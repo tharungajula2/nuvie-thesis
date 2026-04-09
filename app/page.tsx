@@ -1,40 +1,25 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { siteContent } from './data/site-content';
 import { products } from './data/products';
 import { occasions } from './data/occasions';
 import { modules } from './data/modules';
-import { mainNavigation, footerNavigation } from './data/navigation';
+
 
 // Primitives
 import { SectionHeader } from './components/ui/SectionHeader';
-import { StrategyCard } from './components/ui/StrategyCard';
 import { ProductSurface } from './components/ui/ProductSurface';
+import { OccasionEngine } from './components/ui/OccasionEngine';
+import { SystemModules } from './components/ui/SystemModules';
 import { CtaButton } from './components/ui/CtaButton';
 import { CinematicHero } from './components/hero/CinematicHero';
 
 export default function HomePage() {
   return (
     <main className="min-h-screen selection:bg-gold selection:text-background">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full z-[100] border-b border-foreground/5 bg-background/60 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="text-xl font-serif tracking-tight font-semibold">
-            PROTEIN<span className="text-gold ml-1 italic font-light">OS</span>
-          </div>
-          <div className="hidden md:flex items-center space-x-10">
-            {mainNavigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-[10px] uppercase tracking-[0.25em] font-bold text-foreground/40 hover:text-gold transition-all duration-300">
-                {item.name}
-              </a>
-            ))}
-          </div>
-          <CtaButton size="md" variant="outline" className="text-[10px] tracking-[0.2em] uppercase px-6">
-            Access System
-          </CtaButton>
-        </div>
-      </nav>
+
 
       {/* 1. Cinematic Scrollytelling Hero */}
       <CinematicHero />
@@ -122,39 +107,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. Occasion & Modules Section Split */}
-      <section className="py-32 md:py-48 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-24 lg:gap-32 items-start">
-            <aside className="sticky top-32">
-                <SectionHeader 
-                    alignment="left"
-                    eyebrow="Consumer Behavior"
-                    title="Brands win moments before they win markets"
-                    subtitle="Mapping the occasions that define protein adoption."
-                    badge="Moment Strategy"
-                />
-                <div className="space-y-4 mt-12">
-                    {occasions.slice(0, 3).map(occ => (
-                        <div key={occ.id} className="p-6 rounded-xl border border-foreground/5 hover:border-gold/20 transition-all cursor-pointer group">
-                             <h4 className="text-sm uppercase tracking-widest font-bold text-foreground/40 group-hover:text-gold">{occ.title}</h4>
-                        </div>
-                    ))}
-                </div>
-            </aside>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 md:pt-12">
-                {modules.map(module => (
-                    <StrategyCard 
-                        key={module.id}
-                        title={module.title}
-                        description={module.description}
-                        badge={module.badge}
-                        footer="View Logic"
-                    />
-                ))}
-            </div>
-        </div>
-      </section>
+      {/* 5. Occasion Engine: Strategic Interface */}
+      <OccasionEngine />
+
+      {/* 6. System Modules: Intelligence Previews */}
+      <SystemModules />
 
       {/* 6. Final CTA: Cinematic Title Card */}
       <section className="relative min-h-[80vh] flex items-center justify-center px-6 overflow-hidden bg-background">
@@ -171,43 +128,58 @@ export default function HomePage() {
                 subtitle="Join the system built for owners who think in decades, not drops."
             />
             <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8">
-                <CtaButton size="xl" variant="primary" className="min-w-[280px]">
-                   Access the Full System
-                </CtaButton>
+                <Link href="/strategy">
+                    <CtaButton size="xl" variant="primary" className="min-w-[280px]">
+                        Initiate Demo — Enter Strategy OS
+                    </CtaButton>
+                </Link>
                 <CtaButton size="xl" variant="outline" className="min-w-[280px]">
                    View All Products
                 </CtaButton>
             </div>
-            
-            <div className="mt-32 text-center text-foreground/20">
-                <p className="text-[9px] uppercase tracking-[0.6em] font-bold mb-4 italic">End of Session</p>
-                <div className="text-xl font-serif">
-                    PROTEIN<span className="text-gold ml-1 italic font-light">OS</span>
+        </div>
+      </section>
+
+      {/* 2.5 System Mapping: The Demo Guide */}
+      <section className="py-32 px-6 bg-[#0a0a09] border-y border-foreground/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="space-y-8">
+                    <span className="text-gold/40 text-[10px] tracking-[0.5em] uppercase font-bold">System Architecture</span>
+                    <h3 className="text-4xl md:text-5xl font-serif leading-tight">
+                        A multi-layer <span className="italic text-gold">logic suite</span> for the modern protein enterprise.
+                    </h3>
+                    <p className="text-foreground/40 font-light leading-relaxed max-w-xl">
+                        Protein OS is not a dashboard of metrics. It is a cinematic roadmap of strategy, economics, and behavior, built to help founders and operators navigate product viability and category expansion.
+                    </p>
+                </div>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {[
+                        { title: 'Core Strategy', desc: 'Portfolio architecture & SKU logic.', route: '/strategy' },
+                        { title: 'Unit Economics', desc: 'Margin structure & failure modes.', route: '/economics' },
+                        { title: 'Growth Engine', desc: 'Behavioral loops & repeat logic.', route: '/growth' },
+                        { title: 'Labs Hub', desc: 'Flavor, Trust, & Future Adjacency.', route: '/labs/packaging' }
+                    ].map((item, idx) => (
+                        <Link key={item.title} href={item.route} className="group p-8 bg-background border border-foreground/5 rounded-2xl hover:border-gold/30 transition-all duration-500">
+                            <span className="text-[10px] font-bold text-foreground/20 group-hover:text-gold block mb-4">0{idx + 1}</span>
+                            <h4 className="text-lg font-serif mb-2 group-hover:translate-x-1 transition-transform">{item.title}</h4>
+                            <p className="text-[11px] text-foreground/40 leading-relaxed">{item.desc}</p>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t border-foreground/5 bg-background text-center md:text-left">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="flex items-center space-x-12">
-                <div className="text-base font-serif tracking-tighter">
-                    PROTEIN<span className="text-gold ml-1 italic font-light">OS</span>
-                </div>
-                <div className="hidden lg:flex items-center space-x-8">
-                    {footerNavigation.map(item => (
-                        <a key={item.name} href="#" className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 hover:text-gold transition-colors">
-                            {item.name}
-                        </a>
-                    ))}
-                </div>
-            </div>
-            <div className="text-[9px] uppercase tracking-[0.5em] font-bold text-foreground/10">
-                2026 Tharun Gajula
-            </div>
-        </div>
-      </footer>
+      <div className="mt-32 pb-32 text-center text-foreground/20">
+          <p className="text-[9px] uppercase tracking-[0.6em] font-bold mb-4 italic">End of Session</p>
+          <div className="text-xl font-serif">
+              PROTEIN<span className="text-gold ml-1 italic font-light">OS</span>
+          </div>
+      </div>
+
+
 
       <style jsx global>{`
         @keyframes scroll {

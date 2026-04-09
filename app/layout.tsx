@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "./components/layout/Navbar";
+import { Footer } from "./components/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +17,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Protein OS | The Operating System for Modern Protein Brands",
-  description: "From product storytelling and flavor strategy to quick commerce, trust, repeat, and unit economics — Protein OS maps how better-for-you products actually win.",
+  title: "Protein OS | Strategy & Intelligence Layer",
+  description: "A premium operating system for protein brand strategy, formulation, and behavioral growth.",
 };
 
 export default function RootLayout({
@@ -27,10 +29,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${cormorant.variable} h-full antialiased dark`}
+      className={`${geistSans.variable} ${cormorant.variable} h-full antialiased dark scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-gold/30 selection:text-white">
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

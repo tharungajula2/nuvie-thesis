@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Product } from '../../types';
 
 interface ProductSurfaceProps {
@@ -41,10 +42,44 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                         {product.name.split(' ')[0]}
                     </span>
 
-                    {/* Placeholder for Product Asset mapping */}
-                    <div className="relative w-full h-full flex items-center justify-center transform group-hover:scale-105 transition-transform duration-1000">
-                        <div className="w-2/3 h-5/6 bg-gradient-to-tr from-graphite to-background border border-foreground/5 shadow-2xl skew-y-3 rounded-xl flex items-center justify-center text-foreground/10 italic font-serif">
-                            {product.name}
+                    {/* Cinematic Product Asset Stage */}
+                    <div className="relative w-full h-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-1000 ease-out">
+                        {/* 
+                          Asset Fallback Layer 
+                          If a real .png exists, it would sit here. 
+                          For demo-readiness, we represent the SKU as a cinematic "Form Factor Block".
+                        */}
+                        <div 
+                            className="relative w-3/4 h-5/6 bg-[#0c0c0b] border border-white/10 rounded-2xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] flex flex-col items-center justify-center overflow-hidden"
+                            style={{ 
+                                boxShadow: `0 40px 80px -20px ${product.themeColor}33, 0 0 0 1px rgba(255,255,255,0.05)` 
+                            }}
+                        >
+                            {/* Inner Glow */}
+                            <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
+                            
+                            {/* SKU Identity Text */}
+                            <div className="flex flex-col items-center text-center p-8 space-y-4">
+                                <span 
+                                    className="text-[10px] uppercase tracking-[0.6em] font-bold opacity-40 blur-[0.5px]"
+                                    style={{ color: product.accentColor }}
+                                >
+                                    SKU Prototype
+                                </span>
+                                <div className="h-px w-8 bg-foreground/10" />
+                                <span className="text-xl md:text-2xl font-serif text-foreground/80 tracking-tight leading-none group-hover:text-white transition-colors">
+                                    {product.name}
+                                </span>
+                                <span className="text-[10px] text-foreground/20 font-mono tracking-widest uppercase">
+                                    Ref: {product.slug}.v1.os
+                                </span>
+                            </div>
+
+                            {/* Status Indicator */}
+                            <div className="absolute bottom-6 flex items-center space-x-2">
+                                <div className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
+                                <span className="text-[8px] uppercase tracking-[0.4em] font-bold text-foreground/30">System Active</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,10 +158,10 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
             </div>
             
             <div className="pt-8">
-                <button className="flex items-center space-x-4 text-[11px] uppercase tracking-[0.3em] font-bold text-foreground/30 hover:text-gold transition-all duration-300">
+                <Link href={`/products/${product.slug}`} className="flex items-center space-x-4 text-[11px] uppercase tracking-[0.3em] font-bold text-foreground/30 hover:text-gold transition-all duration-300">
                     <span className="h-px w-12 bg-foreground/10 group-hover:bg-gold/40 transition-colors" />
-                    <span>View Scientific Log (Coming Soon)</span>
-                </button>
+                    <span>View Product Intelligence</span>
+                </Link>
             </div>
           </div>
 

@@ -7,7 +7,7 @@ export const products: Product[] = [
     name: 'Choco Loco',
     format: 'Drink',
     heroDescriptor: 'Dessert-coded protein indulgence',
-    operatorDescription: 'A bridges between high-performance macros and high-pleasure flavor profiles. Designed as a calorie-controlled alternative to traditional high-sugar chocolate beverages.',
+    operatorDescription: 'A bridge between high-performance macros and high-pleasure flavor profiles. Designed as a calorie-controlled alternative to traditional high-sugar chocolate beverages.',
     primaryOccasion: 'Sweet Craving Swap',
     accentColor: '#8B4513',
     imagePath: '/images/products/choco-loco.png',
@@ -16,7 +16,15 @@ export const products: Product[] = [
     repeatLogic: 'Emotional Impulse Swap',
     channelFit: ['Quick Commerce', 'D2C', 'Retail'],
     operatorNote: 'Choco Loco serves as the primary psychological leverage point for the brand. By moving the user from pleasure-only to pleasure-plus-protein, we reduce entry friction into the OS.',
-    themeColor: '#722F37' // Mauve / Wine depth
+    themeColor: '#722F37', // Mauve / Wine depth
+    productThesis: 'Protein adoption fails when it feels like a punishment. Choco Loco exists to prove that high-performance nutrition can compete directly with confectionery on taste, capturing the massive 4 PM "sweet craving" daypart.',
+    consumerJobToBeDone: 'Give me chocolate indulgence without the insulin crash and guilt.',
+    repeatTriggers: ['Post-lunch craving loop', 'Late night dessert replacement', 'Stress-induced impulse snacking'],
+    portfolioClassification: 'Indulgence',
+    riskLevel: 'Moderate',
+    expansionCaution: 'Too many dessert flavors (e.g. cookies & cream, caramel) will cannibalize this anchor and bloat inventory.',
+    cannibalizationRisk: 'High risk of absorbing volume from standard Vanilla if marketed as a daily staple instead of an indulgence.',
+    strategicWeight: 75,
   },
   {
     id: 'kesar-pista',
@@ -32,8 +40,16 @@ export const products: Product[] = [
     strategicRole: 'Retention Pillar / Trust SKU',
     repeatLogic: 'Daily Household Routine',
     channelFit: ['Retail', 'Subscriptions', 'General Trade'],
-    operatorNote: 'Kesar Pista is the "Mainstream Bridge". It offsets the westernized identity of the OS by utilizing heritage trust, making it the highest recurring SKU in traditional markets.',
-    themeColor: '#2E4A35' // Deep Forest / Pistachio
+    operatorNote: 'Kesar Pista is the "Mainstream Bridge". It offsets the westernized identity of the portfolio by utilizing heritage trust, making it the highest recurring SKU in traditional markets.',
+    themeColor: '#2E4A35', // Deep Forest / Pistachio
+    productThesis: 'Trust is built on familiarity. While western flavors drive trial, regional heritage flavors drive household retention. Kesar Pista embeds protein into traditional family consumption patterns.',
+    consumerJobToBeDone: 'Provide a premium, healthy beverage that the whole family trusts and enjoys.',
+    repeatTriggers: ['Morning family breakfast', 'Evening wind-down routine', 'Festive or hospitality situations'],
+    portfolioClassification: 'Repeat',
+    riskLevel: 'Low',
+    expansionCaution: 'Do not dilute the heritage line with overly modern variations (e.g., Kesar Pista "Extreme"); it breaks the trust compact.',
+    cannibalizationRisk: 'Low. Operates in a distinct cultural occasion lane.',
+    strategicWeight: 85,
   },
   {
     id: 'wah-vanilla',
@@ -49,8 +65,16 @@ export const products: Product[] = [
     strategicRole: 'Daily Utility / Base SKU',
     repeatLogic: 'Low-Risk Routine Anchor',
     channelFit: ['D2C', 'Modern Trade'],
-    operatorNote: 'Vanilla acts as the "safe" entry point. It has the lowest churn but often requires a secondary hook (mixability) to sustain interest over several months.',
-    themeColor: '#4A4232' // Muted Cream / Clay
+    operatorNote: 'Vanilla acts as the "safe" entry point. It has the lowest churn but often requires a secondary hook (like mixability with smoothies or oats) to sustain interest over several months.',
+    themeColor: '#4A4232', // Muted Cream / Clay
+    productThesis: 'A portfolio needs a blank canvas. Wah Vanilla is designed for extreme versatility—it is the SKU that integrates into existing smoothies, oats, and recipes without fighting the base flavor.',
+    consumerJobToBeDone: 'Give me a reliable, neutral protein base I can mix into my existing breakfast habits.',
+    repeatTriggers: ['Daily smoothie blending', 'Baking and oats integration', 'Low-friction morning rush'],
+    portfolioClassification: 'Support',
+    riskLevel: 'Low',
+    expansionCaution: 'Should never be the primary focus of expensive top-of-funnel marketing. It is a retention mechanic, not an acquisition wedge.',
+    cannibalizationRisk: 'Will bleed volume to any new "smooth" flavor launch if not strictly positioned as a mixer.',
+    strategicWeight: 60,
   },
   {
     id: 'cafe-latte',
@@ -67,7 +91,15 @@ export const products: Product[] = [
     repeatLogic: 'Addictive Ritual Frequency',
     channelFit: ['Office', 'Quick Commerce', 'Ready-to-drink'],
     operatorNote: 'The strongest occasion-led wedge in the portfolio. Once the user replaces their morning coffee with this SKU, they are locked into the OS ecosystem by default.',
-    themeColor: '#3E2723' // Dark Espresso
+    themeColor: '#3E2723', // Dark Espresso
+    productThesis: 'You cannot force a new habit, but you can hijack an existing one. Café Latte eliminates the friction of adding protein by hiding it inside the non-negotiable morning caffeine ritual.',
+    consumerJobToBeDone: 'Wake me up and feed my muscles at the exact same time with zero extra effort.',
+    repeatTriggers: ['The morning wake-up anchor', 'Mid-morning office slump', 'Pre-workout energy need'],
+    portfolioClassification: 'Hero',
+    riskLevel: 'High',
+    expansionCaution: 'Expanding into Mocha or Caramel too early splits the morning ritual volume and introduces inventory inefficiency.',
+    cannibalizationRisk: 'None. It steals volume from external coffee brands, not internal protein SKUs.',
+    strategicWeight: 95,
   },
   {
     id: 'choco-brownie-bar',
@@ -84,7 +116,15 @@ export const products: Product[] = [
     repeatLogic: 'Impulse Management',
     channelFit: ['Corporate', 'Travel', 'D2C Pack'],
     operatorNote: 'Bars capture the "lost moments" where hydration is impossible but satiation is required. Designed for desk drawer storage and commute readiness.',
-    themeColor: '#2B1B17' // Cocoa Shell
+    themeColor: '#2B1B17', // Cocoa Shell
+    productThesis: 'Liquids process fast; solids provide psychological fullness. The Brownie Bar is designed to stop midday hunger dead in its tracks while surviving the harsh logistics of a laptop bag.',
+    consumerJobToBeDone: 'Keep me full and focused during a busy work afternoon without making a mess.',
+    repeatTriggers: ['3 PM desk hunger', 'Airport/Travel delays', 'Between-meeting rushed fuel'],
+    portfolioClassification: 'Wedge',
+    riskLevel: 'Moderate',
+    expansionCaution: 'Bars easily fall into the "candy aisle" trap. Do not over-expand formats until the core logistics (melting/crushing) are perfected.',
+    cannibalizationRisk: 'Competes directly with Choco Loco for the 4 PM sweet craving.',
+    strategicWeight: 70,
   },
   {
     id: 'choco-almond-bar',
@@ -100,7 +140,15 @@ export const products: Product[] = [
     strategicRole: 'Indulgence Variant',
     repeatLogic: 'Flavor Rotation',
     channelFit: ['Retail', 'Travel hubs', 'Impulse'],
-    operatorNote: 'Almond adds a "crunch" bias to the portfolio. Sensory variety is critical to prevent "flavor fatigue" within the bar category.',
-    themeColor: '#5C4033' // Wood / Almond
+    operatorNote: 'Almond adds a crunch bias to the portfolio. Sensory variety (crunch vs smooth) is critical to prevent flavor fatigue within the bar category over long subscriber lifetimes.',
+    themeColor: '#5C4033', // Wood / Almond
+    productThesis: 'A successful bar portfolio requires textural divergence. Choco Almond introduces crunch mechanics, activating a different sensory reward pathway than our smooth formats.',
+    consumerJobToBeDone: 'Give me a satisfying, crunchy snack that feels like real food while I am on the move.',
+    repeatTriggers: ['Commuting and driving routines', 'Outdoor activity fuel', 'Convenience store impulse pair'],
+    portfolioClassification: 'Support',
+    riskLevel: 'Moderate',
+    expansionCaution: 'Nut-inclusive bars require stricter supply chain controls. Do not add peanut or cashew variants without significant volume demand.',
+    cannibalizationRisk: 'High risk of cannibalizing the Brownie Bar if positioned identically. Must be heavily indexed toward "crunch/texture".',
+    strategicWeight: 50,
   },
 ];
