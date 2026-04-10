@@ -13,12 +13,23 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center py-24 md:py-32 overflow-hidden border-b border-foreground/5 last:border-0 group">
       {/* 
-        Atmospheric Backdrop 
-        The themeColor bleeds into the Obsidian background to create a cinematic world for each SKU.
+        INTENSIFIED ATMOSPHERIC BACKDROP 
+        Triple-layer lighting: Central radial wash + Dual corner light leaks.
       */}
       <div className="absolute inset-0 -z-10 bg-background">
+          {/* Central Radial Wash — matched to Summer Concepts */}
           <div 
-            className={`absolute top-1/2 ${isEven ? 'right-0' : 'left-0'} -translate-y-1/2 w-[600px] h-[600px] blur-[150px] opacity-[0.12] transition-all duration-1000 group-hover:opacity-[0.2]`}
+            className="absolute inset-0 opacity-5 group-hover:opacity-30 transition-opacity duration-1000 pointer-events-none"
+            style={{ background: `radial-gradient(circle at 50% 50%, ${product.themeColor}55 0%, transparent 80%)` }}
+          />
+          {/* Primary Corner Leak */}
+          <div 
+            className={`absolute -top-32 ${isEven ? '-right-32' : '-left-32'} w-64 h-64 blur-[100px] opacity-20 group-hover:opacity-50 transition-all duration-1000 group-hover:scale-125`}
+            style={{ backgroundColor: product.themeColor }}
+          />
+          {/* Secondary Corner Leak */}
+          <div 
+            className={`absolute -bottom-32 ${isEven ? '-left-32' : '-right-32'} w-64 h-64 blur-[100px] opacity-10 group-hover:opacity-40 transition-all duration-1000 group-hover:scale-125`}
             style={{ backgroundColor: product.themeColor }}
           />
           <div className="absolute inset-0 vignette-atmosphere opacity-40" />
@@ -29,12 +40,12 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
           
           {/* Visual Product Stage */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-3xl bg-graphite/10 border border-foreground/5 sheen-effect">
+            <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-3xl bg-graphite/10 border border-foreground/5 group-hover:border-gold/20 sheen-effect transition-all duration-700">
                 <div className="absolute inset-0 flex items-center justify-center p-12 lg:p-20">
-                    {/* Atmospheric Glow behind product */}
+                    {/* BEHIND-ASSET PULSING SPOTLIGHT — matched to Summer Concepts (opacity-20 → opacity-80) */}
                     <div 
-                        className="absolute w-[200px] h-[300px] blur-[100px] opacity-30 animate-pulse" 
-                        style={{ backgroundColor: product.accentColor }}
+                        className="absolute w-48 h-48 blur-[80px] opacity-20 group-hover:opacity-80 transition-all duration-1000 animate-pulse" 
+                        style={{ backgroundColor: product.themeColor }}
                     />
                     
                     {/* Product Typography Watermark */}
@@ -42,8 +53,8 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                         {product.name.split(' ')[0]}
                     </span>
 
-                    {/* Cinematic Product Asset Stage */}
-                    <div className="relative w-full h-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    {/* Cinematic Product Asset Stage with Float — animate-float-slow added */}
+                    <div className="relative w-full h-full flex items-center justify-center transform group-hover:scale-110 group-hover:-translate-y-4 transition-all duration-1000 ease-out animate-float-slow">
                         {/* THE REAL ASSET */}
                         <div className="relative z-20 w-full h-full flex items-center justify-center">
                             <img 
@@ -52,9 +63,10 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                                 className="max-w-[70%] max-h-[85%] object-contain filter drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)]"
                             />
                         </div>
-
-                        {/* Inner Pedestal Removed for 100% Floating Aesthetic */}
                     </div>
+
+                    {/* Reflection Pedestal — matched to Summer Concepts */}
+                    <div className="absolute bottom-4 w-32 h-6 bg-black/40 blur-xl rounded-full opacity-60 group-hover:scale-150 transition-transform duration-1000" />
                 </div>
                 
                 {/* Format Badge Overlay */}

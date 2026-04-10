@@ -16,7 +16,7 @@ export const products: Product[] = [
     repeatLogic: 'Emotional Impulse Swap',
     channelFit: ['Quick Commerce', 'D2C', 'Retail'],
     operatorNote: 'Choco Loco serves as the primary psychological leverage point for the brand. By moving the user from pleasure-only to pleasure-plus-protein, we reduce entry friction into the OS.',
-    themeColor: '#722F37', // Mauve / Wine depth
+    themeColor: '#4A2311', // Rich Chocolate / Deep Cocoa
     productThesis: 'Protein adoption fails when it feels like a punishment. Choco Loco exists to prove that high-performance nutrition can compete directly with confectionery on taste, capturing the massive 4 PM "sweet craving" daypart.',
     consumerJobToBeDone: 'Give me chocolate indulgence without the insulin crash and guilt.',
     repeatTriggers: ['Post-lunch craving loop', 'Late night dessert replacement', 'Stress-induced impulse snacking'],
