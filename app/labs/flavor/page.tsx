@@ -7,6 +7,7 @@ import { FlavorPositioningConsole } from '../../components/labs/flavor/FlavorPos
 import { RepeatVsNoveltyLayer } from '../../components/labs/flavor/RepeatVsNoveltyLayer';
 import { FormatFlavorFit } from '../../components/labs/flavor/FormatFlavorFit';
 import { IndiaCulturalFit } from '../../components/labs/flavor/IndiaCulturalFit';
+import { SummerConceptGrid } from '../../components/labs/flavor/SummerConceptGrid';
 import { FlavorBreakdown } from '../../components/labs/flavor/FlavorBreakdown';
 import { FounderMemo } from '../../components/labs/flavor/FounderMemo';
 
@@ -26,6 +27,7 @@ export default function FlavorLabPage() {
           <RepeatVsNoveltyLayer />
           <FormatFlavorFit />
           <IndiaCulturalFit />
+          <SummerConceptGrid />
           <FlavorBreakdown />
           <FounderMemo />
       </article>

@@ -16,23 +16,23 @@ export const Navbar: React.FC = () => {
 
     return (
         <nav className="fixed top-0 w-full z-[100] border-b border-white/5 bg-background/80 backdrop-blur-2xl">
-            <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between relative">
+            <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between relative">
                 {/* LOGO - Forced Breathing Room */}
-                <Link href="/" className="flex-shrink-0 text-xl md:text-2xl font-serif tracking-tighter font-semibold hover:text-gold transition-all duration-500 mr-12">
+                <Link href="/" className="flex-shrink-0 text-lg md:text-xl font-serif tracking-tighter font-semibold hover:text-gold transition-all duration-500 mr-8 lg:mr-12">
                     PROTEIN<span className="text-gold ml-1 italic font-light">OS</span>
                 </Link>
                 
                 {/* Desktop Nav - Clean & Restrained */}
-                <div className="hidden lg:flex items-center space-x-10">
+                <div className="hidden lg:flex items-center space-x-8">
                     {/* FOUNDATION GROUP */}
-                    <div className="flex items-center space-x-8 pr-8 border-r border-white/5">
+                    <div className="flex items-center space-x-6 pr-6 border-r border-white/5">
                         {foundationItems.map((item) => {
                             const isActive = pathname === item.href;
                             return (
                                 <Link 
                                     key={item.name} 
                                     href={item.href} 
-                                    className={`text-[9px] uppercase tracking-[0.3em] font-bold transition-all duration-300 ${isActive ? 'text-gold' : 'text-foreground/30 hover:text-gold'}`}
+                                    className={`text-[8.5px] uppercase tracking-[0.3em] font-bold transition-all duration-300 ${isActive ? 'text-gold' : 'text-foreground/30 hover:text-gold'}`}
                                 >
                                     {item.name}
                                 </Link>
@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
                         onMouseEnter={() => setStrategyOpen(true)}
                         onMouseLeave={() => setStrategyOpen(false)}
                     >
-                        <button className={`flex items-center space-x-2 text-[9px] uppercase tracking-[0.3em] font-bold transition-all duration-300 ${stepItems.some(i => pathname === i.href) ? 'text-gold' : 'text-foreground/30 hover:text-gold'}`}>
+                        <button className={`flex items-center space-x-2 text-[8.5px] uppercase tracking-[0.3em] font-bold transition-all duration-300 ${stepItems.some(i => pathname === i.href) ? 'text-gold' : 'text-foreground/30 hover:text-gold'}`}>
                             <span>Strategy OS</span>
                             <svg className={`w-3 h-3 transition-transform duration-300 ${strategyOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
                 {/* Right CTA */}
                 <div className="hidden lg:block ml-auto">
                     <Link href="/strategy">
-                        <CtaButton size="md" variant="outline" className="text-[9px] tracking-[0.25em] uppercase px-8 py-3.5 border-white/10 hover:border-gold/50">
+                        <CtaButton size="md" variant="outline" className="text-[8.5px] tracking-[0.25em] uppercase px-6 py-2.5 border-white/10 hover:border-gold/50">
                             Access System
                         </CtaButton>
                     </Link>

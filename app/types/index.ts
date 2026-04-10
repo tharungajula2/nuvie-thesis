@@ -169,3 +169,84 @@ export interface ExpansionOpportunity {
   failureMode: string;
   themeColor: string;
 }
+export interface SummerConcept {
+  id: string;
+  name: string;
+  descriptor: string;
+  strategicRole: string;
+  logic: string;
+  classification: 'Trial-Driven' | 'Repeat Candidate' | 'Cultural Wedge' | 'Premium Stretch' | 'Seasonal Hero';
+  imagePath: string;
+  themeColor: string;
+}
+
+export interface ProcessStage {
+  id: string;
+  name: string;
+  objective: string;
+  variables: string[];
+  failureModes: string[];
+  complexity: 'Low' | 'Moderate' | 'High';
+  impact: string;
+}
+
+export interface IngredientTechnicalProfile {
+  id: string;
+  category: string;
+  behavior: string;
+  manufacturingRisk: string;
+  stabilityLogic: string;
+  themeColor: string;
+}
+
+export interface StabilityRisk {
+  id: string;
+  issue: string;
+  rootCause: string;
+  prevention: string;
+  businessImpact: string;
+}
+
+export interface ManufacturingRoadmapItem {
+  id: string;
+  title: string;
+  description: string;
+  keyLearning: string;
+  level: 'Fundamentals' | 'Applied' | 'Operator Grade';
+}
+
+export interface RecipeConcept {
+  id: string;
+  name: string;
+  tagline: string;
+  objective: string;
+  sensoryTarget: string;
+  manufacturability: 'Simple' | 'Complex' | 'Hazardous';
+  costBurden: 'Low' | 'Moderate' | 'High';
+  repeatLogic: string;
+  themeColor: string;
+}
+
+export interface RDHypothesis {
+  id: string;
+  question: string;
+  benchmarkContext: string;
+  testMethod: string;
+  status: 'Pending' | 'Validated' | 'Rejected';
+}
+
+export interface AIWorkflowStep {
+  id: string;
+  title: string;
+  aiRole: string;
+  humanRole: string;
+  output: string;
+}
+
+export interface ExperimentationStage {
+  id: string;
+  title: string;
+  gatekeeper: string;
+  successMetric: string;
+  failureAction: string;
+}

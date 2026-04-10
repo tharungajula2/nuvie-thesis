@@ -6,8 +6,8 @@ export const NarrativeLayer: React.FC = () => {
       <div className="max-w-5xl mx-auto text-center">
         
         {/* Beat 1: Brand Arrival — Initial Poster State */}
-        <div id="narrative-beat-1" className="narrative-beat flex flex-col items-center">
-            <span className="text-gold/40 text-[9px] uppercase tracking-[0.6em] font-bold mb-8">Director's Thesis</span>
+        <div id="narrative-beat-1" className="narrative-beat flex flex-col items-center pt-20">
+            <span className="text-gold/40 text-[9px] uppercase tracking-[0.6em] font-bold mb-8">DIRECTION & INTENT</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.05] mb-8 text-balance">
                 The operating system for modern protein brands
             </h1>

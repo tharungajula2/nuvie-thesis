@@ -15,7 +15,9 @@ export const mainNavigation: NavItem[] = [
   { name: '04 Growth', href: '/growth' },
   { name: '05 Packaging', href: '/labs/packaging' },
   { name: '06 Flavor', href: '/labs/flavor' },
-  { name: '07 Expansion', href: '/labs/expansion' },
+  { name: '07 Manufacturing', href: '/labs/manufacturing' },
+  { name: '08 R&D', href: '/labs/r-and-d' },
+  { name: '09 Expansion', href: '/labs/expansion' },
 ];
 
 export const footerNavigation: NavItem[] = [
