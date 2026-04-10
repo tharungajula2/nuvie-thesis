@@ -53,18 +53,7 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                             />
                         </div>
 
-                        {/* 
-                          Cinematic Backdrop Reflection
-                          We keep a version of the block as a "pedestal" or reflection spot for the real image.
-                        */}
-                        <div 
-                            className="absolute z-10 w-3/4 h-5/6 bg-[#0c0c0b] border border-white/5 rounded-2xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] opacity-40"
-                            style={{ 
-                                boxShadow: `0 40px 80px -20px ${product.themeColor}33, 0 0 0 1px rgba(255,255,255,0.03)` 
-                            }}
-                        >
-                            <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
-                        </div>
+                        {/* Inner Pedestal Removed for 100% Floating Aesthetic */}
                     </div>
                 </div>
                 

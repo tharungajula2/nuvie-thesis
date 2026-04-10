@@ -55,16 +55,7 @@ export const ProductHeroStage: React.FC<ProductHeroStageProps> = ({ product }) =
                         />
                     </div>
                     
-                    {/* Cinematic SKU Presentation Pedestal */}
-                    <div 
-                        className="absolute z-10 w-48 md:w-64 aspect-[3/4] bg-background border border-foreground/10 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)] opacity-40"
-                        style={{ 
-                            boxShadow: `0 40px 120px -20px ${product.themeColor}55, 0 0 0 1px rgba(255,255,255,0.05)` 
-                        }}
-                    >
-                        <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
-                        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] pointer-events-none" />
-                    </div>
+                    {/* Inner Pedestal Removed for 100% Floating Aesthetic */}
 
                     {/* Stage Typography Watermark */}
                     <div className="absolute right-8 bottom-4 text-foreground/[0.03] text-7xl md:text-9xl font-serif italic font-bold select-none tracking-tighter">

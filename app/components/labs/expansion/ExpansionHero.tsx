@@ -11,9 +11,14 @@ export const ExpansionHero: React.FC = () => {
             </div>
 
             <div className="relative z-10 max-w-6xl mx-auto text-center space-y-8 flex flex-col items-center">
-                <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-foreground/50 inline-block py-2 px-6 border border-foreground/10 rounded-full bg-foreground/5 backdrop-blur-md">
-                    Step 07 // Operating System // Labs // Adjacency Strategy
-                </span>
+                <div className="flex items-center justify-center space-x-4">
+                    <span className="text-[10px] font-mono font-bold text-teal-600/80 px-2 py-0.5 border border-teal-600/30 rounded bg-teal-600/5">
+                        Step 07
+                    </span>
+                    <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-foreground/50 inline-block py-2 px-6 border border-foreground/10 rounded-full bg-foreground/5 backdrop-blur-md">
+                        Operating System // Labs // Adjacency Strategy
+                    </span>
+                </div>
                 
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.05] tracking-tight text-balance">
                     Expansion is where brands either compound or <span className="italic text-teal-600/80">fragment.</span>

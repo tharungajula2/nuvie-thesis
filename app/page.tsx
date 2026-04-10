@@ -15,6 +15,7 @@ import { OccasionEngine } from './components/ui/OccasionEngine';
 import { SystemModules } from './components/ui/SystemModules';
 import { CtaButton } from './components/ui/CtaButton';
 import { CinematicHero } from './components/hero/CinematicHero';
+import { SystemContinuation } from './components/ui/SystemContinuation';
 
 export default function HomePage() {
   return (
@@ -68,10 +69,10 @@ export default function HomePage() {
       {/* 4. Winning Formula Strip: Iconic Map */}
       <section className="py-48 px-6 bg-gradient-to-b from-background via-graphite/10 to-background border-y border-foreground/5">
         <div className="max-w-5xl mx-auto text-center mb-16 px-6">
-            <SectionHeader 
-                alignment="center"
-                title="The Unit Truth"
-                badge="Strategy Strip"
+            <SystemContinuation 
+                nextRoute="/products" 
+                nextTitle="Portfolio Hub" 
+                description="Explore the 6-SKU core portfolio architecture." 
             />
         </div>
         
