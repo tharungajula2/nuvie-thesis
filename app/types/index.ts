@@ -65,6 +65,16 @@ export interface Module {
   isFeatured?: boolean; // Determines layout weight in the grid
 }
 
+export interface HeroChapter {
+  id: string;
+  eyebrow: string;
+  title: string;
+  body?: string | null;
+  occasionTags?: string[];
+  formula?: string[];
+  cta?: { label: string; href?: string; type: 'scroll-cue' | 'primary' | 'outline' };
+}
+
 export interface SiteContent {
   name: string;
   tagline: string;
@@ -75,6 +85,7 @@ export interface SiteContent {
     primaryCta: string;
     secondaryCta: string;
   };
+  heroChapters: HeroChapter[];
   manifesto: {
     heading: string;
     body: string;

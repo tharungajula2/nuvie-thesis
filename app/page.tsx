@@ -14,7 +14,7 @@ import { ProductSurface } from './components/ui/ProductSurface';
 import { OccasionEngine } from './components/ui/OccasionEngine';
 import { SystemModules } from './components/ui/SystemModules';
 import { CtaButton } from './components/ui/CtaButton';
-import { CinematicHero } from './components/hero/CinematicHero';
+import { ChapterHero } from './components/hero/ChapterHero';
 import { SystemContinuation } from './components/ui/SystemContinuation';
 
 export default function HomePage() {
@@ -22,8 +22,8 @@ export default function HomePage() {
     <main className="min-h-screen selection:bg-gold selection:text-background">
 
 
-      {/* 1. Cinematic Scrollytelling Hero */}
-      <CinematicHero />
+      {/* 1. Chapter-Based Cinematic Hero */}
+      <ChapterHero />
 
       {/* 2. Manifesto: The Director's Note */}
       <section className="relative py-48 md:py-64 px-6 z-20 overflow-hidden bg-background">
