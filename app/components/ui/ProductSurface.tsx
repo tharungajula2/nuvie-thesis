@@ -40,7 +40,7 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
           
           {/* Visual Product Stage */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-3xl bg-graphite/10 border border-foreground/5 group-hover:border-gold/20 sheen-effect transition-all duration-700">
+            <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-3xl bg-graphite/10 border border-foreground/5 group-hover:border-accent/20 sheen-effect transition-all duration-700">
                 <div className="absolute inset-0 flex items-center justify-center p-12 lg:p-20">
                     {/* BEHIND-ASSET PULSING SPOTLIGHT — matched to Summer Concepts (opacity-20 → opacity-80) */}
                     <div 
@@ -71,7 +71,7 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                 
                 {/* Format Badge Overlay */}
                 <div className="absolute top-8 left-8">
-                    <span className="px-4 py-1.5 bg-white/60 backdrop-blur-md rounded-full text-[9px] uppercase tracking-[0.4em] font-bold text-gold border border-gold/20">
+                    <span className="px-4 py-1.5 bg-white/60 backdrop-blur-md rounded-full text-[10px] uppercase tracking-[0.4em] font-bold text-accent border border-accent/20">
                         {product.format} Format
                     </span>
                 </div>
@@ -81,13 +81,13 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
           {/* Strategic Narrative Surface */}
           <div className="w-full lg:w-1/2 space-y-10">
             <div>
-                <span className="text-gold/60 text-[10px] uppercase tracking-[0.5em] font-bold block mb-4">
+                <span className="text-accent/60 text-[10px] uppercase tracking-[0.5em] font-bold block mb-4">
                     {product.category}
                 </span>
                 <h2 className="text-4xl md:text-6xl font-serif mb-6 leading-tight max-w-[12ch]">
                     {product.name}
                 </h2>
-                <p className="text-xl md:text-2xl font-serif italic text-gold/80 max-w-xl">
+                <p className="text-xl md:text-2xl font-serif italic text-accent/80 max-w-xl">
                     "{product.heroDescriptor}"
                 </p>
             </div>
@@ -97,27 +97,27 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                     {product.operatorDescription}
                 </p>
 
-                {/* Portfolio Intelligence Blueprint */}
+                {/* Product Reading */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 pt-6 border-t border-foreground/10">
                     <div className="space-y-4">
                         <div>
-                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Portfolio Role</span>
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Why this SKU matters</span>
                             <span className="text-sm font-medium text-foreground/80">{product.strategicRole}</span>
                         </div>
                         <div>
-                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Primary Occasion</span>
-                            <span className="text-sm text-gold font-medium">{product.primaryOccasion}</span>
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Best moment</span>
+                            <span className="text-sm text-accent font-medium">{product.primaryOccasion}</span>
                         </div>
                     </div>
                     <div className="space-y-4">
                         <div>
-                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Repeat Logic</span>
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Repeat potential</span>
                             <span className="text-sm font-medium text-foreground/80">{product.repeatLogic}</span>
                         </div>
                         <div className="flex flex-wrap gap-2">
-                            <span className="w-full text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Target Channels</span>
+                            <span className="w-full text-[10px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">Best-fit channels</span>
                             {product.channelFit.map(channel => (
-                                <span key={channel} className="text-[9px] uppercase tracking-widest font-bold px-3 py-1 bg-foreground/5 rounded-full text-foreground/60 border border-foreground/5">
+                                <span key={channel} className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-foreground/5 rounded-full text-foreground/70 border border-foreground/5">
                                     {channel}
                                 </span>
                             ))}
@@ -126,7 +126,7 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                 </div>
 
                 {/* Operator Note Context */}
-                <div className="bg-graphite/20 p-8 rounded-2xl border border-gold/10 relative overflow-hidden group/note">
+                <div className="bg-graphite/20 p-8 rounded-2xl border border-accent/10 relative overflow-hidden group/note">
                     <div 
                       className="absolute top-0 right-0 p-4 opacity-5 group-hover/note:opacity-20 transition-opacity"
                       style={{ color: product.accentColor }}
@@ -135,18 +135,17 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
                         </svg>
                     </div>
-                    <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-gold/60 block mb-4">Strategic Framework Note</span>
-                    <p className="text-sm text-foreground/40 leading-relaxed italic pr-8">
+                    <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent/80 block mb-4">Product Note</span>
+                    <p className="text-sm text-foreground/60 leading-relaxed italic pr-8">
                         {product.operatorNote}
                     </p>
                 </div>
             </div>
             
-            <div className="pt-8">
-                <Link href={`/products/${product.slug}`} className="flex items-center space-x-4 text-[11px] uppercase tracking-[0.3em] font-bold text-foreground/30 hover:text-gold transition-all duration-300">
-                    <span className="h-px w-12 bg-foreground/10 group-hover:bg-gold/40 transition-colors" />
-                    <span>View Product Intelligence</span>
-                </Link>
+            {/* Simplified Footer - No dead link */}
+            <div className="pt-8 flex items-center space-x-4 opacity-10">
+                <span className="h-px w-12 bg-foreground/30" />
+                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/30">End of Entry</span>
             </div>
           </div>
 

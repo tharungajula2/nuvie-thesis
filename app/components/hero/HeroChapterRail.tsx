@@ -32,7 +32,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
             }}
           >
             {/* Eyebrow */}
-            <span className="text-gold/60 text-[9px] uppercase tracking-[0.6em] font-bold mb-8 block">
+            <span className="text-accent/60 text-[9px] uppercase tracking-[0.6em] font-bold mb-8 block">
               {chapter.eyebrow}
             </span>
 
@@ -69,7 +69,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
 
             {/* Formula chain */}
             {chapter.formula && (
-              <div className="flex flex-wrap items-center justify-center gap-4 text-2xl md:text-4xl font-serif text-gold italic mt-4">
+              <div className="flex flex-wrap items-center justify-center gap-4 text-2xl md:text-4xl font-serif text-accent italic mt-4">
                 {chapter.formula.map((step, i) => (
                   <React.Fragment key={step}>
                     <span className={i === chapter.formula!.length - 1 ? 'underline decoration-1 underline-offset-[12px]' : ''}>
@@ -86,10 +86,10 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
             {/* CTA */}
             {chapter.cta && chapter.cta.type === 'scroll-cue' && (
               <div className="mt-20 flex flex-col items-center gap-4 opacity-40">
-                <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-gold/60">
+                <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-accent/60">
                   {chapter.cta.label}
                 </span>
-                <div className="w-px h-12 bg-gradient-to-b from-gold/40 to-transparent animate-pulse" />
+                <div className="w-px h-12 bg-gradient-to-b from-accent/40 to-transparent animate-pulse" />
               </div>
             )}
 
@@ -97,7 +97,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
               <div className="mt-16">
                 <Link
                   href={chapter.cta.href}
-                  className="inline-block px-10 py-5 bg-gold text-white rounded-full uppercase tracking-widest font-bold text-sm hover:scale-105 transition-transform pointer-events-auto shadow-lg"
+                  className="inline-block px-10 py-5 bg-accent text-background rounded-full uppercase tracking-widest font-bold text-sm hover:scale-105 transition-transform pointer-events-auto shadow-lg"
                 >
                   {chapter.cta.label}
                 </Link>

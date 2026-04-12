@@ -7,13 +7,12 @@ export const SummerConceptGrid: React.FC = () => {
     return (
         <section className="py-32 px-6 max-w-7xl mx-auto border-t border-foreground/8">
             <div className="mb-20 text-center">
-                <span className="text-gold/60 text-[10px] uppercase tracking-[0.5em] font-bold block mb-4">
-                    Horizon Strategy
+                <span className="text-accent/60 text-[10px] uppercase tracking-[0.5em] font-bold block mb-4">
+                    Concept Extensions
                 </span>
-                <h3 className="text-4xl md:text-5xl font-serif mb-6">Seasonal Concept Extensions</h3>
+                <h3 className="text-4xl md:text-5xl font-serif mb-6">Future flavor directions</h3>
                 <p className="text-foreground/40 max-w-2xl mx-auto text-sm md:text-base font-light leading-relaxed">
-                    A disciplined flavor roadmap ensures the brand remains relevant without fragmenting the core. 
-                    These concept SKUs demonstrate how summer seasonality can be used as a trial-pull tool.
+                    Thoughtful extensions that could widen seasonal relevance, cultural fit, or trial without breaking core clarity.
                 </p>
             </div>
 
@@ -21,7 +20,7 @@ export const SummerConceptGrid: React.FC = () => {
                 {summerConcepts.map((concept) => (
                     <div 
                         key={concept.id} 
-                        className="group relative flex flex-col items-center text-center p-8 bg-graphite/10 rounded-3xl border border-foreground/8 hover:border-gold/30 transition-all duration-700 overflow-hidden"
+                        className="group relative flex flex-col items-center text-center p-8 bg-graphite/10 rounded-3xl border border-foreground/8 hover:border-accent/30 transition-all duration-700 overflow-hidden"
                     >
                         {/* THE INTENSIFIED AMBIENT LIGHTING SYSTEM */}
                         <div 
@@ -74,10 +73,10 @@ export const SummerConceptGrid: React.FC = () => {
 
                         <div className="relative z-10 space-y-4">
                             <div className="flex flex-col items-center">
-                                <span className="px-2 py-0.5 border border-gold/30 rounded bg-gold/5 text-[8px] font-mono font-bold text-gold/80 mb-2">
+                                <span className="px-2 py-0.5 border border-accent/30 rounded bg-accent/5 text-[8px] font-mono font-bold text-accent/80 mb-2">
                                     Concept SKU
                                 </span>
-                                <h4 className="text-2xl font-serif text-foreground group-hover:text-gold transition-colors">
+                                <h4 className="text-2xl font-serif text-foreground group-hover:text-accent transition-colors">
                                     {concept.name}
                                 </h4>
                             </div>
@@ -88,12 +87,12 @@ export const SummerConceptGrid: React.FC = () => {
 
                             <div className="pt-6 border-t border-foreground/8 space-y-4 text-left">
                                 <div>
-                                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 block mb-1">Strategic Role</span>
+                                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 block mb-1">Potential role</span>
                                     <span className="text-[11px] text-foreground/70 leading-tight block">{concept.strategicRole}</span>
                                 </div>
                                 <div>
-                                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 block mb-1">Classification</span>
-                                    <span className="text-[10px] text-gold font-bold uppercase tracking-wider">{concept.classification}</span>
+                                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 block mb-1">Type</span>
+                                    <span className="text-[10px] text-accent font-bold uppercase tracking-wider">{concept.classification}</span>
                                 </div>
                             </div>
                         </div>

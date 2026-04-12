@@ -41,7 +41,7 @@ export const MobileChapterStack: React.FC<MobileChapterStackProps> = ({ chapters
 
             <div className="relative z-10 px-6 max-w-2xl mx-auto text-center">
               {/* Eyebrow */}
-              <span className="text-gold/60 text-[9px] uppercase tracking-[0.5em] font-bold mb-6 block">
+              <span className="text-accent/60 text-[9px] uppercase tracking-[0.5em] font-bold mb-6 block">
                 {chapter.eyebrow}
               </span>
 
@@ -78,7 +78,7 @@ export const MobileChapterStack: React.FC<MobileChapterStackProps> = ({ chapters
 
               {/* Formula chain */}
               {chapter.formula && (
-                <div className="flex flex-wrap items-center justify-center gap-3 text-xl font-serif text-gold italic mt-4">
+                <div className="flex flex-wrap items-center justify-center gap-3 text-xl font-serif text-accent italic mt-4">
                   {chapter.formula.map((step, i) => (
                     <React.Fragment key={step}>
                       <span className={i === chapter.formula!.length - 1 ? 'underline decoration-1 underline-offset-8' : ''}>
@@ -95,10 +95,10 @@ export const MobileChapterStack: React.FC<MobileChapterStackProps> = ({ chapters
               {/* CTA */}
               {chapter.cta && chapter.cta.type === 'scroll-cue' && (
                 <div className="mt-12 flex flex-col items-center gap-3 opacity-30">
-                  <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-gold/60">
+                  <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-accent/60">
                     {chapter.cta.label}
                   </span>
-                  <div className="w-px h-8 bg-gradient-to-b from-gold/40 to-transparent" />
+                  <div className="w-px h-8 bg-gradient-to-b from-accent/40 to-transparent" />
                 </div>
               )}
 
@@ -106,7 +106,7 @@ export const MobileChapterStack: React.FC<MobileChapterStackProps> = ({ chapters
                 <div className="mt-10">
                   <Link
                     href={chapter.cta.href}
-                    className="inline-block px-8 py-4 bg-gold text-white rounded-full uppercase tracking-widest font-bold text-xs hover:scale-105 transition-transform shadow-lg"
+                    className="inline-block px-8 py-4 bg-accent text-white rounded-full uppercase tracking-widest font-bold text-xs hover:scale-105 transition-transform shadow-lg"
                   >
                     {chapter.cta.label}
                   </Link>

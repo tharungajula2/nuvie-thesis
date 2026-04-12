@@ -2,18 +2,23 @@
 
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { siteContent } from '../../data/site-content';
+import { HeroChapter } from '../../types';
 import { HeroVisualStage } from './HeroVisualStage';
 import { HeroChapterRail } from './HeroChapterRail';
 import { MobileChapterStack } from './MobileChapterStack';
 import { ChapterIndicator } from './ChapterIndicator';
 
-export const ChapterHero: React.FC = () => {
+interface ChapterHeroProps {
+  chapters?: HeroChapter[];
+}
+
+export const ChapterHero: React.FC<ChapterHeroProps> = ({ 
+  chapters = siteContent.heroChapters 
+}) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const chapterRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [activeChapter, setActiveChapter] = useState(0);
   const [isInView, setIsInView] = useState(false);
-
-  const chapters = siteContent.heroChapters;
 
   // IntersectionObserver for chapter detection (desktop)
   useEffect(() => {

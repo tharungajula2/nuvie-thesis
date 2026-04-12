@@ -2,27 +2,43 @@
 
 :root {
   --background: #F5ECD7; /* Vanilla Cream — from Café Latte bottle */
-  --foreground: #2C1810; /* Deep Espresso — from bottle cap/text */
-  --muted-gold: #B8860B; /* Burnished Gold — tuned for cream */
+  --foreground: #2B1A15; /* Espresso Ink — Grounded and authoritative */
+  
+  /* Nuvie Pistachio Accent System — Functional & Performance-focused */
+  --pistachio: #5F7752; /* Readable Green — Strengthened for legibility */
+  --pistachio-strong: #4F6745; /* Heavy Performance Green */
+  --pistachio-soft: rgba(95, 119, 82, 0.4);
+  --pistachio-subtle: rgba(95, 119, 82, 0.14);
+  
+  /* Neutral Grounding */
+  --border-warm: #CFC3B0; 
   --graphite: #E8DCC8; /* Warm Sand — card surfaces */
   
-  /* Product Accents */
+  /* Product Accents — Kept for artwork relevance */
   --accent-choco: #8B4513;
   --accent-pista: #93C572;
   --accent-vanilla: #F3E5AB;
   --accent-coffee: #6F4E37;
   --accent-bar: #4A2B29;
+  --accent-cocoa: #8A5A3B;
 
-  /* Extended Palette */
-  --accent-sky: #5B8FA8;
-  --nuvie-green: #4A7C59;
+  /* Semantic Aliases */
+  --accent: var(--pistachio);
+  --accent-soft: var(--pistachio-soft);
+  --accent-subtle: var(--pistachio-subtle);
+  --muted-gold: var(--foreground); /* Mapped to ink for grounding */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-gold: var(--muted-gold);
+  --color-accent: var(--pistachio);
+  --color-accent-strong: var(--pistachio-strong);
+  --color-accent-soft: var(--pistachio-soft);
+  --color-accent-subtle: var(--pistachio-subtle);
   --color-graphite: var(--graphite);
+  --color-border-warm: var(--border-warm);
+  --color-cocoa: var(--accent-cocoa);
   
   --font-serif: var(--font-cormorant);
   --font-sans: var(--font-geist-sans);
@@ -36,79 +52,76 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-cormorant), serif;
   font-weight: 500;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
+  color: var(--foreground);
 }
 
 /* ═══════════════════════════════════════════
-   Cinematic UI Utilities — Cream Light Theme
+   Performance Editorial Utilities
    ═══════════════════════════════════════════ */
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(44, 24, 16, 0.08);
-  box-shadow: 0 8px 32px rgba(44, 24, 16, 0.06);
+  border: 1px solid rgba(43, 26, 21, 0.08);
+  box-shadow: 0 4px 24px rgba(43, 26, 21, 0.04);
 }
 
 .glass-card:hover {
-  border: 1px solid rgba(184, 134, 11, 0.25);
-  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--pistachio);
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .film-surface {
   background: linear-gradient(180deg, rgba(245, 236, 215, 0) 0%, rgba(245, 236, 215, 0.9) 100%);
 }
 
-.gold-dim-glow {
-  box-shadow: 0 0 24px rgba(184, 134, 11, 0.12);
+.accent-dim-glow {
+  box-shadow: 0 0 32px rgba(111, 134, 97, 0.1);
 }
 
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--graphite) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, var(--border-warm) 50%, transparent 100%);
 }
 
-.text-gradient-gold {
-  background: linear-gradient(135deg, #B8860B 0%, #D4A843 50%, #B8860B 100%);
+.text-gradient-pistachio {
+  background: linear-gradient(135deg, var(--pistachio) 0%, var(--pistachio-strong) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Advanced Cinematic Utilities — Cream */
+/* Advanced Cinematic Utilities — Grounded */
 
 .vignette-atmosphere {
-  mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
+  mask-image: radial-gradient(circle at center, black 0%, transparent 85%);
   pointer-events: none;
 }
 
 .haze-overlay {
-  background: radial-gradient(circle at 50% 50%, rgba(184, 134, 11, 0.06) 0%, transparent 70%);
-  filter: blur(60px);
+  background: radial-gradient(circle at 50% 50%, rgba(111, 134, 97, 0.04) 0%, transparent 70%);
+  filter: blur(80px);
 }
 
 .product-glow {
   filter: blur(80px);
-  opacity: 0.12;
+  opacity: 0.1;
   mix-blend-mode: multiply;
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0); }
-  50% { transform: translateY(-20px) rotate(2deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
 }
 
 .animate-float {
   animation: float 8s ease-in-out infinite;
-}
-
-.animate-float-delayed {
-  animation: float 10s ease-in-out infinite;
-  animation-delay: 2s;
 }
 
 .animate-float-slow {
@@ -131,9 +144,9 @@ h1, h2, h3, h4 {
   background: linear-gradient(
     45deg,
     transparent 0%,
-    rgba(184, 134, 11, 0.06) 45%,
-    rgba(184, 134, 11, 0.12) 50%,
-    rgba(184, 134, 11, 0.06) 55%,
+    rgba(111, 134, 97, 0.03) 45%,
+    rgba(111, 134, 97, 0.08) 50%,
+    rgba(111, 134, 97, 0.03) 55%,
     transparent 100%
   );
   transform: rotate(45deg);

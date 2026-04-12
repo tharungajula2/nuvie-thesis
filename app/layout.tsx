@@ -17,8 +17,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Protein OS | Strategy & Intelligence Layer",
-  description: "A premium operating system for protein brand strategy, formulation, and behavioral growth.",
+  title: "Nuvie Thesis | Strategic Exploration",
+  description: "A strategic study of modern protein brand strategy, formulation, and behavioral growth.",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${cormorant.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-gold/30 selection:text-foreground">
+      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-accent/30 selection:text-foreground">
         <Navbar />
         {children}
         <Footer />

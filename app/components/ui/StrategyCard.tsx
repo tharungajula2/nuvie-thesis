@@ -18,7 +18,7 @@ export const StrategyCard: React.FC<StrategyCardProps> = ({
   return (
     <div className="glass-card p-8 rounded-2xl flex flex-col h-full transition-all duration-300">
       <div className="flex justify-between items-start mb-6">
-        {icon && <div className="text-gold">{icon}</div>}
+        {icon && <div className="text-accent">{icon}</div>}
         {badge && (
           <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-foreground/40 bg-foreground/5 px-2 py-1 rounded">
             {badge}
@@ -36,7 +36,7 @@ export const StrategyCard: React.FC<StrategyCardProps> = ({
       
       {footer && (
         <div className="mt-8 pt-6 border-t border-foreground/5 flex items-center justify-between group cursor-pointer">
-          <span className="text-sm font-medium text-gold/80 group-hover:text-gold transition-colors">
+          <span className="text-sm font-medium text-accent-strong group-hover:text-accent transition-colors">
             {footer}
           </span>
           <svg 
@@ -48,7 +48,7 @@ export const StrategyCard: React.FC<StrategyCardProps> = ({
             strokeWidth="2" 
             strokeLinecap="round" 
             strokeLinejoin="round"
-            className="text-gold/40 group-hover:text-gold group-hover:translate-x-1 transition-all"
+            className="text-accent/40 group-hover:text-accent group-hover:translate-x-1 transition-all"
           >
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>

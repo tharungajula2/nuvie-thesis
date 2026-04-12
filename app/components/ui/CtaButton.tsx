@@ -15,18 +15,21 @@ export const CtaButton: React.FC<CtaButtonProps> = ({
   className = '',
   onClick,
 }) => {
-  const baseStyles = "inline-flex items-center justify-center font-medium transition-all duration-300 rounded-full tracking-wide";
+  const baseStyles = "inline-flex items-center justify-center font-bold transition-all duration-300 rounded-full tracking-widest uppercase";
   
   const variants = {
-    primary: "bg-gold text-white hover:bg-gold/90 gold-dim-glow shadow-lg",
-    secondary: "bg-foreground text-background hover:bg-foreground/90",
-    outline: "border border-foreground/15 text-foreground hover:border-gold hover:text-gold bg-transparent",
+    // Entry/Energy Action: Pistachio fill + Cream text
+    primary: "bg-accent text-background hover:bg-accent-strong shadow-sm active:scale-[0.98]",
+    // Soft Neutral: Subtle backdrop with Espresso text
+    secondary: "bg-foreground/5 text-foreground hover:bg-foreground/10 border border-foreground/10",
+    // Structural Anchor: Espresso border + Espresso text
+    outline: "border border-foreground text-foreground hover:bg-foreground/5 bg-transparent",
   };
 
   const sizes = {
-    md: "px-6 py-2.5 text-sm",
-    lg: "px-8 py-3.5 text-base",
-    xl: "px-10 py-5 text-lg uppercase tracking-widest",
+    md: "px-6 py-2.5 text-[10px]",
+    lg: "px-8 py-3.5 text-[11px]",
+    xl: "px-10 py-5 text-[12px] tracking-[0.3em]",
   };
 
   return (

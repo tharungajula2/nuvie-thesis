@@ -23,7 +23,7 @@ export default function NotFound() {
             <div className="pt-8">
                 <Link 
                     href="/" 
-                    className="inline-block text-[10px] uppercase tracking-[0.25em] font-bold text-foreground hover:text-gold border-b border-foreground/20 hover:border-gold pb-1 transition-all duration-300"
+                    className="inline-block text-[10px] uppercase tracking-[0.25em] font-bold text-foreground hover:text-accent border-b border-foreground/20 hover:border-accent pb-1 transition-all duration-300"
                 >
                     Return to Dashboard
                 </Link>

@@ -1,6 +1,7 @@
 {
-  "name": "protein-os",
+  "name": "nuvie-thesis",
   "version": "0.1.0",
+  "description": "Nuvie Thesis | A strategic study of modern protein growth",
   "private": true,
   "scripts": {
     "dev": "next dev",
