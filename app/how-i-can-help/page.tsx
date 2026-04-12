@@ -227,7 +227,7 @@ export default function HowICanHelpPage() {
                 </h2>
                 <div className="flex flex-col sm:flex-row justify-center gap-8">
                     <CtaButton size="xl" variant="primary">
-                        Talk Through the Thesis
+                        Start a Conversation
                     </CtaButton>
                     <Link href="/">
                         <CtaButton size="xl" variant="outline">
@@ -237,12 +237,6 @@ export default function HowICanHelpPage() {
                 </div>
             </section>
 
-            <div className="mt-32 pb-32 text-center text-foreground/30">
-                <p className="text-[10px] uppercase tracking-[0.6em] font-bold mb-4 italic">Fin.</p>
-                <div className="text-xl font-serif opacity-70">
-                    NUVIE<span className="text-accent ml-1 italic font-light">THESIS</span>
-                </div>
-            </div>
         </main>
     );
 }

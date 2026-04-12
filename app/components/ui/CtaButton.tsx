@@ -6,6 +6,7 @@ interface CtaButtonProps {
   size?: 'md' | 'lg' | 'xl';
   className?: string;
   onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 export const CtaButton: React.FC<CtaButtonProps> = ({
@@ -14,6 +15,7 @@ export const CtaButton: React.FC<CtaButtonProps> = ({
   size = 'md',
   className = '',
   onClick,
+  type = 'button',
 }) => {
   const baseStyles = "inline-flex items-center justify-center font-bold transition-all duration-300 rounded-full tracking-widest uppercase";
   
@@ -36,6 +38,7 @@ export const CtaButton: React.FC<CtaButtonProps> = ({
     <button 
       className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
       onClick={onClick}
+      type={type}
     >
       {children}
     </button>

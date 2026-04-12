@@ -5,16 +5,7 @@ import { summerConcepts } from '../../../data/summer-concepts';
 
 export const SummerConceptGrid: React.FC = () => {
     return (
-        <section className="py-32 px-6 max-w-7xl mx-auto border-t border-foreground/8">
-            <div className="mb-20 text-center">
-                <span className="text-accent/60 text-[10px] uppercase tracking-[0.5em] font-bold block mb-4">
-                    Concept Extensions
-                </span>
-                <h3 className="text-4xl md:text-5xl font-serif mb-6">Future flavor directions</h3>
-                <p className="text-foreground/40 max-w-2xl mx-auto text-sm md:text-base font-light leading-relaxed">
-                    Thoughtful extensions that could widen seasonal relevance, cultural fit, or trial without breaking core clarity.
-                </p>
-            </div>
+        <section className="py-24 px-6 max-w-7xl mx-auto border-t border-foreground/8">
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {summerConcepts.map((concept) => (

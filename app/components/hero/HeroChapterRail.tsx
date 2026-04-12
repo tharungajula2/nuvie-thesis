@@ -16,7 +16,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
   chapterRefs,
 }) => {
   return (
-    <div className="relative z-30 hidden lg:block">
+    <div className="relative z-30">
       {chapters.map((chapter, idx) => (
         <div
           key={chapter.id}
@@ -40,10 +40,10 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
             <h2
               className={`font-medium leading-[1.05] mb-8 text-balance ${
                 idx === 0
-                  ? 'text-5xl md:text-7xl lg:text-8xl'
+                  ? 'text-4xl sm:text-6xl md:text-7xl lg:text-8xl'
                   : idx === 3
-                    ? 'text-3xl md:text-4xl lg:text-5xl'
-                    : 'text-4xl md:text-5xl lg:text-7xl'
+                    ? 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl'
+                    : 'text-3xl sm:text-4xl md:text-5xl lg:text-7xl'
               } ${idx === 1 ? 'italic' : ''}`}
             >
               {chapter.title}

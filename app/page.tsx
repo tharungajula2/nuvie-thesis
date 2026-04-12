@@ -138,12 +138,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <footer className="py-24 border-t border-foreground/5 text-center bg-background">
-          <p className="text-[10px] uppercase tracking-[0.6em] font-bold mb-6 text-foreground/20 italic">End of Session</p>
-          <div className="text-2xl font-serif text-foreground/80 tracking-tighter">
-              NUVIE<span className="text-accent ml-1 italic font-light tracking-wide">THESIS</span>
-          </div>
-      </footer>
     </main>
   );
 }

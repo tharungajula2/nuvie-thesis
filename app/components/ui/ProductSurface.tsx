@@ -142,11 +142,6 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                 </div>
             </div>
             
-            {/* Simplified Footer - No dead link */}
-            <div className="pt-8 flex items-center space-x-4 opacity-10">
-                <span className="h-px w-12 bg-foreground/30" />
-                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/30">End of Entry</span>
-            </div>
           </div>
 
         </div>

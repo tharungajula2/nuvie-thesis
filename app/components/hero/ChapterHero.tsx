@@ -5,7 +5,6 @@ import { siteContent } from '../../data/site-content';
 import { HeroChapter } from '../../types';
 import { HeroVisualStage } from './HeroVisualStage';
 import { HeroChapterRail } from './HeroChapterRail';
-import { MobileChapterStack } from './MobileChapterStack';
 import { ChapterIndicator } from './ChapterIndicator';
 
 interface ChapterHeroProps {
@@ -20,13 +19,10 @@ export const ChapterHero: React.FC<ChapterHeroProps> = ({
   const [activeChapter, setActiveChapter] = useState(0);
   const [isInView, setIsInView] = useState(false);
 
-  // IntersectionObserver for chapter detection (desktop)
+  // IntersectionObserver for chapter detection
   useEffect(() => {
-    // Only run on desktop
     if (typeof window === 'undefined') return;
-    const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
-    if (!isDesktop) return;
-
+    
     const observers: IntersectionObserver[] = [];
 
     chapterRefs.current.forEach((ref, idx) => {
@@ -74,34 +70,31 @@ export const ChapterHero: React.FC<ChapterHeroProps> = ({
 
   return (
     <div ref={containerRef} className="relative bg-background">
-      {/* Desktop: Sticky visual stage */}
-      <div className="hidden lg:block">
-        <div className="relative">
-          {/* Sticky visual backdrop */}
-          <div className="sticky top-0 w-full h-screen overflow-hidden z-10">
-            <HeroVisualStage activeChapter={activeChapter} />
-          </div>
+      {/* Unified Cinematic Flow */}
+      <div className="relative">
+        {/* Sticky visual backdrop */}
+        <div className="sticky top-0 w-full h-screen overflow-hidden z-10">
+          <HeroVisualStage activeChapter={activeChapter} />
+        </div>
 
-          {/* Chapter narrative rail overlaid on top */}
-          <div className="relative" style={{ marginTop: '-100vh' }}>
-            <HeroChapterRail
-              chapters={chapters}
-              activeIndex={activeChapter}
-              chapterRefs={chapterRefs}
-            />
-          </div>
+        {/* Chapter narrative rail overlaid on top */}
+        <div className="relative" style={{ marginTop: '-100vh' }}>
+          <HeroChapterRail
+            chapters={chapters}
+            activeIndex={activeChapter}
+            chapterRefs={chapterRefs}
+          />
         </div>
       </div>
 
-      {/* Mobile: Stacked chapter cards */}
-      <MobileChapterStack chapters={chapters} />
-
-      {/* Desktop: Chapter progress indicator */}
+      {/* Chapter progress indicator (Visible on LG+) */}
       {isInView && (
-        <ChapterIndicator
-          chapters={chapters.map((c) => ({ id: c.id, eyebrow: c.eyebrow }))}
-          activeIndex={activeChapter}
-        />
+        <div className="hidden lg:block">
+          <ChapterIndicator
+            chapters={chapters.map((c) => ({ id: c.id, eyebrow: c.eyebrow }))}
+            activeIndex={activeChapter}
+          />
+        </div>
       )}
     </div>
   );

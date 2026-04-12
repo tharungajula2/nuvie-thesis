@@ -30,7 +30,7 @@ export const MessageOccasionConsole: React.FC = () => {
                                 className={`w-full text-left p-6 rounded-xl border transition-all duration-300 ${isActive ? 'bg-graphite/40 border-accent/30' : 'bg-background border-foreground/5 hover:bg-graphite/10'}`}
                             >
                                 <span className={`text-[9px] uppercase tracking-[0.2em] font-bold block mb-2 transition-colors duration-300 ${isActive ? 'text-accent' : 'text-foreground/30'}`}>
-                                    {isActive ? 'Active Framing' : 'Inspect Framing'}
+                                    {isActive ? 'Selected Focus' : 'Review Focus'}
                                 </span>
                                 <span className={`text-xl font-serif block ${isActive ? 'text-foreground' : 'text-foreground/50'}`}>
                                     {frame.framingName}
@@ -45,7 +45,7 @@ export const MessageOccasionConsole: React.FC = () => {
                     
                     <div className="relative z-10 flex flex-col h-full space-y-10">
                         <div>
-                            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-accent inline-block mb-3 px-3 py-1 rounded bg-accent/5 border border-accent/20">The Primary Hook</span>
+                            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-accent inline-block mb-3 px-3 py-1 rounded bg-accent/5 border border-accent/20">Framing Intent</span>
                             <p className="text-xl md:text-2xl font-light text-foreground leading-relaxed">{activeFrame.primaryHook}</p>
                         </div>
 
