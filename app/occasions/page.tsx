@@ -24,9 +24,9 @@ export default function OccasionsPage() {
                         Occasion Mapping
                     </span>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.05] mb-8 text-balance">
-                        Context shapes <span className="italic text-foreground/40">consumption.</span>
+                        Context shapes <span className="italic text-foreground/80">consumption.</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-foreground/45 font-light max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl md:text-2xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed">
                         Most people do not buy “protein” in the abstract. They buy a solution to a specific moment — a missed breakfast, a coffee ritual, a craving, or a convenience gap. Occasions are where product, biology, and habit begin to meet.
                     </p>
                 </div>
@@ -46,17 +46,17 @@ export default function OccasionsPage() {
                                     {occasion.title}
                                 </h3>
                             </div>
-                            <p className="text-foreground/45 font-light text-sm leading-relaxed mb-8">
+                            <p className="text-foreground/80 font-light text-base leading-relaxed mb-8">
                                 {occasion.humanDescription}
                             </p>
                             <div className="space-y-6 pt-6 border-t border-foreground/5">
                                 <div>
-                                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Best product fit</span>
-                                    <span className="text-xs text-foreground/70 font-medium">{occasion.winningFormat}</span>
+                                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">Best product fit</span>
+                                    <span className="text-sm text-foreground/90 font-medium">{occasion.winningFormat}</span>
                                 </div>
                                 <div>
-                                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Best message</span>
-                                    <span className="text-xs text-foreground/60">{occasion.messageThatWorks}</span>
+                                    <span className="text-[9px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">Best message</span>
+                                    <span className="text-sm text-foreground/80">{occasion.messageThatWorks}</span>
                                 </div>
                             </div>
                         </div>

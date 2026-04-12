@@ -93,7 +93,7 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
             </div>
 
             <div className="space-y-8">
-                <p className="text-foreground/50 text-base md:text-lg leading-relaxed font-light max-w-2xl text-balance">
+                <p className="text-foreground/80 text-lg md:text-xl leading-relaxed font-light max-w-2xl text-balance">
                     {product.operatorDescription}
                 </p>
 
@@ -101,21 +101,21 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 pt-6 border-t border-foreground/10">
                     <div className="space-y-4">
                         <div>
-                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Why this SKU matters</span>
-                            <span className="text-sm font-medium text-foreground/80">{product.strategicRole}</span>
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">Why this SKU matters</span>
+                            <span className="text-base font-medium text-foreground/90">{product.strategicRole}</span>
                         </div>
                         <div>
-                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Best moment</span>
-                            <span className="text-sm text-accent font-medium">{product.primaryOccasion}</span>
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">Best moment</span>
+                            <span className="text-base text-accent font-medium">{product.primaryOccasion}</span>
                         </div>
                     </div>
                     <div className="space-y-4">
                         <div>
                             <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 block mb-2">Repeat potential</span>
-                            <span className="text-sm font-medium text-foreground/80">{product.repeatLogic}</span>
+                            <span className="text-base font-medium text-foreground/90">{product.repeatLogic}</span>
                         </div>
                         <div className="flex flex-wrap gap-2">
-                            <span className="w-full text-[10px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">Best-fit channels</span>
+                            <span className="w-full text-[10px] uppercase tracking-widest font-bold text-foreground/60 block mb-2">Best-fit channels</span>
                             {product.channelFit.map(channel => (
                                 <span key={channel} className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-foreground/5 rounded-full text-foreground/70 border border-foreground/5">
                                     {channel}
@@ -136,7 +136,7 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                         </svg>
                     </div>
                     <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent/80 block mb-4">Product Note</span>
-                    <p className="text-sm text-foreground/60 leading-relaxed italic pr-8">
+                    <p className="text-base text-foreground/75 leading-relaxed italic pr-8">
                         {product.operatorNote}
                     </p>
                 </div>

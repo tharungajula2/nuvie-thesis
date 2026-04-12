@@ -30,7 +30,7 @@ export const StrategyCard: React.FC<StrategyCardProps> = ({
         {title}
       </h3>
       
-      <p className="text-foreground/60 font-light leading-relaxed mb-auto">
+      <p className="text-foreground/80 font-light leading-relaxed mb-auto text-base">
         {description}
       </p>
       

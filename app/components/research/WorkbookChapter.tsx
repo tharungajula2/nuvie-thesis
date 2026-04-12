@@ -23,7 +23,7 @@ export const WorkbookChapter: React.FC<WorkbookChapterProps> = ({
           <span className="text-[10px] uppercase tracking-[0.6em] font-bold text-accent/60 italic">{chapter.eyebrow}</span>
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6 leading-tight">{chapter.title}</h2>
-        <p className="text-xl md:text-2xl font-light text-foreground/45 leading-relaxed italic max-w-3xl">
+        <p className="text-xl md:text-2xl font-light text-foreground/80 leading-relaxed italic max-w-3xl">
           "{chapter.summary}"
         </p>
       </header>
@@ -49,9 +49,9 @@ export const WorkbookChapter: React.FC<WorkbookChapterProps> = ({
               }`}>
                 {block.type}
               </span>
-              <h4 className="text-sm uppercase tracking-widest font-bold text-foreground/80">{block.title}</h4>
+              <h4 className="text-sm uppercase tracking-widest font-bold text-foreground/90">{block.title}</h4>
             </div>
-            <p className={`text-lg md:text-xl font-light leading-relaxed text-balance ${block.type === 'hypothesis' ? 'font-serif' : 'text-foreground/60'}`}>
+            <p className={`text-xl md:text-2xl font-light leading-relaxed text-balance ${block.type === 'hypothesis' ? 'font-serif' : 'text-foreground/85'}`}>
               {block.body}
             </p>
           </div>
@@ -70,7 +70,7 @@ export const WorkbookChapter: React.FC<WorkbookChapterProps> = ({
               value={note}
               onChange={(e) => onNoteChange(e.target.value)}
               placeholder={`Add findings or unresolved tensions for ${chapter.id}...`}
-              className="relative w-full h-64 bg-background border border-foreground/10 rounded-[2rem] p-8 text-foreground/60 focus:text-foreground focus:border-accent/40 outline-none transition-all duration-300 resize-none font-light leading-relaxed placeholder:italic placeholder:opacity-30"
+              className="relative w-full h-64 bg-background border border-foreground/20 rounded-[2rem] p-8 text-foreground/90 focus:border-accent/60 outline-none transition-all duration-300 resize-none font-light leading-relaxed text-lg placeholder:italic placeholder:opacity-30"
             />
           </div>
           <div className="mt-4 flex justify-between items-center text-[9px] uppercase tracking-widest font-bold text-foreground/15">

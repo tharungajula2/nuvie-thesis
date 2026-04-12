@@ -24,9 +24,9 @@ export default function HowICanHelpPage() {
                         How I Can Help
                     </span>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.05] mb-8 text-balance">
-                        Useful work, not <br/><span className="italic text-foreground/45 text-4xl md:text-6xl lg:text-8xl block md:inline mt-2 md:mt-0">abstract advice.</span>
+                        Useful work, not <br/><span className="italic text-foreground/80 text-4xl md:text-6xl lg:text-8xl block md:inline mt-2 md:mt-0">abstract advice.</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-foreground/45 font-light max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl md:text-2xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed">
                         A few focused areas where I may be able to contribute — by bringing workflow discipline, analytical framing, and product-building clarity to Nuvie’s current reality.
                     </p>
                 </div>
@@ -35,7 +35,7 @@ export default function HowICanHelpPage() {
             {/* How I Think */}
             <section className="py-32 px-6 max-w-7xl mx-auto">
                 <div className="mb-16 text-center">
-                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/30 block mb-4">Approach</span>
+                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/40 block mb-4">Approach</span>
                     <h2 className="text-3xl md:text-5xl font-serif">How I think</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -44,7 +44,7 @@ export default function HowICanHelpPage() {
                             <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 blur-3xl -z-10 opacity-0 group-hover:opacity-100 transition-opacity" />
                             <span className="text-[10px] font-bold text-accent/25 group-hover:text-accent tracking-[0.3em] uppercase block transition-colors">Principle 0{idx + 1}</span>
                             <h3 className="text-2xl font-serif text-foreground">{item.title}</h3>
-                            <p className="text-sm text-foreground/45 font-light leading-relaxed">
+                            <p className="text-base text-foreground/75 font-light leading-relaxed">
                                 {item.description}
                             </p>
                         </div>
@@ -56,9 +56,9 @@ export default function HowICanHelpPage() {
             <section className="py-24 bg-graphite/40 border-y border-foreground/5 relative overflow-hidden">
                 <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-background to-transparent opacity-50" />
                 <div className="max-w-4xl mx-auto px-6 text-center mb-20 relative z-10">
-                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/30 block mb-4">Value Layer</span>
+                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/40 block mb-4">Value Layer</span>
                     <h2 className="text-3xl md:text-5xl font-serif mb-6">Where I may be useful</h2>
-                    <p className="text-foreground/45 font-light max-w-xl mx-auto">
+                    <p className="text-foreground/75 font-light max-w-xl mx-auto text-lg leading-relaxed">
                         Focused contribution areas built around Nuvie’s real problems: occasions, repeat, trust, and channel clarity.
                     </p>
                 </div>
@@ -72,7 +72,7 @@ export default function HowICanHelpPage() {
                                 <span className="text-accent/60 text-[9px] font-bold uppercase tracking-widest">Focus 01</span>
                             </div>
                             <h3 className="text-2xl font-serif mb-4">Product × Occasion Fit</h3>
-                            <p className="text-sm text-foreground/45 font-light leading-relaxed mb-8">
+                            <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
                                 How specific SKUs attach to specific moments, and where messaging or positioning may become sharper based on real behavioral signals.
                             </p>
                             <div className="flex flex-wrap gap-2">
@@ -88,7 +88,7 @@ export default function HowICanHelpPage() {
                                 <span className="text-accent/60 text-[9px] font-bold uppercase tracking-widest">Focus 02</span>
                             </div>
                             <h3 className="text-2xl font-serif mb-4">Repeat & Retention Logic</h3>
-                            <p className="text-sm text-foreground/45 font-light leading-relaxed mb-8">
+                            <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
                                 Identifying where trial happens vs where repeat stalls. Building stronger scaffolding across ritual, routine, and rotation products.
                             </p>
                             <div className="flex flex-wrap gap-2">
@@ -104,7 +104,7 @@ export default function HowICanHelpPage() {
                                 <span className="text-accent/60 text-[9px] font-bold uppercase tracking-widest">Focus 03</span>
                             </div>
                             <h3 className="text-2xl font-serif mb-4">Channel & Conversion Clarity</h3>
-                            <p className="text-sm text-foreground/45 font-light leading-relaxed mb-8">
+                            <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
                                 Optimizing how products communicate in quick-commerce and D2C surfaces when the user is solving an immediate moment.
                             </p>
                             <div className="flex flex-wrap gap-2">
@@ -120,7 +120,7 @@ export default function HowICanHelpPage() {
                                 <span className="text-accent/60 text-[9px] font-bold uppercase tracking-widest">Focus 04</span>
                             </div>
                             <h3 className="text-2xl font-serif mb-4">Structured Internal Artifacts</h3>
-                            <p className="text-sm text-foreground/45 font-light leading-relaxed mb-8">
+                            <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
                                 Building useful systems, audits, messaging maps, or prototypes that make internal decision-making clearer and execution faster.
                             </p>
                             <div className="flex flex-wrap gap-2">
@@ -151,7 +151,7 @@ export default function HowICanHelpPage() {
                         ].map((point, idx) => (
                             <div key={idx} className="flex gap-6 items-start group">
                                 <span className="text-accent/20 font-serif italic text-2xl group-hover:text-accent transition-colors">0{idx + 1}</span>
-                                <p className="text-foreground/60 font-light leading-relaxed pt-1">
+                                <p className="text-foreground/80 font-light leading-relaxed pt-1 text-lg">
                                     {point}
                                 </p>
                             </div>
@@ -167,7 +167,7 @@ export default function HowICanHelpPage() {
                     <div className="text-center mb-24">
                         <span className="text-accent/40 text-[10px] uppercase font-bold tracking-[0.4em] mb-6 block">The First Step</span>
                         <h2 className="text-4xl md:text-6xl font-serif mb-8">What I would try first</h2>
-                        <p className="text-xl text-foreground/40 font-light">A practical, useful first 30 days.</p>
+                        <p className="text-xl text-foreground/60 font-light italic">A practical, useful first 30 days.</p>
                     </div>
 
                     <div className="grid grid-cols-1 gap-10">
@@ -180,7 +180,7 @@ export default function HowICanHelpPage() {
                                         <span className="text-foreground/25 text-[9px] font-bold uppercase tracking-widest">Impact: {item.impact}</span>
                                     </div>
                                     <h4 className="text-3xl font-serif mb-4 group-hover:text-accent transition-colors">{item.title}</h4>
-                                    <p className="text-foreground/45 font-light leading-relaxed">
+                                    <p className="text-foreground/75 font-light leading-relaxed text-lg">
                                         {item.description}
                                     </p>
                                 </div>
@@ -205,14 +205,14 @@ export default function HowICanHelpPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <div className="space-y-4">
-                            <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/30">Career Spine</h4>
-                            <p className="text-foreground/60 font-light leading-relaxed">
+                            <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/60">Career Spine</h4>
+                            <p className="text-foreground/80 font-light leading-relaxed text-lg">
                                 I come from institutional workflow discipline—specifically building lending and risk systems where ambiguity is a liability.
                             </p>
                         </div>
                         <div className="space-y-4">
-                            <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/30">Nuvie Relevance</h4>
-                            <p className="text-foreground/60 font-light leading-relaxed">
+                            <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/60">Nuvie Relevance</h4>
+                            <p className="text-foreground/80 font-light leading-relaxed text-lg">
                                 I connect analytical reasoning with product-building clarity, converting dense domains into structured, usable environments and artifacts.
                             </p>
                         </div>

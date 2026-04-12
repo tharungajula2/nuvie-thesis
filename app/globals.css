@@ -5,10 +5,10 @@
   --foreground: #2B1A15; /* Espresso Ink — Grounded and authoritative */
   
   /* Nuvie Pistachio Accent System — Functional & Performance-focused */
-  --pistachio: #5F7752; /* Readable Green — Strengthened for legibility */
-  --pistachio-strong: #4F6745; /* Heavy Performance Green */
-  --pistachio-soft: rgba(95, 119, 82, 0.4);
-  --pistachio-subtle: rgba(95, 119, 82, 0.14);
+  --pistachio: #4B633C; /* Darkened for better readability and authority */
+  --pistachio-strong: #3A4D2E; /* Heavy Performance Green */
+  --pistachio-soft: rgba(75, 99, 60, 0.4);
+  --pistachio-subtle: rgba(75, 99, 60, 0.14);
   
   /* Neutral Grounding */
   --border-warm: #CFC3B0; 
