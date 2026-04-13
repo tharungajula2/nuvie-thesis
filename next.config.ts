@@ -5,8 +5,9 @@ const nextConfig: NextConfig = {
     return [
       { source: '/strategy', destination: '/how-i-can-help', permanent: true },
       { source: '/economics', destination: '/how-i-can-help', permanent: true },
-      { source: '/channels', destination: '/occasions', permanent: true },
-      { source: '/growth', destination: '/occasions', permanent: true },
+      { source: '/channels', destination: '/products', permanent: true },
+      { source: '/growth', destination: '/products', permanent: true },
+      { source: '/occasions', destination: '/products', permanent: true },
       { source: '/labs/packaging', destination: '/how-i-can-help', permanent: true },
       { source: '/labs/flavor', destination: '/products', permanent: true },
       { source: '/labs/manufacturing', destination: '/how-i-can-help', permanent: true },

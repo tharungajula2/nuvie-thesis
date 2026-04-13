@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "How I Can Help — Nuvie Thesis",
-  description: "A practical outline of where I may be useful across product, occasions, repeat logic, and execution clarity.",
+  description: "A practical outline of where I may be useful across product, repeat logic, and execution clarity.",
 };
 
 import React from 'react';

@@ -135,9 +135,9 @@ export default function ProductsPage() {
 
             {/* Continuation */}
             <SystemContinuation 
-                nextRoute="/occasions"
-                nextTitle="Consumer Occasions"
-                description="The moments where a product either earns a habit or gets forgotten."
+                nextRoute="/how-i-can-help"
+                nextTitle="How I Can Help"
+                description="Specific initiatives and audit directions built around Nuvie’s current growth reality."
             />
         </main>
     );

@@ -18,20 +18,12 @@ A core typographic standard: The site maintains a clean, modern cadence by **pur
 
 ---
 
-## 2. Refined Project Architecture (5 Universes)
+## 2. Updated Project Architecture (4 Core Universes)
 
-1.  **Home (`/`)**: **Atmospheric Proof.** Establishes the "I’m studying Nuvie" narrative. Now features a lean header with no CTA button to maintain professional humility.
-2.  **Product Lab (`/products`)**: **Strategic Logic.** 
-    - **SKU Switcher Top**: Narrative hero limited to Portfolio Logic to avoid mixing occasions with SKU names.
-    - **Occasion Lens**: Separated into a standalone, high-impact section below the showcase.
-    - **Concept Extensions**: Clarified as original concept work via persistent disclaimers.
-3.  **Occasions (`/occasions`)**: **Behavioral Intelligence.** Contextual mapping of the "4 PM Slump" and "Coffee Ritual" habit loops.
-4.  **How I Can Help (`/how-i-can-help`)**: **Builder Value.** 
-    - **Narrative**: Pivoted to "WHERE I COME FROM," focusing on institutional discipline (credit risk/analytics) over generic strategy.
-    - **Single Intent**: Replaces multi-CTAs with a singular, high-intent "LET'S TALK" section.
-5.  **Research WIP (`/research-wip`)**: **The Structured Index.** 
-    - **Status**: Retracted into a "Coming soon" state (muted placeholders).
-    - **Purpose**: Exists as a visible 9-step checklist for future depth while maintaining 100% security logic (password: `nuvie26`).
+1.  **Home (`/`)**: **The Atmospheric Entry.** Establishes intent and profile usefulness. Features an edge-to-edge cinematic background video loop (`hero-teaser.mp4`).
+2.  **Product Lab (`/products`)**: **The Portfolio.** A cinematic dive into the 6 core SKUs and future summer concepts. Includes the **Occasion Lens** section to anchor behavioral logic directly to product strategy.
+3.  **How I Can Help (`/how-i-can-help`)**: **The Execution.** A practical usefulness memo identifying focus areas (Product Fit, Repeat, Channels, Artifacts) and a concrete 30-day first-pass plan.
+4.  **Research WIP (`/research-wip`)**: **The Mastery Layer.** A password-gated (`nuvie26`) workbook containing deep strategic questions, hypotheses, and validation prompts.
 
 ---
 

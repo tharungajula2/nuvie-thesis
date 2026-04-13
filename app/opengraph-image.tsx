@@ -63,7 +63,7 @@ export default async function Image() {
               letterSpacing: '0.2em',
             }}
           >
-            A founder-facing study in product, occasions, and repeat
+            A founder-facing study in product and repeat
           </div>
         </div>
         

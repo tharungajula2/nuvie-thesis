@@ -25,13 +25,6 @@ export const siteContent: SiteContent = {
       body: 'Each SKU has a different job. Some lower trial friction, some build routine, and one might become the highest-frequency wedge.',
     },
     {
-      id: 'occasions',
-      eyebrow: 'OCCASION LENS',
-      title: 'The occasion is the real product.',
-      occasionTags: ['Coffee Ritual', '4 PM Slump', 'Breakfast Rescue', 'Sweet Craving Swap', 'Commute Fuel'],
-      cta: { label: 'Inspect Occasions', href: '/occasions', type: 'primary' },
-    },
-    {
       id: 'outreach',
       eyebrow: 'Profile & Capability',
       title: 'Systems-minded builder.',

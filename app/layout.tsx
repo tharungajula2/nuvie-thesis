@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     default: "Nuvie Thesis — A founder-facing product and growth study",
     template: "%s — Nuvie Thesis",
   },
-  description: "A founder-facing proof-of-work exploring Nuvie’s product portfolio, consumer occasions, repeat behavior, and where I may be useful.",
+  description: "A founder-facing proof-of-work exploring Nuvie’s product portfolio, repeat behavior, and where I may be useful.",
   keywords: ["Nuvie", "protein brand", "product strategy", "consumer behavior", "D2C", "quick commerce", "founder outreach", "proof of work", "Bengaluru startup", "protein RTD"],
   authors: [{ name: "Tharun Gajula" }],
   creator: "Tharun Gajula",
