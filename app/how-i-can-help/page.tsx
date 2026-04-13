@@ -27,7 +27,7 @@ export default function HowICanHelpPage() {
                         Useful work, not <br/><span className="italic text-foreground/80 text-4xl md:text-6xl lg:text-8xl block md:inline mt-2 md:mt-0">abstract advice.</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed">
-                        A few focused areas where I may be able to contribute — by bringing workflow discipline, analytical framing, and product-building clarity to Nuvie’s current reality.
+                        A few areas where I think I can genuinely contribute, around product-occasion fit, repeat mechanics, and how Nuvie communicates in the channels that matter.
                     </p>
                 </div>
             </section>
@@ -119,9 +119,9 @@ export default function HowICanHelpPage() {
                                 <span className="w-6 h-[1px] bg-accent/30" />
                                 <span className="text-accent/60 text-[9px] font-bold uppercase tracking-widest">Focus 04</span>
                             </div>
-                            <h3 className="text-2xl font-serif mb-4">Structured Internal Artifacts</h3>
+                            <h3 className="text-2xl font-serif mb-4">Structured Tools and Artifacts</h3>
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
-                                Building useful systems, audits, messaging maps, or prototypes that make internal decision-making clearer and execution faster.
+                                Building systems, audits, messaging maps, or working prototypes that make decisions clearer and execution faster.
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">Messaging maps</span>
@@ -199,21 +199,21 @@ export default function HowICanHelpPage() {
                     <div className="absolute top-0 right-0 w-64 h-64 bg-accent/2 blur-[80px] pointer-events-none" />
                     
                     <div className="mb-12">
-                        <span className="text-accent/50 text-[10px] uppercase font-bold tracking-[0.5em] block mb-4">Background</span>
+                        <span className="text-accent/50 text-[10px] uppercase font-bold tracking-[0.5em] block mb-4">WHERE I COME FROM</span>
                         <h2 className="text-3xl md:text-5xl font-serif">Why my background helps</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <div className="space-y-4">
-                            <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/60">Career Spine</h4>
-                            <p className="text-foreground/80 font-light leading-relaxed text-lg">
-                                I come from institutional workflow discipline—specifically building lending and risk systems where ambiguity is a liability.
+                            <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/60">The background</h4>
+                            <p className="text-foreground/80 font-light leading-relaxed text-lg text-balance">
+                                Credit risk, lending systems, analytics. Places where information is dense, problems are messy, and clarity is the actual job. Not theory. Not strategy decks. Getting something structured and usable from difficult raw material.
                             </p>
                         </div>
                         <div className="space-y-4">
-                            <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/60">Nuvie Relevance</h4>
-                            <p className="text-foreground/80 font-light leading-relaxed text-lg">
-                                I connect analytical reasoning with product-building clarity, converting dense domains into structured, usable environments and artifacts.
+                            <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/60">Why it matters here</h4>
+                            <p className="text-foreground/80 font-light leading-relaxed text-lg text-balance">
+                                What that means practically is this. I can take a behavioral or data problem, break it into something structured, and build a working output from it. Not a presentation. Something that actually helps someone make a faster, clearer decision.
                             </p>
                         </div>
                     </div>
@@ -223,17 +223,12 @@ export default function HowICanHelpPage() {
             {/* Closing */}
             <section className="py-32 px-6 max-w-4xl mx-auto text-center">
                 <h2 className="text-2xl md:text-4xl font-serif mb-12 italic opacity-60">
-                    If any of this feels directionally useful, I’d value the chance to speak.
+                    If any of this is relevant to where Nuvie is right now, I’d genuinely like to talk.
                 </h2>
-                <div className="flex flex-col sm:flex-row justify-center gap-8">
+                <div className="flex justify-center">
                     <CtaButton size="xl" variant="primary">
-                        Start a Conversation
+                        LET’S TALK
                     </CtaButton>
-                    <Link href="/">
-                        <CtaButton size="xl" variant="outline">
-                            Return to Home
-                        </CtaButton>
-                    </Link>
                 </div>
             </section>
 

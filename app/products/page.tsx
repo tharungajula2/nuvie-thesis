@@ -16,33 +16,34 @@ import { SummerConceptGrid } from '../components/labs/flavor/SummerConceptGrid';
 import { StrategyCard } from '../components/ui/StrategyCard';
 
 export default function ProductsPage() {
-    // Preserve the first 3 cinematic chapters as the Product Lab entry
-    const labChapters = siteContent.heroChapters.slice(0, 3);
+    // FIX 3: Separate Occasions from SKU names in the Hero Switcher
+    // We only take the first 2 chapters (Narrative + SKU Portfolio) for the hero rail.
+    const labChapters = siteContent.heroChapters.slice(0, 2);
 
     const strategicInsights = [
         {
             title: "Role clarity",
             badge: "Product Logic",
-            description: "From lowering entry friction to anchoring a daily routine, specificity matters more than coverage.",
-            footer: "See Portfolio Logic"
+            description: "Each SKU works harder when it has a clear, distinct job. From lowering entry friction to anchoring a daily routine, specificity matters more than coverage.",
+            footer: "More in Research WIP"
         },
         {
             title: "Repeat Dynamics",
             badge: "Retention",
             description: "Routine SKUs and rotation SKUs play different roles in keeping someone in the portfolio. The goal is the habit, not just the next transaction.",
-            footer: "Read Dynamics View"
+            footer: "More in Research WIP"
         },
         {
             title: "Indulgence Entry",
             badge: "Observation",
             description: "For a brand like Nuvie, pleasure is likely the most honest entry point. If the indulgence promise holds at scale, repeat becomes possible.",
-            footer: "Read Product View"
+            footer: "More in Research WIP"
         }
     ];
 
     return (
         <main className="min-h-screen bg-background">
-            {/* Section 1: Cinematic Product Transition */}
+            {/* Section 1: Cinematic Product Transition (SKU Switcher Top) */}
             <ChapterHero chapters={labChapters} />
 
             {/* Section 2: Core SKU Showcase */}
@@ -61,6 +62,26 @@ export default function ProductsPage() {
                     {products.map((product, idx) => (
                         <ProductSurface key={product.id} product={product} index={idx} />
                     ))}
+                </div>
+            </section>
+
+            {/* NEW SECTION: SEPARATED OCCASION LENS (To avoid mix-up in Hero Switcher) */}
+            <section className="relative py-48 bg-background overflow-hidden border-t border-foreground/5">
+                <div className="absolute inset-0 bg-accent/2 blur-[120px] pointer-events-none" />
+                <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
+                    <span className="text-accent text-[10px] uppercase tracking-[0.6em] font-bold mb-8 block">
+                        OCCASION LENS
+                    </span>
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 leading-[1.05] text-balance">
+                        The occasion is the real product.
+                    </h2>
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 mt-16 opacity-60 max-w-4xl mx-auto">
+                        {['Coffee Ritual', '4 PM Slump', 'Breakfast Rescue', 'Sweet Craving Swap', 'Commute Fuel'].map((tag) => (
+                            <span key={tag} className="text-[9px] tracking-widest uppercase font-extrabold border-b border-accent/20 pb-2">
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
                 </div>
             </section>
 

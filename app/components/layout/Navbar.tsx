@@ -59,14 +59,7 @@ export const Navbar: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Right CTA */}
-                    <div className="hidden lg:block ml-auto">
-                        <Link href="/how-i-can-help">
-                            <CtaButton size="md" variant="outline">
-                                Work With Me
-                            </CtaButton>
-                        </Link>
-                    </div>
+                    <div className="hidden lg:block ml-auto" />
 
                     {/* Mobile Toggle */}
                     <button 
@@ -129,14 +122,7 @@ export const Navbar: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Bottom CTA */}
-                    <div className="px-8 py-6 border-t border-foreground/8">
-                        <Link href="/how-i-can-help" onClick={closeMobileMenu}>
-                            <CtaButton size="lg" className="w-full">
-                                Work With Me
-                            </CtaButton>
-                        </Link>
-                    </div>
+                    <div className="px-8 py-6 border-t border-foreground/8" />
                 </div>
             </div>
         </>

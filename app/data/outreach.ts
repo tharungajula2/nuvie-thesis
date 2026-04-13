@@ -12,12 +12,12 @@ export const outreachContent = {
             description: "A claim is just a label; a functioning repeat logic is a system. I focus on the structural clarity that ensures a product earns its place in a daily routine."
         },
         {
-            title: "Friction as a Diagnostic",
+            title: "Friction as a Signal",
             description: "Product adoption is limited by the point where product and behavior meet. I treat logistical and sensory friction as inputs to be audited and solved, not ignored."
         },
         {
-            title: "Structured Usefulness",
-            description: "I value turning ambiguity into structure. I look for the point where product design, channel fit, and unit economics meet to create practical execution paths."
+            title: "Turning Ambiguity into Structure",
+            description: "I look for the point where product design, channel fit, and unit economics meet to create something practical. Not a framework. An actual execution path."
         }
     ],
     initiatives: [

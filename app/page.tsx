@@ -96,7 +96,7 @@ export default function HomePage() {
                 <div className="p-10 bg-background border border-foreground/5 rounded-3xl hover:border-accent/40 transition-all duration-500 h-full flex flex-col items-center text-center">
                    <span className="text-[9px] uppercase tracking-[0.4em] text-accent/50 mb-6">Foundational</span>
                    <h4 className="text-2xl font-serif mb-4">Product Lab</h4>
-                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">A breakdown of each SKU — what strategic role it plays, where it wins, and where the risks live.</p>
+                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">A breakdown of each SKU, what strategic role it plays, where it wins, and where the risks live.</p>
                    <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">Enter Lab →</span>
                 </div>
               </Link>
@@ -105,7 +105,7 @@ export default function HomePage() {
                 <div className="p-10 bg-background border border-foreground/5 rounded-3xl hover:border-accent/40 transition-all duration-500 h-full flex flex-col items-center text-center">
                    <span className="text-[9px] uppercase tracking-[0.4em] text-accent/50 mb-6">Behavioral</span>
                    <h4 className="text-2xl font-serif mb-4">Occasion Engine</h4>
-                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">Mapping the moments where Nuvie can own a habit — and what needs to be true for that to happen.</p>
+                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">Mapping the moments where Nuvie can own a habit, and what needs to be true for that to happen.</p>
                    <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">Inspect Moments →</span>
                 </div>
               </Link>

@@ -23,7 +23,7 @@ export const WorkbookChapter: React.FC<WorkbookChapterProps> = ({
           <span className="text-[10px] uppercase tracking-[0.6em] font-bold text-accent/60 italic">{chapter.eyebrow}</span>
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6 leading-tight">{chapter.title}</h2>
-        <p className="text-xl md:text-2xl font-light text-foreground/80 leading-relaxed italic max-w-3xl">
+        <p className="text-sm text-foreground/40 font-light leading-relaxed italic max-w-3xl">
           "{chapter.summary}"
         </p>
       </header>
@@ -51,7 +51,7 @@ export const WorkbookChapter: React.FC<WorkbookChapterProps> = ({
               </span>
               <h4 className="text-sm uppercase tracking-widest font-bold text-foreground/90">{block.title}</h4>
             </div>
-            <p className={`text-xl md:text-2xl font-light leading-relaxed text-balance ${block.type === 'hypothesis' ? 'font-serif' : 'text-foreground/85'}`}>
+            <p className="text-sm text-foreground/40 font-light leading-relaxed italic">
               {block.body}
             </p>
           </div>

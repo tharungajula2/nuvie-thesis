@@ -27,7 +27,7 @@ export default function OccasionsPage() {
                         Context shapes <span className="italic text-foreground/80">consumption.</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed">
-                        Most people do not buy “protein” in the abstract. They buy a solution to a specific moment — a missed breakfast, a coffee ritual, a craving, or a convenience gap. Occasions are where product, biology, and habit begin to meet.
+                        Most people do not buy “protein” in the abstract. They buy a solution to a specific moment, a missed breakfast, a coffee ritual, a craving, or a convenience gap. Occasions are where product, biology, and habit begin to meet.
                     </p>
                 </div>
             </section>
