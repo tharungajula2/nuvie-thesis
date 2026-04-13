@@ -24,19 +24,19 @@ export default function ProductsPage() {
         {
             title: "Role clarity",
             badge: "Product Logic",
-            description: "Each SKU works harder when it has a clear, distinct job. From lowering entry friction to anchoring a daily routine, specificity matters more than coverage.",
+            description: "Each SKU works harder when it has a clear, distinct job. From lowering entry friction to anchoring a daily routine, specificity matters more than coverage. This is how I am currently thinking about it.",
             footer: "More in Research WIP"
         },
         {
             title: "Repeat Dynamics",
             badge: "Retention",
-            description: "Routine SKUs and rotation SKUs play different roles in keeping someone in the portfolio. The goal is the habit, not just the next transaction.",
+            description: "Routine SKUs and rotation SKUs play different roles in keeping someone in the portfolio. The goal is the habit, not just the next transaction. I may be oversimplifying this.",
             footer: "More in Research WIP"
         },
         {
             title: "Indulgence Entry",
             badge: "Observation",
-            description: "For a brand like Nuvie, pleasure is likely the most honest entry point. If the indulgence promise holds at scale, repeat becomes possible.",
+            description: "For a brand like Nuvie, pleasure is likely the most honest entry point. If the indulgence promise holds at scale, repeat becomes possible. This is an outside read, not a confirmed signal.",
             footer: "More in Research WIP"
         }
     ];
@@ -53,7 +53,7 @@ export default function ProductsPage() {
                         alignment="left"
                         eyebrow="6-SKU CORE"
                         title="Portfolio Architecture"
-                        subtitle="Each SKU in the portfolio appears to do a different job. Some lower trial friction, some build routine, and one may become the highest-frequency wedge in the lineup."
+                        subtitle="This is how I tried to map the portfolio from the outside. Each SKU seems to serve a different purpose, though I am working from public signals only. I may have some of this wrong."
                         badge="PORTFOLIO LOGIC"
                     />
                 </div>
@@ -73,7 +73,7 @@ export default function ProductsPage() {
                         OCCASION LENS
                     </span>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 leading-[1.05] text-balance">
-                        The occasion is the real product.
+                        My working hypothesis: occasion matters more than category.
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 mt-16 opacity-60 max-w-4xl mx-auto">
                         {['Coffee Ritual', '4 PM Slump', 'Breakfast Rescue', 'Sweet Craving Swap', 'Commute Fuel'].map((tag) => (
@@ -93,10 +93,10 @@ export default function ProductsPage() {
                         alignment="center"
                         eyebrow="CONCEPT EXTENSIONS"
                         title="Future flavor directions"
-                        subtitle="These are my own concept ideas on where seasonal and cultural extensions might make sense, without fragmenting what is already working."
+                        subtitle="These are packaging concepts and flavor ideas I designed and developed as part of this study. They are not Nuvie's actual plans. I made them to think through cultural and seasonal extension logic more concretely, and as a way of demonstrating how I approach product thinking."
                         badge="PRODUCT LAB"
                     />
-                    <p className="mt-8 text-[11px] text-foreground/40 italic text-center max-w-2xl mx-auto animate-pulse">
+                    <p className="mt-8 text-xs text-foreground/60 italic text-center max-w-2xl mx-auto animate-pulse">
                         The packaging visuals in this section are original concept designs I created for this study. They are not Nuvie&apos;s planned products.
                     </p>
                 </div>

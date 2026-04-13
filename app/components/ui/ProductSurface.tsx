@@ -136,9 +136,18 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                         </svg>
                     </div>
                     <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent/80 block mb-4">Product Note</span>
-                    <p className="text-base text-foreground/75 leading-relaxed italic pr-8">
-                        {product.operatorNote}
-                    </p>
+                    <div className="text-base text-foreground/75 leading-relaxed pr-8 italic">
+                        {product.operatorNote.startsWith('*Outside observation only.*') ? (
+                            <>
+                                <span className="text-[10px] opacity-50 block mb-2 not-italic font-bold tracking-[0.2em] uppercase">Outside observation only.</span>
+                                <p>
+                                    {product.operatorNote.replace('*Outside observation only.*', '').trim()}
+                                </p>
+                            </>
+                        ) : (
+                            <p>{product.operatorNote}</p>
+                        )}
+                    </div>
                 </div>
             </div>
             
