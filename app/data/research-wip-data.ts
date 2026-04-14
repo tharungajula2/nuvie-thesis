@@ -3,6 +3,7 @@ import { module01Content } from './research/module-01';
 import { module02Content } from './research/module-02';
 import { module03Content } from './research/module-03';
 import { module04Content } from './research/module-04';
+import { module05Content } from './research/module-05';
 
 export const researchWipData: WorkbookChapter[] = [
   {
@@ -51,6 +52,18 @@ export const researchWipData: WorkbookChapter[] = [
     imagePlaceholder: {
       label: 'module 4 hero',
       description: 'Brand positioning spectrum — gym-niche to mainstream wellness'
+    }
+  },
+  {
+    id: '05-what-could-break-this',
+    title: '05 — What Could Break This',
+    eyebrow: 'Risk Mapping',
+    summary: 'Failure modes and risk map. A honest diagnostic of the pressures that could derail a protein RTD brand at Nuvie\'s stage.',
+    type: 'editorial',
+    sections: module05Content,
+    imagePlaceholder: {
+      label: 'module 5 hero',
+      description: 'Risk assessment map — operational, regulatory, and market anchors'
     }
   },
   {
