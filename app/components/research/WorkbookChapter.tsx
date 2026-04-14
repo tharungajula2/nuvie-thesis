@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { WorkbookChapter as ChapterType } from '../../data/research-wip-data';
+import { WorkbookChapter as ChapterType } from '../../types';
 
 interface WorkbookChapterProps {
   chapter: ChapterType;
@@ -38,13 +38,26 @@ export const WorkbookChapter: React.FC<WorkbookChapterProps> = ({
       {/* IMAGE PLACEHOLDER (If present) */}
       {chapter.imagePlaceholder && (
         <div className="mb-20">
-          <div className="w-full aspect-[21/9] border-2 border-dashed border-foreground/5 rounded-[2.5rem] flex flex-col items-center justify-center bg-graphite/5 transition-colors hover:bg-graphite/10">
-            <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-foreground/20 mb-3">
-              Image Placeholder: {chapter.imagePlaceholder.label}
-            </span>
-            <span className="text-[10px] text-foreground/30 italic font-light">
-              {chapter.imagePlaceholder.description}
-            </span>
+          <div className={`w-full aspect-[21/9] rounded-[2.5rem] overflow-hidden ${!chapter.imagePlaceholder.imagePath ? 'border-2 border-dashed border-foreground/5 flex flex-col items-center justify-center bg-graphite/5 transition-colors hover:bg-graphite/10' : ''}`}>
+            {chapter.imagePlaceholder.imagePath ? (
+              <div className="relative w-full h-full group">
+                 <img 
+                   src={chapter.imagePlaceholder.imagePath} 
+                   alt={chapter.imagePlaceholder.description} 
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                 />
+                 <div className="absolute inset-0 bg-espresso/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+            ) : (
+              <>
+                <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-foreground/20 mb-3">
+                  Image Placeholder: {chapter.imagePlaceholder.label}
+                </span>
+                <span className="text-[10px] text-foreground/30 italic font-light">
+                  {chapter.imagePlaceholder.description}
+                </span>
+              </>
+            )}
           </div>
         </div>
       )}

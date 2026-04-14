@@ -48,7 +48,7 @@ export const HomeHero: React.FC = () => {
         </p>
 
         <p className="text-[12px] text-foreground/80 italic font-light max-w-xl mx-auto leading-relaxed mb-12 animate-fade-in">
-          The packaging visuals, product imagery, and background video are original concept work created by me for this outreach. Not Nuvie&apos;s actual assets.
+          The packaging visuals, product imagery, and background video are concept work created by me for this outreach. Not Nuvie&apos;s actual assets.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

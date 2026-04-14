@@ -43,19 +43,40 @@ export const Navbar: React.FC = () => {
                     
                     {/* Desktop Nav */}
                     <div className="hidden lg:flex items-center space-x-12">
-                        <div className="flex items-center space-x-8">
+                        <div className="flex items-center space-x-8 text-[10px] uppercase tracking-[0.3em] font-bold">
                             {mainNavigation.map((item) => {
                                 const isActive = pathname === item.href;
                                 return (
                                     <Link 
                                         key={item.name} 
                                         href={item.href} 
-                                        className={`text-[10px] uppercase tracking-[0.3em] font-bold transition-all duration-300 ${isActive ? 'text-accent-strong underline decoration-accent/30 underline-offset-8' : 'text-foreground/40 hover:text-accent'}`}
+                                        className={`transition-all duration-300 ${isActive ? 'text-accent-strong underline decoration-accent/30 underline-offset-8' : 'text-foreground/40 hover:text-accent'}`}
                                     >
                                         {item.name}
                                     </Link>
                                 );
                             })}
+                            
+                            {/* MORE DROPDOWN */}
+                            <div className="relative group py-2">
+                                <button className="flex items-center gap-2 text-foreground/40 group-hover:text-accent transition-colors">
+                                    <span>More</span>
+                                    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="group-hover:rotate-180 transition-transform duration-500">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </button>
+                                
+                                <div className="absolute top-full -left-4 pt-4 opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto transition-all duration-500 z-50">
+                                    <div className="w-48 bg-background/95 backdrop-blur-xl border border-foreground/8 rounded-2xl shadow-2xl p-3">
+                                        <Link 
+                                            href="/research-wip"
+                                            className={`flex items-center px-4 py-3 rounded-xl transition-all ${pathname === '/research-wip' ? 'bg-accent/10 text-accent' : 'text-foreground/50 hover:bg-graphite/10 hover:text-foreground'}`}
+                                        >
+                                            Research WIP
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -119,6 +140,20 @@ export const Navbar: React.FC = () => {
                                     {item.name}
                                 </Link>
                             ))}
+                            
+                            {/* Mobile More Section */}
+                            <div className="pt-6 border-t border-foreground/5 space-y-6">
+                                <span className="text-[8px] uppercase tracking-[0.5em] font-bold text-foreground/20 block mb-2">Extended Archive</span>
+                                <Link 
+                                    href="/research-wip"
+                                    onClick={closeMobileMenu}
+                                    className={`text-[10px] uppercase tracking-[0.3em] font-bold block transition-colors duration-300 ${
+                                        pathname === '/research-wip' ? 'text-accent' : 'text-foreground/50 active:text-accent'
+                                    }`}
+                                >
+                                    Research WIP
+                                </Link>
+                            </div>
                         </div>
                     </div>
 

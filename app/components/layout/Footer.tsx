@@ -24,12 +24,6 @@ export const Footer: React.FC = () => {
                 </div>
                 <div className="flex flex-col items-center md:items-end gap-3">
                     <div className="flex items-center gap-6">
-                        <Link 
-                            href="/research-wip"
-                            className="text-[10px] uppercase tracking-widest font-bold text-foreground/20 hover:text-accent transition-colors"
-                        >
-                            Research WIP
-                        </Link>
                         <a 
                             href="mailto:tharun.gajula.2@gmail.com"
                             className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 hover:text-accent transition-colors"

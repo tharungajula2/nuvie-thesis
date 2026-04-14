@@ -51,51 +51,84 @@ export const WorkbookTableOfContents: React.FC<WorkbookTableOfContentsProps> = (
           <div className="w-12 h-1 bg-foreground/10 rounded-full mx-auto mb-8" />
           <nav className="space-y-2">
             {chapters.map((chapter) => (
+              <div key={chapter.id} className="space-y-1">
               <button
-                key={chapter.id}
                 onClick={() => handleSelect(chapter.id)}
                 className={`w-full text-left p-4 rounded-2xl transition-all duration-300 ${activeId === chapter.id ? 'bg-graphite/10 text-accent font-medium' : 'text-foreground/40'}`}
               >
                 <span className="text-xs uppercase tracking-widest block mb-1 opacity-70 italic">{chapter.eyebrow}</span>
                 <span className="text-xl font-serif">{chapter.title}</span>
               </button>
-            ))}
-          </nav>
-          
-          <button
-            onClick={onLock}
-            className="w-full mt-10 p-5 rounded-2xl border border-foreground/10 text-[9px] uppercase tracking-[0.4em] font-bold text-foreground/30 hover:text-red-500/60 transition-colors"
-          >
-            Lock Archive
-          </button>
-        </div>
+              
+              {/* Sub-navigation for Editorial Sections (Mobile) */}
+              {activeId === chapter.id && chapter.sections && (
+                <div className="pl-6 space-y-3 mt-2 mb-6 border-l border-foreground/5 ml-4">
+                  {chapter.sections.map((section) => (
+                    <a
+                      key={section.id}
+                      href={`#${section.anchorId}`}
+                      onClick={() => setIsDrawerOpen(false)}
+                      className="block text-sm text-foreground/40 hover:text-accent transition-colors py-1"
+                    >
+                      {section.tocLabel || section.title}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </nav>
+        
+        <button
+          onClick={onLock}
+          className="w-full mt-10 p-5 rounded-2xl border border-foreground/10 text-[9px] uppercase tracking-[0.4em] font-bold text-foreground/30 hover:text-red-500/60 transition-colors"
+        >
+          Lock Archive
+        </button>
+      </div>
+    </div>
+
+    {/* Desktop Sidebar TOC */}
+    <div className="hidden lg:flex flex-col h-full bg-graphite/5 rounded-[2.5rem] border border-foreground/5 p-8 relative overflow-hidden">
+      <div className="mb-8">
+        <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-foreground/40 block mb-2">Workbook</span>
+        <h3 className="text-2xl font-serif">Table of Contents</h3>
       </div>
 
-      {/* Desktop Sidebar TOC */}
-      <div className="hidden lg:flex flex-col h-full bg-graphite/5 rounded-[2.5rem] border border-foreground/5 p-8 relative overflow-hidden">
-        <div className="mb-8">
-          <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-foreground/40 block mb-2">Workbook</span>
-          <h3 className="text-2xl font-serif">Table of Contents</h3>
-        </div>
-
-        <nav className="space-y-1 flex-1">
-          {chapters.map((chapter) => (
+      <nav className="space-y-1 flex-1 overflow-y-auto pr-2 custom-scrollbar">
+        {chapters.map((chapter) => (
+          <div key={chapter.id} className="mb-2">
             <button
-              key={chapter.id}
               onClick={() => onSelect(chapter.id)}
-              className={`w-full text-left px-5 py-3 rounded-xl transition-all duration-300 group border ${activeId === chapter.id ? 'bg-background border-accent/20 text-accent' : 'bg-transparent border-transparent hover:bg-background/50 text-foreground/40 hover:text-foreground'}`}
+              className={`w-full text-left px-5 py-3 rounded-xl transition-all duration-300 group border ${activeId === chapter.id ? 'bg-background border-accent/20 text-accent font-semibold shadow-sm' : 'bg-transparent border-transparent hover:bg-background/50 text-foreground/40 hover:text-foreground'}`}
             >
               <div className="flex items-center gap-4">
                 <span className={`text-[10px] font-mono transition-colors ${activeId === chapter.id ? 'text-accent' : 'text-foreground/40'}`}>
                   {chapters.indexOf(chapter) < 10 ? `0${chapters.indexOf(chapter)}` : chapters.indexOf(chapter)}
                 </span>
-                <span className={`text-base tracking-tight transition-all ${activeId === chapter.id ? 'font-semibold ml-1' : 'font-normal opacity-70 group-hover:opacity-100'}`}>
+                <span className={`text-base tracking-tight transition-all ${activeId === chapter.id ? 'opacity-100' : 'opacity-70 group-hover:opacity-100'}`}>
                   {chapter.title}
                 </span>
               </div>
             </button>
-          ))}
-        </nav>
+
+            {/* Sub-navigation for Editorial Sections (Desktop) */}
+            {activeId === chapter.id && chapter.sections && (
+              <div className="mt-3 ml-12 pl-4 border-l border-foreground/5 space-y-2 animate-in fade-in slide-in-from-left-2 duration-500">
+                {chapter.sections.map((section) => (
+                  <a
+                    key={section.id}
+                    href={`#${section.anchorId}`}
+                    className="block text-[13px] font-sans text-foreground/40 hover:text-accent hover:underline decoration-accent/30 underline-offset-4 transition-all py-1"
+                  >
+                    {section.tocLabel || section.title}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </nav>
 
         <div className="mt-8 pt-6 border-t border-foreground/5">
           <button

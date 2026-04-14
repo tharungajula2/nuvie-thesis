@@ -2,22 +2,18 @@
 
 import React, { useState, useEffect } from 'react';
 import { researchWipData } from '../data/research-wip-data';
-import { PasswordGate } from '../components/research/PasswordGate';
 import { WorkbookTableOfContents } from '../components/research/WorkbookTableOfContents';
-import { WorkbookChapter } from '../components/research/WorkbookChapter';
+import { WorkbookChapter as StudyChapter } from '../components/research/WorkbookChapter';
+import { EditorialChapter } from '../components/research/EditorialChapter';
 
 export default function ResearchWipClient() {
-  const [isUnlocked, setIsUnlocked] = useState(false);
   const [activeChapterId, setActiveChapterId] = useState(researchWipData[0].id);
   const [userNotes, setUserNotes] = useState<Record<string, string>>({});
   const [isMounted, setIsMounted] = useState(false);
 
-  // Persistence: Unlocked state & Notes
+  // Persistence: Notes
   useEffect(() => {
     setIsMounted(true);
-    const unlocked = sessionStorage.getItem('nuvie_research_unlocked');
-    if (unlocked === 'true') setIsUnlocked(true);
-
     const savedNotes = localStorage.getItem('nuvie_research_notes');
     if (savedNotes) {
       try {
@@ -28,20 +24,6 @@ export default function ResearchWipClient() {
     }
   }, []);
 
-  const handleUnlock = (password: string) => {
-    if (password === 'nuvie26') {
-      setIsUnlocked(true);
-      sessionStorage.setItem('nuvie_research_unlocked', 'true');
-      return true;
-    }
-    return false;
-  };
-
-  const handleLock = () => {
-    setIsUnlocked(false);
-    sessionStorage.removeItem('nuvie_research_unlocked');
-  };
-
   const updateNote = (chapterId: string, note: string) => {
     const newNotes = { ...userNotes, [chapterId]: note };
     setUserNotes(newNotes);
@@ -49,10 +31,6 @@ export default function ResearchWipClient() {
   };
 
   if (!isMounted) return null;
-
-  if (!isUnlocked) {
-    return <PasswordGate onUnlock={handleUnlock} />;
-  }
 
   const activeChapter = researchWipData.find(c => c.id === activeChapterId) || researchWipData[0];
 
@@ -68,17 +46,24 @@ export default function ResearchWipClient() {
               chapters={researchWipData} 
               activeId={activeChapterId} 
               onSelect={setActiveChapterId}
-              onLock={handleLock}
             />
           </aside>
 
           {/* Content - Right */}
           <main className="lg:w-3/4 pb-32">
-            <WorkbookChapter 
-              chapter={activeChapter} 
-              note={userNotes[activeChapter.id] || ''}
-              onNoteChange={(val) => updateNote(activeChapter.id, val)}
-            />
+            {activeChapter.type === 'editorial' ? (
+              <EditorialChapter 
+                chapter={activeChapter} 
+                note={userNotes[activeChapter.id] || ''}
+                onNoteChange={(val) => updateNote(activeChapter.id, val)}
+              />
+            ) : (
+              <StudyChapter 
+                chapter={activeChapter} 
+                note={userNotes[activeChapter.id] || ''}
+                onNoteChange={(val) => updateNote(activeChapter.id, val)}
+              />
+            )}
           </main>
         </div>
       </div>

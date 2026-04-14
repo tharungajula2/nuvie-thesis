@@ -15,7 +15,7 @@ export const siteContent: SiteContent = {
       id: 'intent',
       eyebrow: 'MY READING OF THIS PAGE',
       title: "How I'm thinking about Nuvie's product system.",
-      body: "The product visuals and packaging designs on this page are original concept work I created for this study. The analysis alongside each product is my own early interpretation from the outside. Neither is Nuvie's official view.",
+      body: "The product visuals and packaging designs on this page are concept work I created for this study. The analysis alongside each product is my own early interpretation from the outside. Neither is Nuvie's official view.",
       cta: { label: 'Explore the Portfolio', type: 'scroll-cue' },
     },
     {

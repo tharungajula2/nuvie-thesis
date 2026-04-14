@@ -97,7 +97,7 @@ export default function ProductsPage() {
                         badge="PRODUCT LAB"
                     />
                     <p className="mt-8 text-xs text-foreground/60 italic text-center max-w-2xl mx-auto animate-pulse">
-                        The packaging visuals in this section are original concept designs I created for this study. They are not Nuvie&apos;s planned products.
+                        The packaging visuals in this section are concept designs I created for this study. They are not Nuvie&apos;s planned products.
                     </p>
                 </div>
                 

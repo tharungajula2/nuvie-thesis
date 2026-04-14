@@ -111,3 +111,43 @@ export interface SummerConcept {
   imagePath: string;
   themeColor: string;
 }
+
+export interface EditorialSection {
+  id: string;
+  title?: string;
+  subtitle?: string;
+  content: EditorialContentBlock[];
+  anchorId?: string;
+  tocLabel?: string;
+}
+
+export type EditorialContentBlock = 
+  | { type: 'paragraph'; text: string; italic?: boolean; bold?: boolean; variant?: 'default' | 'muted' | 'accented' | 'insight' }
+  | { type: 'sub-section'; title: string; body?: string }
+  | { type: 'list'; items: string[]; listType: 'bullet' | 'numbered' }
+  | { type: 'comparison'; entries: { title: string; body: string }[] }
+  | { type: 'image-slot'; description: string; label?: string; imagePath?: string }
+  | { type: 'callout'; title: string; body: string; highlight?: string }
+  | { type: 'table'; headers: string[]; rows: string[][]; footnote?: string };
+
+export interface WorkbookChapter {
+  id: string;
+  title: string;
+  eyebrow: string;
+  summary: string;
+  type?: 'study' | 'editorial';
+  blocks?: WorkbookBlock[]; // For standard study card style
+  sections?: EditorialSection[]; // For editorial style
+  imagePlaceholder?: {
+    label: string;
+    description: string;
+    imagePath?: string;
+  };
+}
+
+export interface WorkbookBlock {
+  id: string;
+  type: 'prompt' | 'question' | 'hypothesis' | 'validation' | 'risk';
+  title: string;
+  body: string;
+}
