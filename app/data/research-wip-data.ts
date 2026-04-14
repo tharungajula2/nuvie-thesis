@@ -1,4 +1,4 @@
-import { WorkbookChapter } from '../types';
+import type { WorkbookChapter } from '../types/index';
 import { module01Content } from './research/module-01';
 import { module02Content } from './research/module-02';
 import { module03Content } from './research/module-03';

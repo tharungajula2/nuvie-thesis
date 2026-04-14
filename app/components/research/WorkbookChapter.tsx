@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { WorkbookChapter as ChapterType } from '../../types';
+import type { WorkbookChapter as ChapterType } from '../../types/index';
 
 interface WorkbookChapterProps {
   chapter: ChapterType;
@@ -64,7 +64,7 @@ export const WorkbookChapter: React.FC<WorkbookChapterProps> = ({
 
       {/* Chapter blocks */}
       <div className="space-y-12">
-        {chapter.blocks.map((block) => (
+        {chapter.blocks?.map((block) => (
           <div 
             key={block.id} 
             className={`p-10 md:p-12 rounded-[2.5rem] border transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.02)] ${

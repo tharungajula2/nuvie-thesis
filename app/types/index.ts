@@ -1,3 +1,5 @@
+export const TYPES_REVISION = '1.0.1';
+
 export interface NavItem {
   name: string;
   href: string;

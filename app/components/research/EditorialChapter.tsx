@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import { WorkbookChapter as ChapterType, EditorialContentBlock } from '../../types';
+import type { WorkbookChapter as ChapterType, EditorialContentBlock } from '../../types/index';
 import { ImageSlot } from './ImageSlot';
 import { EditorialTable } from './EditorialTable';
 import { EditorialCallout } from './EditorialCallout';

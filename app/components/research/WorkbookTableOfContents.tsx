@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import { WorkbookChapter } from '../../data/research-wip-data';
+import type { WorkbookChapter } from '../../types/index';
 
 interface WorkbookTableOfContentsProps {
   chapters: WorkbookChapter[];
   activeId: string;
   onSelect: (id: string) => void;
-  onLock: () => void;
+  onLock?: () => void;
 }
 
 export const WorkbookTableOfContents: React.FC<WorkbookTableOfContentsProps> = ({ 
@@ -78,13 +78,6 @@ export const WorkbookTableOfContents: React.FC<WorkbookTableOfContentsProps> = (
             </div>
           ))}
         </nav>
-        
-        <button
-          onClick={onLock}
-          className="w-full mt-10 p-5 rounded-2xl border border-foreground/10 text-[9px] uppercase tracking-[0.4em] font-bold text-foreground/30 hover:text-red-500/60 transition-colors"
-        >
-          Lock Archive
-        </button>
       </div>
     </div>
 
@@ -130,18 +123,6 @@ export const WorkbookTableOfContents: React.FC<WorkbookTableOfContentsProps> = (
         ))}
       </nav>
 
-        <div className="mt-8 pt-6 border-t border-foreground/5">
-          <button
-            onClick={onLock}
-            className="w-full text-left px-5 py-2 text-[8px] uppercase tracking-[0.4em] font-bold text-foreground/40 hover:text-red-500/80 transition-colors flex items-center gap-3"
-          >
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-              <path d="M7 11V7a5 5 0 0110 0v4" />
-            </svg>
-            Lock Archive
-          </button>
-        </div>
       </div>
     </>
   );
