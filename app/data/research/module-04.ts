@@ -165,7 +165,7 @@ export const module04Content: EditorialSection[] = [
       {
         type: 'sub-section',
         title: 'FSSAI Tightening — Trust as Regulatory Compliance Advantage',
-        body: 'New 2025 mandates: QR codes linking to live Certificates of Analysis and batch traceability (mandatory by Q3 2025), AI-powered market surveillance scanning 1 in 5 packs monthly, Rs 25,000 fines per SKU for untested claims. FSSAI also banned use of "100" in food labelling in May 2025 because it "misleads consumers." Brands achieving early compliance — particularly through batch-specific third-party lab reports accessible via QR codes — gain a structural trust advantage as enforcement tightens across the category. MuscleBlaze\'s ProCheck home test kit directly attacked the authenticity crisis and contributed to measured market share gains.'
+        body: "FSSAI's regulatory posture tightened visibly in 2025. In May 2025, FSSAI banned the use of \"100%\" on food labels to prevent misleading consumer claims. In July 2025, FSSAI mandated that all food business operators display QR codes linked to the \"Food Safety Connect\" app at customer-visible locations — enabling real-time consumer grievance redressal and license verification. While no published FSSAI mandate currently requires QR-linked Certificates of Analysis or specifies AI-powered surveillance quotas, the directional trajectory is clear: enforcement is tightening, transparency expectations are rising, and brands without proactive third-party testing infrastructure face increasing regulatory and reputational exposure. Brands achieving early voluntary compliance — particularly through batch-specific third-party lab reports accessible via QR codes — gain a structural trust advantage as enforcement tightens across the category. MuscleBlaze's ProCheck home test kit directly attacked the authenticity crisis and contributed to measured market share gains."
       },
       {
         type: 'sub-section',
@@ -227,7 +227,7 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'paragraph',
-        text: 'A nuance worth noting: the product uses Sucralose (INS 955) as a sweetener, while an FAQ elsewhere references "steviol glycosides" (Stevia), suggesting possible formulation variation across flavor variants. Consistency in sweetener communication across all SKUs would strengthen the no-drama positioning.'
+        text: 'A material inconsistency worth noting: the Vanilla shake ingredient panel explicitly lists Sucralose (INS 955) as the sweetener, while the FAQ section on the same product pages states "you\'ll spot steviol glycosides in our ingredient list — it\'s just Stevia in regulatory speak." This is a direct internal contradiction on Nuvie\'s own website — not a cross-flavor variation — and represents exactly the kind of label-vs-communication mismatch that erodes consumer trust in a category already plagued by mislabeling. For a brand built on "Zero Drama," resolving this inconsistency should be a priority.'
       },
       {
         type: 'sub-section',
@@ -236,7 +236,7 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'paragraph',
-        text: 'Gaps: At approximately 9,000 Instagram followers versus competitors with hundreds of thousands, brand awareness is functionally zero outside Bengaluru\'s fitness community. The Rs 110 price point is structurally undercut by Amul at Rs 50 and must be justified by taste, experience, and positioning every single time. No third-party testing certifications, Trustified verification, or public batch test reports are visible — a gap that will become more material as FSSAI enforcement tightens. The Trustpilot brand page is corrupted by reviews for an unrelated Korean face mask brand sharing the "Nuvie" name, creating a reputational confusion risk that requires proactive management.'
+        text: 'Gaps: At approximately 9,000 Instagram followers versus competitors with hundreds of thousands, brand awareness is functionally zero outside Bengaluru\'s fitness community. The Rs 110 price point is structurally undercut by Amul at Rs 50 and must be justified by taste, experience, and positioning every single time. Nuvie\'s website does include a "Test Reports" link in its navigation menu, though the link currently appears to resolve to a non-functional page. No Trustified verification badge or third-party certification (such as Informed Protein or NABL-accredited batch reports) is visible — a gap that will become more material as FSSAI enforcement tightens and competitors like MuscleBlaze set higher verification standards. The Trustpilot brand page is corrupted by reviews for an unrelated Korean face mask brand sharing the "Nuvie" name, creating a reputational confusion risk that requires proactive management.'
       },
       {
         type: 'image-slot',

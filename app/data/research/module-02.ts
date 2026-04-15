@@ -83,16 +83,11 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'paragraph',
-        text: "YouTube reviewers play an outsized verification role. When influencer Mangal tested San Nutrition's ISO PRO and found far less protein than labeled, the brand filed a defamation lawsuit. Delhi High Court upheld the influencer's right to fact-based critique in 2025. This case established that independent third-party testing is now considered a legitimate and protected consumer service in India."
+        text: "YouTube reviewers play an outsized verification role. When influencer Arpit Mangal tested San Nutrition's ISO PRO and found far less protein than labeled, the brand filed a defamation and trademark infringement lawsuit. In April 2025, the Delhi High Court (Justice Amit Bansal) refused to grant San Nutrition an injunction, finding that Mangal's lab-report-backed criticism constituted prima facie fair comment protected under Article 19(1)(a) of the Constitution. The court held that San Nutrition had not challenged the authenticity of the lab results and that the influencer's conduct fell within the realm of consumer awareness and public interest. While this ruling does not establish a broad new legal right for all third-party testers, it sets a strong precedent that evidence-based product criticism supported by accredited lab reports is protected speech in India."
       },
       {
-        type: 'list',
-        listType: 'bullet',
-        items: [
-          '41.9% of Indian youth doubt protein supplement efficacy',
-          'Only 3.9% of supplement recommendations come from doctors',
-          'Gym trainers are the primary recommenders at 22.6%'
-        ]
+        type: 'paragraph',
+        text: "Survey-level data reinforces the trust gap: in a 2021 online survey of youth in Navi Mumbai, 41.9% of respondents doubted protein supplement efficacy. A separate 2023-24 study of 450 gym-goers in Chennai found only 3.9% of supplement recommendations came from doctors, while gym trainers were the primary recommenders at 22.6%. These are localized samples, not national statistics, but they directionally illustrate the information vacuum in which Indian protein consumers operate."
       },
       {
         type: 'sub-section',
@@ -141,7 +136,7 @@ export const module02Content: EditorialSection[] = [
           'YogaBar built clean-label protein bars and was acquired by ITC, signaling the category\'s mainstream arrival.',
           'Epigamia modernized dairy protein through Greek yogurt.',
           'ITC Aashirvaad Protein Atta reframed the category entirely: "3 rotis = 25% of your daily protein need."',
-          'Swiggy launched a dedicated "High Protein" food category across 30 cities in April 2025, normalizing protein as everyday food rather than supplement.'
+          'Swiggy launched a dedicated "High Protein" food category across 30 cities in July 2025 — featuring over 5 lakh dishes from 35,000+ restaurant partners, each meeting a minimum 15g protein per serving threshold — normalizing protein as everyday food rather than supplement.'
         ]
       },
       {
