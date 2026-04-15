@@ -99,7 +99,7 @@ export const HeroVisualStage: React.FC<HeroVisualStageProps> = ({ activeChapter 
         <div className="relative w-full h-full flex items-center justify-center">
           <img
             src="/images/products/choco-loco.png"
-            alt="Hero SKU"
+            alt=""
             className="w-full h-full object-contain filter drop-shadow-[0_30px_60px_rgba(43,26,21,0.25)]"
           />
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-foreground/5 blur-3xl opacity-40 -z-10" />

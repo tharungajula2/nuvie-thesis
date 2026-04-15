@@ -101,7 +101,7 @@ export const ProductSurface: React.FC<ProductSurfaceProps> = ({ product, index }
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 pt-6 border-t border-foreground/10">
                     <div className="space-y-4">
                         <div>
-                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">Why this SKU matters</span>
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-foreground/40 block mb-2">How I read this SKU</span>
                             <span className="text-base font-medium text-foreground/90">{product.strategicRole}</span>
                         </div>
                         <div>

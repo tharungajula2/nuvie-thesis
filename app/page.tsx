@@ -41,7 +41,6 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-accent/2 blur-[120px] pointer-events-none" />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="mb-20">
-            <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-foreground/30 block mb-4">Diagnostic Output</span>
             <h3 className="text-4xl md:text-5xl font-serif">{siteContent.understanding.heading}</h3>
           </div>
 
@@ -64,7 +63,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-16 md:gap-32">
             <div className="md:w-1/3">
-               <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-foreground/30 block mb-4">The Profile</span>
                <h3 className="text-4xl font-serif mb-8 text-balance">{siteContent.usefulness.heading}</h3>
                <p className="text-foreground/85 font-light leading-relaxed text-lg italic">
                  My background is not a straight line. Analytics, systems design, operations, product building. I&apos;ve moved across these because messy problems tend to need all of them at once. I don&apos;t come with a ready playbook for Nuvie. I come with the habit of thinking carefully, and building things that work.
@@ -94,7 +92,6 @@ export default function HomePage() {
            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Link href="/products" className="group">
                 <div className="p-10 bg-background border border-foreground/5 rounded-3xl hover:border-accent/40 transition-all duration-500 h-full flex flex-col items-center text-center">
-                   <span className="text-[9px] uppercase tracking-[0.4em] text-accent/50 mb-6">Foundational</span>
                    <h4 className="text-2xl font-serif mb-4">Product Lab</h4>
                    <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">A breakdown of each SKU, what strategic role it plays, where it wins, and where the risks live.</p>
                    <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">Enter Lab →</span>
@@ -103,7 +100,6 @@ export default function HomePage() {
 
               <Link href="/how-i-can-help" className="group">
                 <div className="p-10 bg-background border border-foreground/5 rounded-3xl hover:border-accent/40 transition-all duration-500 h-full flex flex-col items-center text-center">
-                   <span className="text-[9px] uppercase tracking-[0.4em] text-accent/50 mb-6">Strategic</span>
                    <h4 className="text-2xl font-serif mb-4">How I Can Help</h4>
                    <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">Four focus areas. One 30-day starting point. Specific, not vague.</p>
                    <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">See The Plan →</span>

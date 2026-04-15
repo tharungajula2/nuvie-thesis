@@ -6,7 +6,7 @@ export const siteContent: SiteContent = {
   description: 'From product storytelling and flavor strategy to quick commerce, trust, repeat, and unit economics. Nuvie Thesis explores how better-for-you products actually win.',
   hero: {
     title: "I'm studying Nuvie.\nThis is the work so far.",
-    body: 'Analytics. Operations. Product building. Now how a protein brand earns its second purchase.',
+    body: 'Analytics. Operations. Product building. Now studying how a protein brand earns its second purchase.',
     primaryCta: 'Explore Product Lab',
     secondaryCta: 'See Where I Can Help',
   },
@@ -49,7 +49,7 @@ export const siteContent: SiteContent = {
       },
       {
         title: 'Taste first, then repeat',
-        body: "If the product does not taste like a treat, there is no repeat conversation. The indulgence promise has to survive industrial processing. That is the real bar before any habit loop even begins.",
+        body: "If the product does not taste like a treat, there is no repeat conversation. The indulgence promise has to survive what the bottle actually went through to get shelf-stable. That is the real bar before any habit loop even begins.",
       },
       {
         title: 'Quick commerce is a search engine',
@@ -70,7 +70,7 @@ export const siteContent: SiteContent = {
       },
       {
         title: 'Building, not just recommending',
-        body: "I don't hand off slide decks. I build the thing. This site is the most recent example.",
+        body: "I build the thing rather than describing it. This site is the most recent example.",
       },
     ],
   },

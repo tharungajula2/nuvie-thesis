@@ -55,22 +55,14 @@ export default function HowICanHelpPage() {
             </section>
 
             {/* How I Think */}
-            <section className="py-32 px-6 max-w-7xl mx-auto">
-                <div className="mb-16 text-center">
-                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/40 block mb-4">Approach</span>
-                    <h2 className="text-3xl md:text-5xl font-serif">How I think</h2>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    {outreachContent.howIThink.map((item, idx) => (
-                        <div key={idx} className="space-y-6 p-10 bg-graphite/5 border border-foreground/5 rounded-[2rem] group hover:border-accent transition-all duration-500 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 blur-3xl -z-10 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            <span className="text-[10px] font-bold text-accent/25 group-hover:text-accent tracking-[0.3em] uppercase block transition-colors">Principle 0{idx + 1}</span>
-                            <h3 className="text-2xl font-serif text-foreground">{item.title}</h3>
-                            <p className="text-base text-foreground/75 font-light leading-relaxed">
-                                {item.description}
-                            </p>
-                        </div>
-                    ))}
+            <section className="py-32 px-6 max-w-4xl mx-auto">
+                <div className="space-y-10">
+                    <p className="text-2xl md:text-3xl font-serif text-foreground leading-[1.3] text-balance">
+                        I came from places where the information was dense and the job was to make it clearer. Credit risk, lending workflows, analytics. The common thread was always the same — take something messy, find the structure inside it, and build something usable from it. Not a framework. A working output.
+                    </p>
+                    <p className="text-2xl md:text-3xl font-serif text-foreground leading-[1.3] text-balance">
+                        That is how I approached this study. And that is how I would approach anything useful I could do here.
+                    </p>
                 </div>
             </section>
 
@@ -78,7 +70,6 @@ export default function HowICanHelpPage() {
             <section className="py-24 bg-graphite/40 border-y border-foreground/5 relative overflow-hidden">
                 <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-background to-transparent opacity-50" />
                 <div className="max-w-4xl mx-auto px-6 text-center mb-20 relative z-10">
-                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-foreground/40 block mb-4">Value Layer</span>
                     <h2 className="text-3xl md:text-5xl font-serif mb-6">Where I may be useful</h2>
                     <p className="text-foreground/75 font-light max-w-xl mx-auto text-lg leading-relaxed">
                         Focused contribution areas built around Nuvie’s real problems: occasions, repeat, trust, and channel clarity.
@@ -97,10 +88,9 @@ export default function HowICanHelpPage() {
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
                                 How specific SKUs attach to specific moments, and where messaging or positioning may become sharper based on real behavioral signals.
                             </p>
-                            <div className="flex flex-wrap gap-2">
-                                <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">Occasion mapping</span>
-                                <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">Framing audit</span>
-                            </div>
+                            <p className="text-base text-foreground/60 italic leading-relaxed">
+                                Specifically around which SKUs attach naturally to which moments, and where the current messaging may be working against that.
+                            </p>
                         </div>
 
                         {/* Area 2 */}
@@ -113,10 +103,9 @@ export default function HowICanHelpPage() {
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
                                 Identifying where trial happens vs where repeat stalls. Building stronger scaffolding across ritual, routine, and rotation products.
                             </p>
-                            <div className="flex flex-wrap gap-2">
-                                <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">LTV analysis</span>
-                                <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">Churn diagnostics</span>
-                            </div>
+                            <p className="text-base text-foreground/60 italic leading-relaxed">
+                                Specifically around where first trial is happening, where repeat stalls, and what the data would tell you if you looked at it cohort by cohort.
+                            </p>
                         </div>
 
                         {/* Area 3 */}
@@ -129,10 +118,9 @@ export default function HowICanHelpPage() {
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
                                 Optimizing how products communicate in quick-commerce and D2C surfaces when the user is solving an immediate moment.
                             </p>
-                            <div className="flex flex-wrap gap-2">
-                                <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">Thumbnail visibility</span>
-                                <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">Trust anatomy</span>
-                            </div>
+                            <p className="text-base text-foreground/60 italic leading-relaxed">
+                                Specifically around quick commerce listing language and how product pages communicate when a consumer is solving an immediate moment.
+                            </p>
                         </div>
 
                         {/* Area 4 */}
@@ -145,10 +133,9 @@ export default function HowICanHelpPage() {
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
                                 Building systems, audits, messaging maps, or working prototypes that make decisions clearer and execution faster.
                             </p>
-                            <div className="flex flex-wrap gap-2">
-                                <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">Messaging maps</span>
-                                <span className="text-[8px] uppercase font-bold tracking-widest px-2 py-1 bg-graphite/10 rounded">Decision tools</span>
-                            </div>
+                            <p className="text-base text-foreground/60 italic leading-relaxed">
+                                Specifically building the working output — audit, map, or prototype — rather than describing what it should look like.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -197,9 +184,8 @@ export default function HowICanHelpPage() {
                             <div key={idx} className="p-12 md:p-16 bg-white/40 backdrop-blur-md border border-foreground/5 rounded-[3rem] flex flex-col md:flex-row justify-between items-start md:items-center gap-12 group hover:border-accent transition-all duration-700 relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-accent/2 blur-3xl -z-10" />
                                 <div className="max-w-xl">
-                                    <div className="flex items-center space-x-4 mb-6">
-                                        <span className="px-3 py-1 bg-accent/5 border border-accent/20 rounded text-[8px] font-bold text-accent uppercase tracking-widest">{item.badge}</span>
-                                        <span className="text-foreground/25 text-[9px] font-bold uppercase tracking-widest">Impact: {item.impact}</span>
+                                    <div className="flex items-center space-x-4 mb-6 opacity-0 pointer-events-none">
+                                        <span className="px-3 py-1 bg-accent/5 border border-accent/20 rounded text-[8px] font-bold text-accent uppercase tracking-widest">Spacer</span>
                                     </div>
                                     <h4 className="text-3xl font-serif mb-4 group-hover:text-accent transition-colors">{item.title}</h4>
                                     <p className="text-foreground/75 font-light leading-relaxed text-lg">
@@ -235,7 +221,7 @@ export default function HowICanHelpPage() {
                         <div className="space-y-4">
                             <h4 className="text-xs uppercase tracking-widest font-bold text-foreground/60">Why it matters here</h4>
                             <p className="text-foreground/80 font-light leading-relaxed text-lg text-balance">
-                                What that means practically is this. I can take a behavioral or data problem, break it into something structured, and build a working output from it. Not a presentation. Something that actually helps someone make a faster, clearer decision.
+                                What that means practically is this. I can take a behavioral or data problem, break it into something structured, and build a working output from it. Not a presentation. Something that actually helps someone make a faster decision.
                             </p>
                         </div>
                     </div>

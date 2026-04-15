@@ -36,7 +36,7 @@ export default function ProductsPage() {
         {
             title: "Indulgence Entry",
             badge: "Observation",
-            description: "For a brand like Nuvie, pleasure is likely the most honest entry point. If the indulgence promise holds at scale, repeat becomes possible. This is an outside read, not a confirmed signal.",
+            description: "For a brand like Nuvie, pleasure seems like a natural entry point. If the indulgence promise holds at scale, repeat becomes possible. This is an outside read, not a confirmed signal.",
             footer: "More in Research WIP"
         }
     ];
@@ -52,9 +52,9 @@ export default function ProductsPage() {
                     <SectionHeader 
                         alignment="left"
                         eyebrow="6-SKU CORE"
-                        title="Portfolio Architecture"
+                        title="Portfolio as I Read It from the Outside"
                         subtitle="This is how I tried to map the portfolio from the outside. Each SKU seems to serve a different purpose, though I am working from public signals only. I may have some of this wrong."
-                        badge="PORTFOLIO LOGIC"
+                        badge="How I Read the Portfolio"
                     />
                 </div>
                 
@@ -92,7 +92,7 @@ export default function ProductsPage() {
                     <SectionHeader 
                         alignment="center"
                         eyebrow="CONCEPT EXTENSIONS"
-                        title="Future flavor directions"
+                        title="Flavor directions I explored in this study"
                         subtitle="These are packaging concepts and flavor ideas I designed and developed as part of this study. They are not Nuvie's actual plans. I made them to think through cultural and seasonal extension logic more concretely, and as a way of demonstrating how I approach product thinking."
                         badge="PRODUCT LAB"
                     />
