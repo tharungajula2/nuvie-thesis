@@ -15,7 +15,7 @@ export const siteContent: SiteContent = {
       id: 'intent',
       eyebrow: 'MY READING OF THIS PAGE',
       title: "How I'm thinking about Nuvie's product system.",
-      body: "The product visuals and packaging designs on this page are concept work I created for this study. The analysis alongside each product is my own early interpretation from the outside. Neither is Nuvie's official view.",
+      body: "The product visuals and packaging designs on this page are concept work I created for this study. I took creative liberty with the packaging — including moving away from Nuvie's signature yellow. Nuvie's yellow is intentional: it signals fun-first, approachability, and nutrition for life. I understand that. This was me exploring what the product system could look like across different visual directions — not a suggestion that anything should change.\n\nThe analysis alongside each product is my own early interpretation from the outside. Neither the visuals nor the analysis represent Nuvie's official view.",
       cta: { label: 'Explore the Portfolio', type: 'scroll-cue' },
     },
     {
@@ -77,6 +77,6 @@ export const siteContent: SiteContent = {
   connection: {
     heading: 'If any of this resonates',
     body: `This is honest work, built specifically for this conversation. If the thinking here is useful to you, or if you're curious about any part of it, I'd genuinely like to hear from you. No pitch. Just a conversation.`,
-    cta: { label: 'REACH OUT', href: '/how-i-can-help' },
+    cta: { label: 'REACH OUT', href: 'mailto:tharun.gajula.2@gmail.com' },
   },
 };

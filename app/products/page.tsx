@@ -93,11 +93,11 @@ export default function ProductsPage() {
                         alignment="center"
                         eyebrow="CONCEPT EXTENSIONS"
                         title="Flavor directions I explored in this study"
-                        subtitle="These are packaging concepts and flavor ideas I designed and developed as part of this study. They are not Nuvie's actual plans. I made them to think through cultural and seasonal extension logic more concretely, and as a way of demonstrating how I approach product thinking."
+                        subtitle="These are packaging concepts and flavor ideas I designed as part of this study. They are not Nuvie's actual plans and I am not proposing they should be. Nuvie's philosophy of doing one thing well before expanding is something I noticed and respect. This section is simply my way of thinking through cultural and seasonal fit logic, and demonstrating how I approach product exploration. Nothing here should be read as a product roadmap."
                         badge="PRODUCT LAB"
                     />
                     <p className="mt-8 text-xs text-foreground/60 italic text-center max-w-2xl mx-auto animate-pulse">
-                        The packaging visuals in this section are concept designs I created for this study. They are not Nuvie&apos;s planned products.
+                        The packaging visuals in this section are concept designs I created for this study. They are not Nuvie's planned products.
                     </p>
                 </div>
                 

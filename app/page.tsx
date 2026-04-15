@@ -101,7 +101,7 @@ export default function HomePage() {
               <Link href="/how-i-can-help" className="group">
                 <div className="p-10 bg-background border border-foreground/5 rounded-3xl hover:border-accent/40 transition-all duration-500 h-full flex flex-col items-center text-center">
                    <h4 className="text-2xl font-serif mb-4">How I Can Help</h4>
-                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">Four focus areas. One 30-day starting point. Specific, not vague.</p>
+                   <p className="text-sm text-foreground/75 font-light mb-8 flex-grow">A few areas where I think I can genuinely contribute, and where I am willing to go as deep as needed.</p>
                    <span className="text-[10px] uppercase tracking-widest font-bold group-hover:text-accent transition-colors">See The Plan →</span>
                 </div>
               </Link>
