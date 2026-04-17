@@ -36,6 +36,22 @@ export default function ResearchWipClient() {
 
   return (
     <div className="min-h-screen bg-background pt-24 lg:pt-28">
+      {/* Disclaimer Banner */}
+      <div className="max-w-7xl mx-auto px-6 mb-12">
+        <div className="bg-accent/[0.03] border-l-2 border-accent p-8 md:p-10">
+          <h2 className="text-lg font-serif mb-4 text-foreground">A note before you read.</h2>
+          <p className="text-sm text-foreground/70 leading-relaxed max-w-4xl">
+            These six modules are working notes built from the outside. 
+            I do not have access to Nuvie&apos;s internal data — everything here 
+            is based on public information, product observation, 
+            and independent research. There will be gaps. There may be errors. 
+            Some things I have written with more confidence than I actually have. 
+            This is a live study, not a finished report. I am sharing it as 
+            work-in-progress, not as authority.
+          </p>
+        </div>
+      </div>
+
       {/* Workbook Layout */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">

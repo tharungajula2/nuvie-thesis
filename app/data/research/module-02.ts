@@ -53,7 +53,8 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'India protein source breakdown — data visualization concept'
+        description: 'India protein source breakdown — data visualization concept',
+        imagePath: '/public/images/research/module-02/protein-source-breakdown.jpg'
       }
     ]
   },
@@ -100,7 +101,8 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Protein supplement testing — lab verification concept'
+        description: 'Protein supplement testing — lab verification concept',
+        imagePath: '/public/images/research/module-02/supplement-testing-lab.jpg'
       }
     ]
   },
@@ -155,7 +157,8 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Indian consumer health food shift — everyday protein formats'
+        description: 'Indian consumer health food shift — everyday protein formats',
+        imagePath: '/public/images/research/module-02/consumer-health-shift.jpg'
       }
     ]
   },
@@ -202,7 +205,8 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Urban Indian consumer — everyday health buying moment'
+        description: 'Urban Indian consumer — everyday health buying moment',
+        imagePath: '/public/images/research/module-02/urban-consumer-buying.jpg'
       }
     ]
   },
@@ -249,7 +253,8 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'North vs South India lactose intolerance variation — regional map concept'
+        description: 'North vs South India lactose intolerance variation — regional map concept',
+        imagePath: '/public/images/research/module-02/lactose-intolerance-regional.jpg'
       }
     ]
   },
@@ -295,7 +300,8 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: '5 consumption occasions — timeline concept'
+        description: '5 consumption occasions — daily timeline concept',
+        imagePath: '/public/images/research/module-02/consumption-occasions-timeline.jpg'
       }
     ]
   },
@@ -353,7 +359,8 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Quick commerce dark store — pick and pack operation concept'
+        description: 'Quick commerce dark store — pick and pack operation concept',
+        imagePath: '/public/images/research/module-02/quick-commerce-darkstore.jpg'
       }
     ]
   },
@@ -393,7 +400,8 @@ export const module02Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Product failure modes — conceptual illustration'
+        description: 'Product failure modes — conceptual illustration',
+        imagePath: '/public/images/research/module-02/product-failure-modes.jpg'
       }
     ]
   },

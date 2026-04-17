@@ -16,7 +16,8 @@ export const researchWipData: WorkbookChapter[] = [
     sections: module01Content,
     imagePlaceholder: {
       label: 'module 1 hero',
-      description: 'Diagram comparing PDCAAS vs DIAAS scoring concept'
+      description: 'Module 01 hero — from raw ingredient to ready bottle',
+      imagePath: '/public/images/research/module-01/module-hero.jpg'
     }
   },
   {
@@ -28,7 +29,8 @@ export const researchWipData: WorkbookChapter[] = [
     sections: module02Content,
     imagePlaceholder: {
       label: 'module 2 hero',
-      description: 'Indian consumer health food shift — everyday protein formats'
+      description: 'Module 02 hero — the Indian consumer and protein',
+      imagePath: '/public/images/research/module-02/module-hero.jpg'
     }
   },
   {
@@ -40,7 +42,8 @@ export const researchWipData: WorkbookChapter[] = [
     sections: module03Content,
     imagePlaceholder: {
       label: 'module 3 hero',
-      description: 'The P&L Waterfall — MRP to net contribution visual'
+      description: 'Module 03 hero — the business model and unit economics',
+      imagePath: '/public/images/research/module-03/module-hero.jpg'
     }
   },
   {
@@ -52,7 +55,8 @@ export const researchWipData: WorkbookChapter[] = [
     sections: module04Content,
     imagePlaceholder: {
       label: 'module 4 hero',
-      description: 'Brand positioning spectrum — gym-niche to mainstream wellness'
+      description: 'Module 04 hero — brand positioning and trust',
+      imagePath: '/public/images/research/module-04/module-hero.jpg'
     }
   },
   {

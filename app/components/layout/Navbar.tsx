@@ -9,28 +9,47 @@ import { CtaButton } from '../ui/CtaButton';
 export const Navbar: React.FC = () => {
     const pathname = usePathname();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    // Body scroll lock when mobile menu is open
+ 
+    // Body scroll lock with scroll position preservation
     useEffect(() => {
+        const body = document.body;
+        let originalScrollY = 0;
+
         if (mobileMenuOpen) {
-            document.body.style.overflow = 'hidden';
+            originalScrollY = window.scrollY;
+            body.style.position = 'fixed';
+            body.style.top = `-${originalScrollY}px`;
+            body.style.width = '100%';
+            body.style.overflowY = 'hidden';
         } else {
-            document.body.style.overflow = '';
+            const scrollY = body.style.top;
+            body.style.position = '';
+            body.style.top = '';
+            body.style.width = '';
+            body.style.overflowY = '';
+            
+            if (scrollY) {
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
         }
+        
         return () => {
-            document.body.style.overflow = '';
+            body.style.position = '';
+            body.style.top = '';
+            body.style.width = '';
+            body.style.overflowY = '';
         };
     }, [mobileMenuOpen]);
-
+ 
     // Close mobile menu on route change
     useEffect(() => {
         setMobileMenuOpen(false);
     }, [pathname]);
-
+ 
     const closeMobileMenu = () => {
         setMobileMenuOpen(false);
     };
-
+ 
     return (
         <>
             {/* ─── Top Navigation Bar — Cream Frosted Glass ─── */}
@@ -79,9 +98,9 @@ export const Navbar: React.FC = () => {
                             </div>
                         </div>
                     </div>
-
+ 
                     <div className="hidden lg:block ml-auto" />
-
+ 
                     {/* Mobile Toggle */}
                     <button 
                         className="lg:hidden text-foreground/70 p-2 ml-auto"
@@ -100,7 +119,7 @@ export const Navbar: React.FC = () => {
                     </button>
                 </div>
             </nav>
-
+ 
             {/* ─── Mobile Nav: Backdrop ─── */}
             <div
                 className={`lg:hidden fixed inset-0 z-[150] transition-opacity duration-400 ${
@@ -110,7 +129,7 @@ export const Navbar: React.FC = () => {
                 onClick={closeMobileMenu}
                 aria-hidden="true"
             />
-
+ 
             {/* ─── Mobile Nav: Panel — Cream Opaque ─── */}
             <div
                 id="mobile-nav-panel"
@@ -124,6 +143,17 @@ export const Navbar: React.FC = () => {
                 }`}
                 style={{ backgroundColor: 'rgba(245, 236, 215, 0.98)', paddingBottom: 'env(safe-area-inset-bottom, 20px)' }}
             >
+                {/* Close Button Top Right */}
+                <button 
+                    className="absolute top-6 right-6 text-foreground/40 p-2 z-[250]"
+                    onClick={closeMobileMenu}
+                    aria-label="Close menu"
+                >
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                        <path d="M18 6L6 18M6 6l12 12" />
+                    </svg>
+                </button>
+
                 {/* Scrollable content container */}
                 <div className="flex flex-col h-full overflow-y-auto overscroll-contain">
                     <div className="flex-1 px-8 pt-10 pb-6">
@@ -156,7 +186,7 @@ export const Navbar: React.FC = () => {
                             </div>
                         </div>
                     </div>
-
+ 
                     <div className="px-8 py-6 border-t border-foreground/8" />
                 </div>
             </div>

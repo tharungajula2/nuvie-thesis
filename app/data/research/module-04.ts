@@ -68,7 +68,8 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Indian protein brand competitive landscape — positioning map concept'
+        description: 'Indian protein brand competitive landscape — positioning map concept',
+        imagePath: '/public/images/research/module-04/competitive-landscape.jpg'
       }
     ]
   },
@@ -130,7 +131,8 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Brand positioning spectrum — gym-niche to mainstream wellness'
+        description: 'Brand positioning spectrum — gym-niche to mainstream wellness',
+        imagePath: '/public/images/research/module-04/positioning-spectrum.jpg'
       }
     ]
   },
@@ -174,7 +176,8 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Trust-building signals hierarchy — Indian health food consumer'
+        description: 'Trust-building signals hierarchy — Indian health food consumer',
+        imagePath: '/public/images/research/module-04/trust-signals-hierarchy.jpg'
       }
     ]
   },
@@ -240,7 +243,8 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Nuvie bottle detail — claim hierarchy and brand voice elements'
+        description: 'Nuvie bottle detail — claim hierarchy and brand voice elements',
+        imagePath: '/public/images/research/module-04/nuvie-bottle-detail.jpg'
       }
     ]
   },
@@ -284,7 +288,8 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Indian flavor culture — kesar, badam, pista as dual-coded ingredients concept'
+        description: 'Indian flavor culture — kesar, badam, pista as dual-coded ingredients concept',
+        imagePath: '/public/images/research/module-04/indian-flavor-culture.jpg'
       }
     ]
   },
@@ -327,7 +332,8 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Quick commerce thumbnail comparison — protein brands at 200px scale concept'
+        description: 'Quick commerce thumbnail comparison — protein brands at 200px scale concept',
+        imagePath: '/public/images/research/module-04/qc-thumbnail-comparison.jpg'
       }
     ]
   },
@@ -382,7 +388,8 @@ export const module04Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Content strategy comparison — education-first vs attention-first brand building'
+        description: 'Content strategy comparison — education-first vs attention-first brand building',
+        imagePath: '/public/images/research/module-04/content-strategy-comparison.jpg'
       }
     ]
   },

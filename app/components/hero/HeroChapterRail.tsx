@@ -21,7 +21,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
         <div
           key={chapter.id}
           ref={(el) => { chapterRefs.current[idx] = el; }}
-          className="min-h-screen flex items-center justify-center px-6"
+          className="min-h-screen flex items-center justify-center px-6 pt-24"
         >
           <div
             className="max-w-5xl mx-auto text-center transition-all duration-700 ease-out"
@@ -40,7 +40,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
             <h2
               className={`font-medium leading-[1.05] mb-4 sm:mb-8 text-balance ${
                 idx === 0
-                  ? 'text-4xl sm:text-6xl md:text-7xl lg:text-8xl'
+                  ? 'text-3xl sm:text-6xl md:text-7xl lg:text-8xl'
                   : idx === 3
                     ? 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl'
                     : 'text-3xl sm:text-4xl md:text-5xl lg:text-7xl'
@@ -51,7 +51,7 @@ export const HeroChapterRail: React.FC<HeroChapterRailProps> = ({
 
             {/* Body text */}
             {chapter.body && (
-              <p className="text-lg md:text-2xl text-foreground/40 font-light max-w-3xl mx-auto leading-relaxed text-balance mb-4 sm:mb-8">
+              <p className="text-base md:text-2xl text-foreground/40 font-light max-w-3xl mx-auto leading-snug md:leading-relaxed text-balance mb-8 sm:mb-12 pb-10 sm:pb-0">
                 {chapter.body}
               </p>
             )}

@@ -50,6 +50,8 @@ export const HeroVisualStage: React.FC<HeroVisualStageProps> = ({ activeChapter 
         <div className="absolute inset-0 video-vignette opacity-85" />
         <div className="absolute inset-0 bg-accent/5 mix-blend-overlay pointer-events-none" />
         <div className="absolute inset-0 bg-background/40 backdrop-blur-[1px] pointer-events-none" />
+        {/* Mobile Readability Overlay */}
+        <div className="md:hidden absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background/50 pointer-events-none" />
       </div>
 
       {/* Cinematic Vignette */}

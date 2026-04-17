@@ -51,7 +51,8 @@ export const module03Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'P&L waterfall diagram — MRP to net contribution visual'
+        description: 'P&L waterfall diagram — MRP to net contribution visual',
+        imagePath: '/public/images/research/module-03/pl-waterfall.jpg'
       }
     ]
   },
@@ -117,7 +118,8 @@ export const module03Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Quick commerce margin stack — visual breakdown'
+        description: 'Quick commerce margin stack — visual breakdown',
+        imagePath: '/public/images/research/module-03/qc-margin-stack.jpg'
       }
     ]
   },
@@ -183,7 +185,8 @@ export const module03Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'RTD protein price-per-gram comparison chart'
+        description: 'RTD protein price-per-gram comparison chart',
+        imagePath: '/public/images/research/module-03/price-per-gram-comparison.jpg'
       }
     ]
   },
@@ -246,7 +249,8 @@ export const module03Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Channel mix comparison — protein brands India'
+        description: 'Channel mix comparison — protein brands India',
+        imagePath: '/public/images/research/module-03/channel-mix-comparison.jpg'
       }
     ]
   },
@@ -312,7 +316,8 @@ export const module03Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Retention funnel — trial to subscriber conversion concept'
+        description: 'Retention funnel — trial to subscriber conversion concept',
+        imagePath: '/public/images/research/module-03/retention-funnel.jpg'
       }
     ]
   },
@@ -379,7 +384,8 @@ export const module03Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'SKU portfolio map — Nuvie product range visual'
+        description: 'SKU portfolio map — Nuvie product range visual',
+        imagePath: '/public/images/research/module-03/sku-portfolio-map.jpg'
       }
     ]
   },
@@ -460,7 +466,8 @@ export const module03Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Protein brand funding timeline — seed to IPO concept'
+        description: 'Protein brand funding timeline — seed to scale concept',
+        imagePath: '/public/images/research/module-03/funding-timeline.jpg'
       }
     ]
   },

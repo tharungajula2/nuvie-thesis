@@ -50,7 +50,8 @@ export const module01Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Diagram comparing PDCAAS vs DIAAS scoring concept'
+        description: 'Diagram comparing PDCAAS vs DIAAS scoring concept',
+        imagePath: '/public/images/research/module-01/pdcaas-diaas-diagram.jpg'
       },
       {
         type: 'sub-section',
@@ -123,42 +124,16 @@ export const module01Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Simplified diagram: milk to cheese to whey — the separation process'
-      },
-      {
-        type: 'callout',
-        title: 'India Import Reality',
-        body: 'Most quality WPC/WPI used in Indian protein brands is imported from USA, Europe (Netherlands, Ireland, Germany), and Australia/New Zealand.',
-        highlight: 'Strategic Note'
+        description: 'Simplified diagram — milk to cheese to whey separation process',
+        imagePath: '/public/images/research/module-01/whey-separation-process.jpg'
       },
       {
         type: 'paragraph',
-        text: 'Pros of imported whey:',
-        bold: true
-      },
-      {
-        type: 'list',
-        listType: 'bullet',
-        items: [
-          'High quality and consistent standards',
-          'Large-scale global production',
-          'Established testing infrastructure'
-        ]
+        text: "Most quality whey protein concentrate and isolate used in Indian protein brands is imported from the USA, Europe (Netherlands, Ireland, Germany), and Australia and New Zealand. The quality and consistency are high, and large-scale global production means established testing infrastructure exists."
       },
       {
         type: 'paragraph',
-        text: 'Cons:',
-        bold: true
-      },
-      {
-        type: 'list',
-        listType: 'bullet',
-        items: [
-          'Approximately 30% import duty plus GST increases cost significantly',
-          'Currency risk from USD/EUR fluctuation',
-          'Supply chain vulnerability',
-          'Long-term dependency on foreign supply'
-        ]
+        text: "The trade-off is structural. An approximately 30% import duty plus GST significantly increases landed cost. Currency risk from USD and EUR fluctuation adds unpredictability. And there is long-term supply chain dependency on foreign sourcing that domestic alternatives — like Nuvie's ultra-filtered milk protein approach — are positioned to avoid."
       },
       {
         type: 'paragraph',
@@ -172,7 +147,8 @@ export const module01Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Ultra-filtration membrane diagram — milk in, concentrate out, permeate out'
+        description: 'Ultra-filtration membrane diagram — milk in, concentrate out, permeate out',
+        imagePath: '/public/images/research/module-01/ultrafiltration-membrane.jpg'
       },
       {
         type: 'paragraph',
@@ -290,7 +266,8 @@ export const module01Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Process flow diagram: raw milk to finished retort bottle — 10 steps'
+        description: 'Process flow diagram — raw milk to finished retort bottle',
+        imagePath: '/public/images/research/module-01/manufacturing-process-flow.jpg'
       },
       {
         type: 'sub-section',
@@ -323,10 +300,12 @@ export const module01Content: EditorialSection[] = [
         body: 'HDPE bottles filled to precise 250ml volume. Cap applied immediately. The timing here matters — the bottle must be sealed before retort.'
       },
       {
-        type: 'callout',
-        title: 'Specific Callout: Retort Processing',
-        body: 'What is retort: A pressurized steam chamber (autoclave) for sealed food containers. Nuvie uses this instead of preservatives. Why it works: At 121°C under pressure (approximately 1 to 3 bar), all pathogenic and spoilage microorganisms are killed. The F₀ standard: at least 3 minutes at 121°C — the threshold that kills Clostridium botulinum spores. Hold time is typically 15 to 30 minutes. What retort does to the product: Maillard reaction occurs at high heat — amino acids and sugars react, creating cooked, caramelized, slightly eggy notes. Protein structure changes (denaturation) but amino acid profile and nutritional content remain intact.',
-        highlight: 'Critical Manufacturing Step'
+        type: 'sub-section',
+        title: 'Retort Processing'
+      },
+      {
+        type: 'paragraph',
+        text: "Retort is a pressurized steam chamber — an autoclave for sealed food containers. Nuvie uses this instead of preservatives. At 121 degrees Celsius under pressure (approximately 1 to 3 bar), all pathogenic and spoilage microorganisms are killed. The F₀ standard requires at least 3 minutes at 121 degrees Celsius — the threshold that kills Clostridium botulinum spores. Hold time is typically 15 to 30 minutes."
       },
       {
         type: 'comparison',
@@ -340,6 +319,10 @@ export const module01Content: EditorialSection[] = [
             body: '135 to 145°C for 2 to 4 seconds, then aseptic filling into pre-sterilized packaging, gentler on sensory quality, expensive sterile filling environment required'
           }
         ]
+      },
+      {
+        type: 'paragraph',
+        text: "What retort does to the product: the Maillard reaction occurs at high heat — amino acids and sugars react, creating cooked, caramelized, and occasionally slightly eggy notes. Protein structure changes through denaturation but the amino acid profile and nutritional content remain intact."
       },
       {
         type: 'sub-section',
@@ -375,7 +358,8 @@ export const module01Content: EditorialSection[] = [
       },
       {
         type: 'image-slot',
-        description: 'Nuvie bottle front — Kesar Pista'
+        description: 'Nuvie bottle front — Kesar Pista',
+        imagePath: '/public/images/research/module-01/nuvie-kesar-pista-bottle.jpg'
       },
       {
         type: 'sub-section',
