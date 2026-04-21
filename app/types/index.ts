@@ -137,9 +137,10 @@ export interface WorkbookChapter {
   title: string;
   eyebrow: string;
   summary: string;
-  type?: 'study' | 'editorial';
+  type?: 'study' | 'editorial' | 'sticky-notes';
   blocks?: WorkbookBlock[]; // For standard study card style
   sections?: EditorialSection[]; // For editorial style
+  stickyNotes?: StickyNote[]; // For raw observations context
   imagePlaceholder?: {
     label: string;
     description: string;
@@ -152,4 +153,10 @@ export interface WorkbookBlock {
   type: 'prompt' | 'question' | 'hypothesis' | 'validation' | 'risk';
   title: string;
   body: string;
+}
+export interface StickyNote {
+  id: string;
+  title: string;
+  body: string;
+  status: 'OPEN' | 'CLOSED';
 }

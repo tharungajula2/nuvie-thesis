@@ -52,8 +52,8 @@ export const siteContent: SiteContent = {
         body: "If the product does not taste like a treat, there is no repeat conversation. The indulgence promise has to survive what the bottle actually went through to get shelf-stable. That is the real bar before any habit loop even begins.",
       },
       {
-        title: 'Quick commerce is a search engine',
-        body: "On Blinkit, you're a 150-pixel thumbnail competing against chai and chips. If the occasion isn't visible in 2 seconds, you don't exist.",
+        title: 'Quick commerce is a data problem',
+        body: "On Blinkit, availability, search visibility, and dark store distribution are all measurable and improvable — if you know where to look. That is the kind of problem I want to work on.",
       },
     ],
   },

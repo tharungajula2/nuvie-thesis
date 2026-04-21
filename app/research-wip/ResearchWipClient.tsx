@@ -5,6 +5,7 @@ import { researchWipData } from '../data/research-wip-data';
 import { WorkbookTableOfContents } from '../components/research/WorkbookTableOfContents';
 import { WorkbookChapter as StudyChapter } from '../components/research/WorkbookChapter';
 import { EditorialChapter } from '../components/research/EditorialChapter';
+import { StickyNotesChapter } from '../components/research/StickyNotesChapter';
 
 export default function ResearchWipClient() {
   const chapters = researchWipData;
@@ -69,7 +70,9 @@ export default function ResearchWipClient() {
                 </p>
               </div>
             ) : activeChapter && (
-              activeChapter.type === 'editorial' ? (
+              activeChapter.type === 'sticky-notes' ? (
+                <StickyNotesChapter chapter={activeChapter} />
+              ) : activeChapter.type === 'editorial' ? (
                 <EditorialChapter 
                   chapter={activeChapter} 
                   note={userNotes[activeChapter.id] || ''}

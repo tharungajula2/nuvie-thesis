@@ -98,7 +98,7 @@ export default function HowICanHelpPage() {
                             </div>
                             <h3 className="text-2xl font-serif mb-4">Repeat & Retention Logic</h3>
                             <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
-                                Identifying where trial happens vs where repeat stalls. Building stronger scaffolding across ritual, routine, and rotation products.
+                                Identifying where trial happens vs where repeat stalls. Building stronger structure across ritual, routine, and rotation products.
                             </p>
                             <p className="text-base text-foreground/75 font-light leading-relaxed">
                                 Specifically around where first trial is happening, where repeat stalls, and what the data would tell you if you looked at it cohort by cohort.
@@ -120,20 +120,6 @@ export default function HowICanHelpPage() {
                             </p>
                         </div>
 
-                        {/* Area 4 */}
-                        <div className="p-10 bg-background border border-foreground/10 rounded-[2.5rem] shadow-sm group hover:border-accent transition-all duration-500">
-                             <div className="flex items-center gap-3 mb-6">
-                                <span className="w-6 h-[1px] bg-accent/30" />
-                                <span className="text-accent/60 text-[9px] font-bold uppercase tracking-widest">Focus 04</span>
-                            </div>
-                            <h3 className="text-2xl font-serif mb-4">Structured Tools and Artifacts</h3>
-                            <p className="text-base text-foreground/75 font-light leading-relaxed mb-8">
-                                Building systems, audits, messaging maps, or working prototypes that make decisions clearer and execution faster.
-                            </p>
-                            <p className="text-base text-foreground/75 font-light leading-relaxed">
-                                Specifically building the working output — audit, map, or prototype — rather than describing what it should look like.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </section>

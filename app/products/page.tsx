@@ -24,20 +24,17 @@ export default function ProductsPage() {
         {
             title: "Role clarity",
             badge: "Product Logic",
-            description: "Each SKU works harder when it has a clear, distinct job. From lowering entry friction to anchoring a daily routine, specificity matters more than coverage. This is how I am currently thinking about it.",
-            footer: "More in Research WIP"
+            description: "Each SKU works harder when it has a clear, distinct job. From lowering entry friction to anchoring a daily routine, specificity matters more than coverage. This is how I am currently thinking about it."
         },
         {
             title: "Repeat Dynamics",
             badge: "Retention",
-            description: "Routine SKUs and rotation SKUs play different roles in keeping someone in the portfolio. The goal is the habit, not just the next transaction. I may be oversimplifying this.",
-            footer: "More in Research WIP"
+            description: "Routine SKUs and rotation SKUs play different roles in keeping someone in the portfolio. The goal is the habit, not just the next transaction. I may be oversimplifying this."
         },
         {
             title: "Indulgence Entry",
             badge: "Observation",
-            description: "For a brand like Nuvie, pleasure seems like a natural entry point. If the indulgence promise holds at scale, repeat becomes possible. This is an outside read, not a confirmed signal.",
-            footer: "More in Research WIP"
+            description: "For a brand like Nuvie, pleasure seems like a natural entry point. If the indulgence promise holds at scale, repeat becomes possible. This is an outside read, not a confirmed signal."
         }
     ];
 
@@ -125,7 +122,6 @@ export default function ProductsPage() {
                                     title={insight.title}
                                     badge={insight.badge}
                                     description={insight.description}
-                                    footer={insight.footer}
                                 />
                             </div>
                         ))}
