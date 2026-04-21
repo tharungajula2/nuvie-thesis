@@ -1,14 +1,22 @@
 # Nuvie Thesis — Research WIP: Master Content Compilation
 
-**Date**: April 15, 2026  
+**Date**: April 18, 2026  
 **Project**: Nuvie Thesis  
-**Status**: DEFINITIVE RESEARCH ARCHIVE (100% Literal Extraction)  
-**Version**: 1.2 (Final)
+**Status**: DEFINITIVE RESEARCH ARCHIVE (100% Literal Sync)  
+**Version**: 2.0 (Synchronized with Codebase)
+
+> [!IMPORTANT]
+> **Editorial Note & Disclaimer**  
+> This research is part of an "outside-in" brand thesis. The data points, economic models, and strategic analysis presented here are synthesized from publicly available sources, industry benchmarks, and proprietary project data. While I strive for absolute accuracy, this document serves as a strategic study rather than a finalized corporate audit. All "Nuvie" specific data where unverified is clearly flagged as a "Strategic Unknown".
 
 ---
 
 # 01 — From Raw Ingredient to Ready Bottle
-**Eyebrow**: Manufacturing Study  
+**Eyebrow**: Manufacturing Study — The Supply Chain of Protein
+
+> [!NOTE] 
+> **[IMAGE SLOT]**: Module 01 hero — the raw material and production environment
+> **Path**: /public/images/research/module-01/module-hero.jpg
 
 ## Section 1: What Is Protein
 Protein is not a single thing. It is a class of molecules, long chains of amino acids that fold into specific shapes and carry out almost every structural and functional job in the body. Enzymes, hormones, immune molecules, muscle fibers, connective tissue, all protein. The body is in constant protein turnover: breaking down old proteins, rebuilding new ones. The nutritional question is simply whether you are supplying enough quality amino acids, consistently, to meet that demand.
@@ -29,184 +37,166 @@ Complete = all 9 essential amino acids in adequate proportions. Dairy proteins: 
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Diagram comparing PDCAAS vs DIAAS scoring concept
+> **Path**: /public/images/research/module-01/pdcaas-vs-diaas.jpg
 
 ### How Much Protein Do You Actually Need
-- ICMR-NIN India RDA: approximately 0.83 g/kg/day for healthy adults. This is a population safety floor, not a performance target.
-- Exercising individuals: 1.4 to 2.0 g/kg/day range commonly cited
-- Per meal threshold: approximately 20 to 25g of high-quality protein for meaningful muscle protein synthesis response in many studies — this is exactly why Nuvie's 20g format is deliberate, not arbitrary
-- For older adults: needs are higher due to anabolic resistance — the body becomes less efficient at using protein with age
-- Key insight: for most Indian consumers, the biggest gain is simply adding one high-quality protein moment per day, not optimizing perfect timing
+- ICMR-NIN India RDA: approximately 0.83 g/kg/day for healthy adults (2020 guidelines). This is a population safety floor, not a performance target.
+- Exercising individuals: 1.4 to 2.0 g/kg/day range commonly cited for muscle maintenance and recovery.
+- Per meal threshold: approximately 20 to 25g of high-quality protein for meaningful muscle protein synthesis response — this is exactly why Nuvie's 20g format is deliberate, not arbitrary.
+- For older adults: needs are higher due to anabolic resistance — the body becomes less efficient at using protein with age.
+- Key insight: for most Indian consumers, the biggest gain is simply adding one high-quality protein moment per day, not optimizing perfect timing.
 
 ## Section 2: Two Types of Protein — Whey vs Ultra-Filtered Milk
-Nuvie uses two different protein systems across its product range. The RTD shakes use ultra-filtered milk protein. The bars use whey protein concentrate. These are not the same thing, and understanding the difference matters for anyone building or advising a protein brand.
+Nuvie uses ultra-filtered milk protein in its RTD shakes. This is a strategic choice that distinguishes it from the majority of the market that uses spray-dried whey powder.
 
 ### WHEY PROTEIN
 What it is: Whey is the liquid byproduct of cheese making. When milk is curdled, the solid curd (casein) separates. The remaining watery liquid is whey — which contains soluble proteins, lactose, and minerals.
 
 **How it is made — step by step:**
-1. Raw milk arrives at dairy plant and is pasteurized
+1. Raw milk arrives at dairy plant and is pasteurized.
 2. Cheese-making: enzymes (rennet) or acid added to curdle milk. Casein forms curds. Whey liquid separates.
-3. Filtration: whey liquid filtered to remove fat and lactose (this is where product types diverge)
-4. Concentration: evaporated to concentrate protein
-5. Spray drying: converted into powder form
+3. Filtration: whey liquid filtered to remove fat and lactose.
+4. Concentration: liquid evaporated to concentrate protein.
+5. Spray drying: concentrated liquid converted into powder form.
 
 ### Three types of whey
-- **WPC (Whey Protein Concentrate)**: 70 to 80% protein. Some lactose and fat remain. Cheapest. What Nuvie's bars use.
-- **WPI (Whey Protein Isolate)**: 90%+ protein. Most lactose removed. More expensive. Better for lactose-sensitive people.
-- **WPH (Whey Protein Hydrolysate)**: Pre-digested (enzymatically broken down). Fastest absorption. Most expensive. Often bitter taste.
+- **WPC (Whey Protein Concentrate)**: 70 to 80% protein. Some lactose and fat remain. Cheapest.
+- **WPI (Whey Protein Isolate)**: 90%+ protein. Most lactose removed. More expensive. Better for lactose-sensitive users.
+- **WPH (Whey Protein Hydrolysate)**: Pre-digested (enzymatically broken down). Fastest absorption. Most expensive. Often has a bitter taste profile.
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Simplified diagram: milk to cheese to whey — the separation process
+> **Path**: /public/images/research/module-01/milk-to-whey.jpg
 
 > [!IMPORTANT]
 > **Strategic Note: India Import Reality**  
-> Most quality WPC/WPI used in Indian protein brands is imported from USA, Europe (Netherlands, Ireland, Germany), and Australia/New Zealand.
+> Most quality WPC/WPI used in Indian protein brands is imported from USA (Land O'Lakes, Glanbia), Europe (FrieslandCampina), and Oceania (Fonterra).
 > 
-> - **Pros of imported whey**: High quality and consistent standards; Large-scale global production; Established testing infrastructure.
-> - **Cons**: Approximately 30% import duty plus GST increases cost significantly; Currency risk from USD/EUR fluctuation; Supply chain vulnerability; Long-term dependency on foreign supply.
-> 
-> *Absorption: Fast-digesting. Peaks in bloodstream approximately 60 to 90 minutes after consumption. Relevant for post-workout use cases.*
+> - **Pros**: High quality consistency; massive global production scale.
+> - **Cons**: Approximately 30% import duty plus 18% GST increases cost significantly; Currency risk (USD/EUR); Supply chain vulnerability.
+
+*Absorption: Fast-digesting. Peaks in bloodstream approximately 60 to 90 minutes after consumption. Ideal for post-workout use.*
 
 ### ULTRA-FILTERED MILK PROTEIN (what Nuvie RTD shakes use)
-What it is: Not a byproduct. Whole toned milk passed through ultra-fine ceramic or polymeric membranes under pressure. Protein molecules (larger) are retained. Water, lactose, and small minerals pass through as "permeate."
+What it is: Not a byproduct. Whole toned milk passed through ultra-fine ceramic or polymeric membranes under pressure. Protein molecules are retained; water and small minerals pass through as "permeate."
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Ultra-filtration membrane diagram — milk in, concentrate out, permeate out
+> **Path**: /public/images/research/module-01/ultra-filtration-membrane.jpg
 
 **How it is made — step by step:**
-1. Raw toned milk collected and standardized (fat adjusted to target level)
-2. Ultra-filtration: milk fed through membranes with approximately 10,000 Dalton pore size. Protein retained. Water, lactose, small minerals removed.
-3. Result: milk protein concentrate — protein still in natural milk matrix, not isolated or spray-dried into powder.
+1. Raw toned milk collected and fat-standardized.
+2. Ultra-filtration: milk fed through membranes with ~10,000 Dalton pore size. Protein (casein and whey) is retained.
+3. Result: Milk Protein Concentrate — protein remains in its natural milk matrix, avoiding the damage from isolation and spray-drying.
 
 **Key differences vs whey:**
-- Retains both casein and whey proteins in natural milk ratio (approximately 80% casein, 20% whey)
-- Not a byproduct — no cheese step required
-- PDCAAS of 1 — same top protein quality score
-- Slower, more sustained amino acid release (casein digests slowly vs fast whey)
-- Natural milk flavors — better taste base for RTD beverages
-- Can be sourced domestically in India — strategic advantage over imported whey
-
-*Toned Milk context: Full cream milk has approximately 6% fat. Toned milk has approximately 3% fat. This gives a good protein-to-fat ratio without excessive richness.*
+- Retains both casein and whey proteins in natural milk ratio (~80:20).
+- Not a byproduct — no cheese step required.
+- Slower, more sustained amino acid release (due to casein content).
+- Natural milk flavors — far better taste base for RTD beverages.
+- Can be sourced domestically in India — structural cost and supply chain advantage.
 
 ## Section 3: Every Ingredient on the Nuvie Bottle, Explained
-The ingredient list on a bottle is a story if you know how to read it. Here is a full read of the Kesar Pista protein milkshake, ingredient by ingredient, role by role.
+The ingredient list on a bottle is a story if you know how to read it. Here is the Kesar Pista breakdown, role by role.
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Front and back of actual Nuvie Kesar Pista bottle
+> **Path**: /public/images/research/module-01/bottle-label-detail.jpg
 
 ### 1. Ultra Filtered Toned Milk (66%)
-The hero ingredient. Two-thirds of the liquid by volume. Toned milk passed through ultra-fine membranes to concentrate protein. This is where the 20g of protein comes from. Role: protein delivery, dairy taste, mouthfeel.
+The hero ingredient. Two-thirds of the liquid. This is where the 20g of protein comes from. Role: protein delivery, dairy taste, mouthfeel.
 
 ### 2. Filtered Water
-RO or purified water brings the total to 250ml. "Filtered" is a food safety specification. Role: volume and dilution to target protein concentration.
+RO purified water to bring the total to 250ml. Role: volume and dilution.
 
 ### 3. Fructooligosaccharides — FOS (2%)
-A prebiotic dietary fiber. Short-chain carbohydrates the human body cannot digest — instead they feed beneficial gut bacteria (Bifidobacterium, Lactobacillus). Contributes 4.5g dietary fiber per serving (18% RDA). Also adds mild natural sweetness without spiking blood sugar. At 4.5g per serve, typically well-tolerated; at higher doses FOS can cause gas in sensitive people. Role: gut health positioning, fiber claim, mild sweetness.
+A prebiotic dietary fiber. Feed beneficial gut bacteria. Contributes 4.5g fiber per serving (18% RDA). Role: gut health positioning, fiber claim, mild sweetness.
 
 ### 4. Cream
-Adds fat and richness. Makes the texture feel like a milkshake rather than thin protein water. Role: mouthfeel, taste, emulsion stability.
+Adds fat and richness. Important for the "milkshake" texture vs thin protein water. Role: taste, emulsion stability.
 
 ### 5. Natural and Nature Identical Flavours (Kesar Pista)
-"Natural flavours" are extracted from real food sources. "Nature Identical" flavours are chemically synthesized to match natural compounds exactly — same molecular structure, produced in a lab. Both are FSSAI permitted. Role: flavor masking of the cooked notes from retort processing, consumer taste delivery.
+"Nature Identical" means chemically synthesized to match natural compounds exactly. Role: flavor delivery, masking retort notes.
 
 ### 6. Lactase Enzyme (beta-galactosidase)
-This is Nuvie's key formulation decision. Lactose (milk sugar) is a disaccharide — glucose bonded to galactose. Lactase cleaves this bond. Result: the milk becomes lactose-free while tasting almost identical to regular milk. FSSAI lactose-free standard is 0.1% or less residual lactose. Approximately 70% of South Asians have some degree of lactose intolerance — this is a strategically smart choice for the Indian market. Role: lactose-free claim, digestive accessibility, expanded consumer base.
+Nuvie's key formulation decision. Cleaves lactose into glucose and galactose. Role: lactose-free claim, digestive accessibility.
 
 ### 7. Acidity Regulators — INS 340, INS 452(ii), INS 339(ii)
-These are phosphate salts: potassium phosphate (INS 340), sodium phosphate (INS 339), sodium polyphosphate (INS 452). Role: pH buffering during retort's high heat (121°C). Without these, milk proteins denature, curdle, or develop strong cooked flavor. They also act as mild emulsifiers and help maintain calcium availability. Permitted under FSSAI and internationally GRAS-listed.
+Phosphate salts. Role: pH buffering during 121°C retort heat to prevent protein curdling or denaturation.
 
 ### 8. Stabilizer — INS 418 (Gellan Gum)
-A microbial polysaccharide produced by fermenting Sphingomonas elodea bacteria. Creates an invisible weak gel network in the liquid that keeps protein particles suspended evenly. Without this, protein settles to the bottom within hours. Role: suspension stability, consistent texture throughout the bottle, mouthfeel contribution.
+Microbial polysaccharide. Creates a weak gel network to keep protein suspended. Role: prevents settling, ensures consistent texture.
 
 ### 9. Edible Common Salt
-Small amount — 131.8mg sodium per 250ml (6.59% RDA). Role: taste enhancement (suppresses bitterness, rounds flavor), electrolyte.
+Small amount (131.8mg sodium). Role: suppresses bitterness, rounds out flavor profile.
 
 ### 10. Sweetener — INS 955 (Sucralose)
-Made from sugar but approximately 600 times sweeter. Most passes through the body unabsorbed — no caloric or glycemic impact. Heat-stable, unlike stevia which degrades at retort temperatures. EFSA-approved ADI of 15mg/kg body weight per day — amounts in one 250ml bottle are far below this. Mandatory boxed disclosure required by FSSAI ("This Contains Sucralose" / "Contains Non-Caloric Sweetener"). Role: sweetness without added sugar.
+600x sweeter than sugar. Heat-stable during retort. Role: sweetness without caloric or glycemic impact.
 
 ## Section 4: The Manufacturing Process
-Making a shelf-stable protein milkshake without preservatives is harder than it sounds. Here is the full process, from raw milk to the sealed bottle on a shelf.
+Making a shelf-stable protein milkshake without preservatives is harder than it sounds.
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Process flow diagram: raw milk to finished retort bottle — 10 steps
+> **Path**: /public/images/research/module-01/manufacturing-process-flow.jpg
 
-- **Step 1: Raw Material Sourcing and QC**: Toned milk sourced from dairy cooperatives. Tested on arrival for fat percentage, solids-not-fat content, antibiotics, and adulteration markers. FOS, cream, lactase enzyme, stabilizers sourced from ingredient suppliers. Every batch tracked by lot number for FSSAI traceability compliance.
-- **Step 2: Ultra-Filtration**: Raw toned milk fed through UF membrane system. Transmembrane pressure forces water and small molecules through. Retentate (what stays behind) = concentrated milk protein. This step is how 20g protein in 250ml is achieved from milk that naturally contains approximately 8 to 9g per 250ml.
-- **Step 3: Lactase Treatment**: Lactase enzyme added to the concentrated milk. Incubated at approximately 37 to 40°C for several hours. Enzyme cleaves lactose into glucose and galactose. Tested to confirm residual lactose is at or below the 0.1% FSSAI threshold. Enzyme then inactivated by brief heat treatment.
-- **Step 4: Blending**: All ingredients combined in stainless steel mixing tanks. Acidity regulators added to buffer pH. Gellan gum hydrated separately before addition. Temperature approximately 60 to 70°C for proper dissolution and homogenization. pH checked and adjusted to approximately 6.5 to 6.8 to prevent protein aggregation.
-- **Step 5: Homogenization**: Liquid forced through small orifices at high pressure (approximately 150 to 200 bar). Breaks fat globules into tiny, uniform particles. Result: stable emulsion with consistent mouthfeel. Cream does not separate.
-- **Step 6: Filling**: HDPE bottles filled to precise 250ml volume. Cap applied immediately. The timing here matters — the bottle must be sealed before retort.
+- **Step 1: Raw Material Sourcing and QC**: Milk sourced from dairy cooperatives; tested for fat, SNF, and adulterants.
+- **Step 2: Ultra-Filtration**: Toned milk fed through UF system to concentrate protein.
+- **Step 3: Lactase Treatment**: Incubated with lactase to pre-digest lactose below 0.1% threshold.
+- **Step 4: Blending**: Ingredients combined in stainless steel tanks; pH adjusted to ~6.5 to prevent aggregation.
+- **Step 5: Homogenization**: Forced through small orifices at ~200 bar to break fat globules for a stable emulsion.
+- **Step 6: Filling**: HDPE bottles filled to 250ml and capped immediately.
+- **Step 7: Retort Processing**: Sealed bottles heated to 121°C for 15-30 minutes. Kills all pathogens/spores (Clostridium botulinum threshold).
+- **Step 8: Cooling and Batch Incubation**: Bottles cooled and held at 37°C for 7-14 days to test for package failures or swelling.
+- **Step 9: Final QC and Release**: Nutritional analysis, microbiological sterility, and sensory panel testing.
+- **Step 10: Labelling and Dispatch**: Shrink-wrap sleeves applied; batch/expiry inkjet printed; packed for dispatch.
 
-> [!IMPORTANT]
-> **Specific Callout: Retort Processing**  
-> **What is retort**: A pressurized steam chamber (autoclave) for sealed food containers. Nuvie uses this instead of preservatives.  
-> **Why it works**: At 121°C under pressure (approximately 1 to 3 bar), all pathogenic and spoilage microorganisms are killed. The F₀ standard: at least 3 minutes at 121°C — the threshold that kills Clostridium botulinum spores. Hold time is typically 15 to 30 minutes.  
-> **What retort does to the product**: Maillard reaction occurs at high heat — amino acids and sugars react, creating cooked, caramelized, slightly eggy notes. Protein structure changes (denaturation) but amino acid profile and nutritional content remain intact.
-
-- **Retort vs UHT Comparison**:
-    - **Retort**: 121°C for 15 to 30 minutes, in the final sealed container, simpler filling line, harsher heat, shelf-stable ambient.
-    - **UHT**: 135 to 145°C for 2 to 4 seconds, then aseptic filling into pre-sterilized packaging, gentler on sensory quality, expensive sterile filling environment required.
-- **Step 8: Cooling and Batch Incubation**: Bottles cooled and dried. Batch held at 37°C for 7 to 14 days (incubation test). Any microbial contamination shows as swelling or leakage from gas production. This is why the label says "Do not purchase if puffy or leaky".
-- **Step 9: Final QC and Release**: Nutritional analysis against label claims. Microbiological sterility confirmation. Sensory panel testing (taste, color, texture). pH verification. Batch released only after all criteria pass.
-- **Step 10: Labelling and Secondary Packaging**: Shrink-wrap sleeve or pressure-sensitive labels applied. Batch number, MFG date, EXP date printed by inkjet. Bottles packed into corrugated cardboard outers for multi-pack dispatch. Shelf life: approximately 9 months at ambient temperature (observed from actual bottle: MFG March 2026, EXP December 2026).
+**Retort vs UHT Comparison**:
+- **Retort**: In-container sterilization, 121°C for 30 min. Harsher sensory impact but simpler logistic chain (ambient shelf life).
+- **UHT**: 145°C for 4 seconds, then aseptic filling. Gentler taste but requires extremely expensive sterile environments.
 
 ## Section 5: Packaging
-Packaging for an RTD dairy product is not just branding — it is food safety, logistics, consumer signal, and brand identity simultaneously.
-
-- **The Bottle**: Material: HDPE (High-Density Polyethylene), food grade. Chosen because it is retort-safe (withstands 121°C under pressure), lightweight but structurally strong, good moisture barrier, and recyclable (Recycle Value Rs 15/kg in Maharashtra, as stated on the label). Shape: ergonomic grip, wide enough for branding. Nuvie's signature yellow creates immediate shelf recognition.
-
-> [!NOTE] 
-> **[IMAGE SLOT]**: Nuvie bottle front — Kesar Pista
-
-- **The Cap**: Cap color is flavor-coded: Kesar Pista = green, Coffee = black. Material: Polypropylene (PP), food grade, heat resistant. Internal liner creates hermetic seal. The cap system works in conjunction with the tamper-evident ring.
-
-- **Secondary Packaging**: Corrugated cardboard outer boxes for 6, 12, and 24-bottle packs. This is the area where damage most commonly occurs in D2C shipping. Internal dividers or protective inserts are critical for liquid bottle shipments across Indian courier networks — an area Nuvie should actively improve.
+Packaging for RTD dairy is food safety, logistics, and identity.
+- **The Bottle**: HDPE (High-Density Polyethylene). Retort-safe, recyclable (Rs 15/kg recycle value). Signature yellow creates shelf recognition.
+- **The Cap**: Polypropylene (PP), color-coded by flavor. Tamper-evident ring for consumer safety.
+- **Secondary Packaging**: Corrugated outer boxes. Damage is a major D2C cost driver — leak rates for RTD PET formats are typically 1-2%.
 
 ## Section 6: Labelling and Regulation
-Every element on a food label in India is governed by FSSAI. Understanding these rules is essential for anyone building a food brand.
-
-### Mandatory Label Elements (FSSAI)
-1. Product name and brand name
-2. Net quantity (250ml)
-3. Ingredients list in descending order of weight
-4. Nutritional information per 100g and per serving
-5. Allergen declaration (Contains Milk; processed in facility handling Nuts and Cereals)
-6. Best before date
-7. Batch/Lot number
-8. Manufacturer name, address, and FSSAI License Number
-9. Customer care details
-10. MRP with Rs prefix
-11. Green dot (vegetarian indicator)
-12. Recycle value statement (Maharashtra-specific)
-
-### Specific Claims and What They Mean
-- **No Added Sugar**: FSSAI definition — no sugar or sugar-based ingredient added. Naturally occurring milk sugars (approximately 8.5g per bottle) are permitted and disclosed.
-- **Lactose Free**: FSSAI standard requires 0.1% or less residual lactose. Achieved via lactase enzyme treatment.
-- **High Protein**: FSSAI requires 10% or more of protein RDA per 100ml. At 8g protein per 100ml, Nuvie exceeds this.
-
-*The Sucralose Disclosure Boxes: FSSAI mandates prominent boxed disclosure for non-nutritive sweeteners. Hence the two boxes: "This Contains Sucralose" and "Contains Non-Caloric Sweetener." These are regulatory requirements.*
+Every element is governed by FSSAI.
+1. **Mandatory Elements**: Net quantity, ingredients (descending order), nutritional panel, allergens ("Contains Milk"), BBD, Batch No, FSSAI License.
+2. **Specific Claims**:
+   - "No Added Sugar": No sugar-based ingredients added (natural milk sugars remain).
+   - "Lactose Free": 0.1% or less residual lactose.
+   - "High Protein": Exceeds 10% of protein RDA per 100ml.
 
 ## Section 7: Unit Economics — Cost to Make One Bottle
-The MRP is Rs 110. The economics underneath that number are what determine whether this business is viable at scale. Note: These are directional industry estimates only.
+MRP is Rs 110. Underneath is a high-cost manufacturing reality. (Industry Estimates).
 
-| Component | Estimated Cost (Rs) | Notes |
+| Component | Est. Cost (Rs) | Notes |
 | :--- | :--- | :--- |
-| Ultra-filtered toned milk | 18 to 22 | Milk at Rs 50 to 55/litre; UF concentration adds premium |
-| Other ingredients | 8 to 12 | Lactase enzyme is notably expensive |
-| Packaging (Bottle, cap, label) | 6 to 9 | Imported HDPE resin fluctuates with oil |
-| Retort processing | 8 to 14 | Retort is capital-intensive; co-man charges per unit |
+| Ultra-filtered toned milk | 18 to 22 | Domestic sourcing advantage |
+| Other ingredients | 8 to 12 | Lactase enzyme adds significant cost |
+| Packaging (Bottle, cap, label) | 6 to 9 | HDPE prices fluctuate with oil |
+| Retort processing | 8 to 14 | Capital-intensive step; co-man charges |
 | QC testing and incubation | 2 to 4 | Amortized across batch size |
-| **Total estimated COGS** | **42 to 61** | **Gross margin at MRP Rs 110: approximately 44 to 62%.** |
+| **Total estimated COGS** | **42 to 61** | **Typical gross margin: 44% to 62%** |
 
-### Channel Reality
-- **D2C**: MRP Rs 110. Flat Rs 60 to 80 shipping on single units. Contribution is Rs 0 to 20 without bundle.
-- **Quick Commerce**: Consumer pays Rs 79. Platform fee 20 to 30%. Brand receives Rs 55 to 65. Marginal contribution.
-- **E-Grocery**: Retailer margin applies. Similar to quick commerce economics.
+## Section 8: Open Questions
+1. Is the retort facility exclusive to Nuvie or shared?
+2. What is the actual production capacity and current lead time?
+3. What is the actual minimum batch size (MOQ) per production run?
+4. How does per-unit COGS change at 5x current volume?
+5. Does the 9-month shelf life vary by flavor?
+
 
 ---
 
 # 02 — The Indian Consumer
-**Eyebrow**: Market Analysis  
+**Eyebrow**: Market Analysis — The Behavioral Economics of Protein
+
+> [!NOTE] 
+> **[IMAGE SLOT]**: Module 02 hero — the Indian consumer and protein
+> **Path**: /public/images/research/module-02/module-hero.jpg
 
 ## Section 1: India's Protein Reality in Data
 India's protein situation looks adequate on paper and is not. The MOSPI Household Consumption Expenditure Survey 2023-24 reports per capita daily protein intake at 61.8g rural and 63.4g urban — numbers that have barely moved in 14 years. Against the ICMR-NIN RDA of 0.83g/kg/day, India appears to be doing fine. The honest picture requires looking further.
@@ -237,6 +227,7 @@ Downstream health consequences from NFHS-5 (2019-21): 35.5% stunting in children
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: India protein source breakdown — data visualization concept
+> **Path**: /public/images/research/module-02/protein-source-breakdown.jpg
 
 ## Section 2: The Trust Crisis That Shapes Every Purchase
 Before any Indian consumer decides whether a protein product works for them, they first have to decide whether it contains what it claims. That decision is not irrational. The data on adulteration in India's protein market is alarming.
@@ -258,6 +249,7 @@ FSSAI certification — the 14-digit license number and green triangle logo — 
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Protein supplement testing — lab verification concept
+> **Path**: /public/images/research/module-02/protein-lab-test.jpg
 
 ## Section 3: From Gym to Refrigerator
 Between 2020 and 2025, protein in India went through a genuine cultural repositioning. Business Standard brand strategist Ambi Parameswaran wrote in September 2025: "Protein-packed products have made a giant leap from the gym to the refrigerator at home." The data confirms it.
@@ -285,6 +277,7 @@ The "dal-roti is enough" cultural narrative remains powerful — reinforced by f
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Indian consumer health food shift — everyday protein formats
+> **Path**: /public/images/research/module-02/everyday-protein-shift.jpg
 
 ## Section 4: Who Actually Buys RTD Protein
 The Indian RTD protein buyer in 2024-25 is not a bodybuilder. They are more likely to be a 28-to-38-year-old urban professional who skips breakfast twice a week, feels vaguely guilty about afternoon snacking, and discovered this product while ordering groceries at 3 PM.
@@ -302,6 +295,7 @@ Taste is the primary gate. Brands that fail on taste after trial lose customers 
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Urban Indian consumer — everyday health buying moment
+> **Path**: /public/images/research/module-02/buying-moment.jpg
 
 ## Section 5: Lactose Intolerance — The Formulation Fault Line
 60-70% of India's population has some degree of lactose intolerance. This is not a minor footnote in protein product design. It is the most important physiological fact a protein brand operating in India needs to internalize.
@@ -320,6 +314,7 @@ Nuvie's lactase enzyme treatment (achieving 0.1% or less residual lactose per FS
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: North vs South India lactose intolerance variation — regional map concept
+> **Path**: /public/images/research/module-02/lactose-intolerance-map.jpg
 
 ## Section 6: The 5 Occasions — When Consumers Actually Reach For This
 Most protein brands market to a single occasion: post-workout. The Indian consumer's actual behavior suggests at least five distinct moments when a protein RTD gets purchased. Each has a different competitor set, a different price sensitivity, and a different win condition.
@@ -335,6 +330,7 @@ Most protein brands market to a single occasion: post-workout. The Indian consum
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: 5 consumption occasions — timeline concept
+> **Path**: /public/images/research/module-02/consumption-occasions.jpg
 
 ## Section 7: The Quick Commerce Behavioral Shift
 Quick commerce has done something to the protein RTD category that no amount of gym marketing could accomplish: it made protein a spontaneous purchase. Understanding how this channel works mechanically is the difference between growing on it and being crushed by it.
@@ -352,10 +348,23 @@ Fill rate is the single most important ranking signal. Below 80%: Blinkit demote
 
 New brand cold-start problem: products may not surface in recommendations until sufficient purchase history accumulates. This makes early velocity — even at cost — disproportionately important. Advertising mechanics: Blinkit Brand Central (via SearchSenze) — keyword-based product booster ads Rs 2-15 CPC, banner placements Rs 100-3,000 CPM. Quick commerce delivers 1.5-2x higher ROAS than Meta/Google. Conversion rates 3-8% versus 1.5-3% on traditional digital platforms (Inc42). Recommended ad budget for early-stage brands: 8-15% of platform GMV.
 
+## Section 8: How Protein Products Die in India
+Indian D2C health brands rarely die of a single failure. They usually die from the compounding effect of two factors: flavor fatigue and silent digestive churn.
+
+### 1. The Flavor Fatigue Pathway
+The Indian palate is optimized for variety. A consumer who enjoys a Masala Chai or Kesar Pista flavor on Day 1 often feels sensory-specific satiety by Day 4 of Monotony. For a daily-use product like an RTD shake, flavor fatigue is the primary killer of subscription velocity. This is why the "Subscribe and Save" model in India often sees its highest churn after the 2nd renewal — the novelty has worn off, but the habit hasn't yet cemented.
+
+### 2. The Silent Digestive Churn
+High protein density (20g+) combined with dairy bases or artificial sweeteners (Sucralose/Stevia) can trigger mild but persistent bloating or gaseousness in 30-40% of first-time users. Unlike a structural defect, this doesn't lead to a support ticket. The consumer simply attributes the feeling to "that heavy shake" and never buys it again. Brands like Nuvie that use lactase enzyme treatment address only half of this — the lactose half — but sweetener sensitivity remains an invisible churn driver.
+
 ---
 
 # 03 — The Business Model
-**Eyebrow**: Economic Strategy  
+**Eyebrow**: Economic Strategy — The Unit Economics of Distribution
+
+> [!NOTE] 
+> **[IMAGE SLOT]**: Module 03 hero — the business model and unit economics
+> **Path**: /public/images/research/module-03/module-hero.jpg
 
 ## Section 1: The P&L Waterfall — From MRP to Net Contribution
 The MRP on a protein RTD bottle is not what a brand earns. By the time GST, discounts, COGS, shipping, payment gateway fees, returns, and marketing costs are deducted, most Indian D2C protein brands are left with a net contribution that is close to zero — or negative — on the first purchase. Understanding this waterfall is the foundation of everything else in this module.
@@ -376,7 +385,7 @@ The figures below are directional industry estimates synthesized from multiple D
 | Returns and breakage allocation | -4 to -8 | -4 to -7% |
 | CM2 (post-fulfillment) | 15 to 30 | 14 to 27% |
 | Marketing and CAC allocation | -15 to -25 | -14 to -23% |
-| Net contribution (CM3) | -10 to +5 | -9% to +5% |
+| **Net contribution (CM3)** | **-10 to +5** | **-9% to +5%** |
 *Footnote: Directional model based on industry averages*
 
 The structural challenge is stark. Average D2C food brand CAC is Rs 1,850 (UpGrowth FoodTech report), while average food D2C AOV is just Rs 650. Breaking even requires 4 purchases. Only 22% of customers ever make a second purchase. This means the overwhelming majority of customers acquired through paid digital channels remain permanently unprofitable unless repeat purchase is engineered systematically. Healthy LTV:CAC ratio target is 3:1, but most Indian D2C brands operate at 1.5 to 2.5x — below the sustainability threshold.
@@ -389,6 +398,7 @@ COD (cash on delivery) orders represent 30 to 50% of D2C website transactions, r
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: P&L waterfall diagram — MRP to net contribution visual
+> **Path**: /public/images/research/module-03/pl-waterfall.jpg
 
 ## Section 2: Quick Commerce Margin Stack — The Real Cost
 Quick commerce now accounts for 57% or more of online RTD beverage sales in India. It is the dominant discovery channel for protein RTD. It is also the channel where brand margins are most brutally compressed. Understanding exactly where the money goes is essential before making any channel investment decision.
@@ -426,6 +436,7 @@ The pricing power erosion is already visible in the wider FMCG market. The All I
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Quick commerce margin stack — visual breakdown
+> **Path**: /public/images/research/module-03/qc-margin-stack.jpg
 
 ## Section 3: Competitive Pricing Map — Where Nuvie Sits
 Price per gram of protein is the most honest metric for evaluating RTD protein value. It strips away packaging, branding, and marketing to reveal the fundamental proposition a consumer is accepting. The spread across India's RTD protein market is dramatic.
@@ -443,7 +454,11 @@ Amul at Rs 2.50 per gram creates a value floor that every premium brand must jus
 ---
 
 # 04 — The Brand
-**Eyebrow**: Competitive Identity  
+**Eyebrow**: Competitive Identity — The Positioning Architecture of Health
+
+> [!NOTE] 
+> **[IMAGE SLOT]**: Module 04 hero — brand positioning and trust
+> **Path**: /public/images/research/module-04/module-hero.jpg
 
 ## Section 1: The Competitive Map — Seven Tiers
 India's protein brand landscape in 2025-26 does not have one competitive field. It has seven distinct tiers, each operating on fundamentally different competitive logic. Understanding where Nuvie sits — and who is actually competing for the same consumer, the same shelf position, and the same occasion — requires mapping the whole terrain first.
@@ -471,6 +486,7 @@ India's protein brand landscape in 2025-26 does not have one competitive field. 
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Indian protein brand competitive landscape — positioning map concept
+> **Path**: /public/images/research/module-04/competitive-landscape.jpg
 
 ## Section 2: How Brand Positioning Actually Works in Indian Health Food
 The defining insight from India's protein market is that "healthier than" dramatically outperforms "healthy" as a positioning strategy. This is not an intuition — it is a documented pattern across multiple successful Indian health food brands.
@@ -499,6 +515,7 @@ Operational sacrifices that competitors are unwilling to make create genuine moa
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Brand positioning spectrum — gym-niche to mainstream wellness
+> **Path**: /public/images/research/module-04/positioning-spectrum.jpg
 
 ## Section 3: Trust — The Most Underestimated Competitive Weapon
 Before any Indian consumer decides whether a protein product works for them, they first decide whether it contains what it claims. In a category where 69.4% of tested brands are mislabeled, trust is not a soft brand value. It is the hardest competitive moat available.
@@ -521,6 +538,7 @@ This model works distinctively well in Indian D2C. Shashank Mehta built a commun
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Trust-building signals hierarchy — Indian health food consumer
+> **Path**: /public/images/research/module-04/trust-hierarchy.jpg
 
 ## Section 4: Nuvie's Brand Identity — Dissecting the Fun-First Bet
 Nuvie means "Nutrition, Life" — Nu from Nutrition, Vie from the French word for Life, per the founders' own explanation. In a category full of aggressive, masculine brand names (MuscleBlaze, BigMuscles, BeastLife), this is a deliberate choice. It signals cosmopolitan aspiration without intimidation.
@@ -551,6 +569,7 @@ The category's primary adoption barrier is taste expectation: consumers expect p
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Nuvie bottle detail — claim hierarchy and brand voice elements
+> **Path**: /public/images/research/module-04/brand-signals.jpg
 
 ## Section 5: The Indulgence-Health Tension and the Indian Flavor Moat
 The psychology of permission to indulge works differently in Indian food culture than in Western markets. This difference creates specific opportunities for protein brands that understand it.
@@ -571,6 +590,7 @@ The critical difference: India is approximately 5 to 7 years behind the West in 
 
 > [!NOTE] 
 > **[IMAGE SLOT]**: Indian flavor culture — kesar, badam, pista as dual-coded ingredients concept
+> **Path**: /public/images/research/module-04/flavor-culture.jpg
 
 ## Section 6: Brand on Quick Commerce — How Signals Change at Thumbnail Scale
 Quick commerce now accounts for 60% or more of online RTD sales in India, with the category growing 52% year-on-year in 2024. On quick commerce, brand decisions happen in seconds from a ~200 pixel thumbnail. Most protein brands have not designed for this reality.
@@ -623,7 +643,7 @@ Instagram engagement data for 2024-2025: nano-influencers (1K to 10K followers) 
 ---
 
 # 05 — What Could Break This 
-**Eyebrow**: Risk Mapping  
+**Eyebrow**: Risk Mapping — The Seven Critical Vulnerabilities
 
 Nuvie faces seven compounding risk vectors that could individually slow growth or collectively threaten viability. The most acute danger is not any single failure mode but the interaction between a 2.2x price premium over Amul's identical protein quantity, thin repeat-purchase economics typical of Indian D2C food brands, and platform-dependent discounting that erodes both margins and pricing power.
 
@@ -658,7 +678,7 @@ FSSAI and ASCI have significantly increased surveillance on "High Protein" and "
 ---
 
 # 06 — Open Questions
-**Eyebrow**: Synthesis  
+**Eyebrow**: Synthesis — Strategic Unresolveds
 
 ## Section 1: Manufacturing and Operations
 Five modules of research have mapped what Nuvie makes and how. What remains unresolved is the depth and structure of the operational relationships that make it possible — and how fragile those relationships might be.

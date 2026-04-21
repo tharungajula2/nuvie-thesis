@@ -7,14 +7,15 @@ import { WorkbookChapter as StudyChapter } from '../components/research/Workbook
 import { EditorialChapter } from '../components/research/EditorialChapter';
 
 export default function ResearchWipClient() {
-  const [activeChapterId, setActiveChapterId] = useState(researchWipData[0].id);
+  const chapters = researchWipData;
+  const [activeChapterId, setActiveChapterId] = useState(chapters.length > 0 ? chapters[0].id : '');
   const [userNotes, setUserNotes] = useState<Record<string, string>>({});
   const [isMounted, setIsMounted] = useState(false);
 
   // Persistence: Notes
   useEffect(() => {
     setIsMounted(true);
-    const savedNotes = localStorage.getItem('nuvie_research_notes');
+    const savedNotes = localStorage.getItem('research_wip_notes');
     if (savedNotes) {
       try {
         setUserNotes(JSON.parse(savedNotes));
@@ -27,58 +28,60 @@ export default function ResearchWipClient() {
   const updateNote = (chapterId: string, note: string) => {
     const newNotes = { ...userNotes, [chapterId]: note };
     setUserNotes(newNotes);
-    localStorage.setItem('nuvie_research_notes', JSON.stringify(newNotes));
+    localStorage.setItem('research_wip_notes', JSON.stringify(newNotes));
   };
 
   if (!isMounted) return null;
 
-  const activeChapter = researchWipData.find(c => c.id === activeChapterId) || researchWipData[0];
+  const activeChapter = chapters.length > 0 
+    ? (chapters.find(c => c.id === activeChapterId) || chapters[0])
+    : null;
 
   return (
     <div className="min-h-screen bg-background pt-24 lg:pt-28">
-      {/* Disclaimer Banner */}
-      <div className="max-w-7xl mx-auto px-6 mb-12">
-        <div className="bg-accent/[0.03] border-l-2 border-accent p-8 md:p-10">
-          <h2 className="text-lg font-serif mb-4 text-foreground">A note before you read.</h2>
-          <p className="text-sm text-foreground/70 leading-relaxed max-w-4xl">
-            These six modules are working notes built from the outside. 
-            I do not have access to Nuvie&apos;s internal data — everything here 
-            is based on public information, product observation, 
-            and independent research. There will be gaps. There may be errors. 
-            Some things I have written with more confidence than I actually have. 
-            This is a live study, not a finished report. I am sharing it as 
-            work-in-progress, not as authority.
-          </p>
-        </div>
-      </div>
 
       {/* Workbook Layout */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           
           {/* TOC - Left (Desktop Sidebar) */}
-          <aside className="lg:w-1/4 lg:sticky lg:top-32 lg:h-[calc(100vh-160px)] z-10">
-            <WorkbookTableOfContents 
-              chapters={researchWipData} 
-              activeId={activeChapterId} 
-              onSelect={setActiveChapterId}
-            />
-          </aside>
+          {chapters.length > 0 ? (
+            <aside className="lg:w-1/4 lg:sticky lg:top-32 lg:h-[calc(100vh-160px)] z-10">
+              <WorkbookTableOfContents 
+                chapters={chapters} 
+                activeId={activeChapterId} 
+                onSelect={setActiveChapterId}
+              />
+            </aside>
+          ) : null}
 
           {/* Content - Right */}
-          <main className="lg:w-3/4 pb-32">
-            {activeChapter.type === 'editorial' ? (
-              <EditorialChapter 
-                chapter={activeChapter} 
-                note={userNotes[activeChapter.id] || ''}
-                onNoteChange={(val) => updateNote(activeChapter.id, val)}
-              />
-            ) : (
-              <StudyChapter 
-                chapter={activeChapter} 
-                note={userNotes[activeChapter.id] || ''}
-                onNoteChange={(val) => updateNote(activeChapter.id, val)}
-              />
+          <main className={chapters.length > 0 ? "lg:w-3/4 pb-32" : "w-full pb-32"}>
+            {chapters.length === 0 ? (
+              <div className="flex flex-col items-center justify-center py-24 text-center">
+                <div className="w-16 h-16 mb-6 rounded-full bg-accent/10 flex items-center justify-center">
+                  <div className="w-2 h-2 rounded-full bg-accent animate-ping" />
+                </div>
+                <h3 className="text-xl font-serif mb-2 text-foreground">Content being updated.</h3>
+                <p className="text-sm text-foreground/50 max-w-sm mx-auto">
+                  I&apos;m currently refreshing the research modules with the latest data and insights. 
+                  Stay tuned for the update.
+                </p>
+              </div>
+            ) : activeChapter && (
+              activeChapter.type === 'editorial' ? (
+                <EditorialChapter 
+                  chapter={activeChapter} 
+                  note={userNotes[activeChapter.id] || ''}
+                  onNoteChange={(val) => updateNote(activeChapter.id, val)}
+                />
+              ) : (
+                <StudyChapter 
+                  chapter={activeChapter} 
+                  note={userNotes[activeChapter.id] || ''}
+                  onNoteChange={(val) => updateNote(activeChapter.id, val)}
+                />
+              )
             )}
           </main>
         </div>
