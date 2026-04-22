@@ -134,6 +134,9 @@ export default function HowICanHelpPage() {
                         If there is a problem worth working on together, I will go as deep as needed to be useful on it. I am not coming with a fixed set of answers. I am coming with the willingness to find them.
                     </p>
                     <p>
+                        If you want to see the broader body of work — portfolio, analytics projects, and prototypes — it&apos;s all <Link href="https://github.com/tharungajula2/Portfolio/tree/main" className="text-accent hover:underline decoration-accent/30 underline-offset-4 transition-all">here</Link>.
+                    </p>
+                    <p>
                         If any of this resonates, I would genuinely like to talk.
                     </p>
                 </div>
